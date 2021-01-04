@@ -30,7 +30,7 @@
 
 ## Additional Apps needed and their settings
 
-1. (Optional) Install [Pokemod](https://pokemod.dev/) Please set the correct client settings in config file
+1. (Optional) Install [Pokemod Public or HAL](https://pokemod.dev/) Please set the correct client settings in config file
 2. GPS Joystick, unlock version. Download from their [official website](http://gpsjoystick.theappninjas.com/faq/)
 - Create/download a GPX Route and run it in background. Make sure joystick are hidden from view.
 - Recommended Speed 7km per hour or less
