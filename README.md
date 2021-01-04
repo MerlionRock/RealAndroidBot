@@ -3,6 +3,9 @@
 ### RAB 1.0
 - First Commit
 
+## Discord
+Join our [Discord Channel](https://discord.gg/WecNxXvs)
+
 ## Features
 - Auto Catch
 - Keep or Transfer base on IV (100 or PvP)
