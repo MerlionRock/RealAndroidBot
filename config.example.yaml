@@ -1,0 +1,114 @@
+## 3rd Party Client Related
+client:
+    team_rocket_blastoff: true # Set to false if not using Pokemod's Team Rocket Blastoff (Explorer Feature)
+    instant_spin: true # Set to false if not using Pokemod's Instant Spin (Explorer Feature)
+    skip_encounter_intro: true # Set to false if not using Pokemod's Skip Encounter Intro
+    encounter_iv: true # Set to false if not using Pokemod's Show Encounter IV
+    transfer_on_catch: false # Is transfer on catch enabled in Pokemod? (Please enable instant catch too)
+
+## Telegram snipe/shiny check
+## Get your own api_id and api_hash from https://my.telegram.org, under API Development
+## Default vaules are exmaple and will not work
+telegram:
+    enabled: false # Enable it if you want to use either Shiny Check or Pokemon Snip function
+    telegram_api_id: 0 # Numbers
+    telegram_api_hash: ''
+    proxy: '' # Optional, for those who can't run telegram in their network
+
+shiny_check:
+    enabled: false
+    auto_catch: false  # let the bot to auto-catch
+    default_location: [0,0]  # initial cooldown timing will be based on this location if cannot get from phone
+    mon_to_check: []  # 'Croagunk', 'Mareep', 'Burmy' list of Pokemon to check. Leave it blank to check all
+    mon_to_ignore: ['Weedle', 'Sentret', 'Seedot', 'Castform', 'Turtwig', 'Mankey', 'Lillipup', 'Rhyhorn', 'Patrat',
+                    'Vulpix', 'Piplup', 'Onix', 'Bulbasaur', 'Abra', 'Swinub', 'Gastly', 'Chimchar', 'Drifloon']
+    mon_at_high_location: ['Burmy']
+    src_telegram: [] # Telegram ID Example: [-10012345678, -1003254618, '@myChannel']
+
+snipe:
+    enabled: false
+    snipe_max_cd: 12 # Only Snip if CD is below this timing in mins, set above 120 to snipe as long as it appear
+    snipe_list: { 'Skuntank': { 'type': 'gl', 'rating': 99 }, 'Crustle': { 'type': 'gl', 'rating': 99 }, 'Granbull': { 'type': 'ul', 'rating': 99, 'shiny_check': true }, 'Mantine': { 'type': 'iv100'} } # The final form of pokemon with pvp rate that you want to catch, type option: gl, ul, pvp, iv100. pvp means any pvp league, add shiny_check if you only want to catch if its shiny 
+    snipe_any_100iv: false # For testing if snipe works
+    auto_catch: true # let the bot to auto-catch
+    default_location: [0,0]  # Set this to the first location in your default route
+    mon_at_high_location: ['Burmy']
+    src_telegram: [] # Telegram ID Example: [-10012345678, -1003254618, '@myChannel']
+    default_route_name: 'Your Route Name' # Bot will start from this route after snipe
+
+quest:
+   enable_check_quest: true
+   clear_quest_interval: 10
+
+## Screenshots
+screenshot:
+    start: false
+    catch: false
+    shiny: true
+    appraisal: true
+    exception: false
+
+# Spin Pokestop
+spin_pokestop: false # Spin pokestop if instant spin is not enabled?
+
+## Catch Related
+catch:
+    enable_keep_mon: true
+    min_atk: 15
+    min_def: 15
+    min_sta: 15
+    min_lvl: 1
+    enable_keep_shiny: true
+    high_far_pokemon: ['Zubat', 'Golbat', 'Magmar', 'Aerodactyl', 'Tentacruel', 'Tangela', 'Electabuzz', 'Abra', 
+                        'Lapras', 'Yanma', 'Sawk', 'Growlithe', 'Weepinbell', 'Porygon', 'Magmar', 'Snorlax', 
+                        'Doduo', 'Mantine', 'Arbok', 'Jynx', 'Dunsparce', 'Hariyama', 'Lickilicky', 'Shuppet', 
+                        'Gastly', 'Hoppip'] # List of Pokemon that requires high throw in order to catch them
+    mon_to_keep: ['Gible','Mewtwo','Vullaby','Scraggy','Pawniard','Deino', 'Gengar', 'Axew', 'Victini', 'Spiritomb', 'Cottonee', 'Pawniard']
+    shadow_mon_to_keep: ['Skarmory']
+
+berry_selection:
+    shiny_or_high_lvl: ['golden razz berry', 'razz berry']
+    mid_lvl: ['pinap berry', 'nanab berry', 'razz berry']
+    low_lvl_or_unknown: ['razz berry', 'nanab berry', 'pinap berry']
+
+ball_selection:
+    shiny_or_high_lvl: ['ultra ball', 'great ball', 'poke ball']
+    mid_lvl: ['great ball', 'poke ball', 'ultra ball']
+    low_lvl_or_unknown: ['poke ball', 'great ball', 'ultra ball']
+
+## Keep Pokemon according to PvP rating
+## gl_to_keep and ul_to_keep is list of Pokedex number of Pokemons to keep if they meet conditions. 
+## Example [3,6,9] Empty box to keep all that meet conditions
+pvp:
+    enable_keep_pvp: true
+    gl_to_keep: ['Aerodactyl','Skarmory','Cottonee', 'Minccino', 'Cubchoo']
+    gl_rating: 99.0
+    gl_cp: 1450
+    ul_to_keep: []
+    ul_rating: 99.0
+    ul_cp: 2400
+
+## Item Management
+item_management:
+    enable_item_management: true
+    item_management_interval: 60 # In mins
+    clear_item_on_start: false
+    reset_bagfull_interval: 20 # In mins
+    auto_max: false # New HAL Feature, items are auto maxed, just need to confirm delete without press and hold
+
+## Item Options
+item_config:
+    Potion: true
+    Super Potion: true
+    Hyper Potion: false
+    Max Potion: false
+    Revive: false
+    Max Revive: false
+    Incense: false
+    Poké Ball: false
+    Great Ball: false
+    Ultra Ball: false
+    Razz Berry: false
+    Nanab Berry: false
+    Pinap Berry: false
+    Golden Razz Berry: false
