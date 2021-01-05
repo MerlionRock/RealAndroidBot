@@ -37,11 +37,11 @@ Join our [Discord Channel](https://discord.gg/HZXCzDXXJJ)
 2. GPS Joystick, unlock version. Download from their [official website](http://gpsjoystick.theappninjas.com/faq/)
 - Create/download a GPX Route and run it in background. Make sure joystick are hidden from view.
 - Recommended Speed 7km per hour or less
-3. (Optional, if your phone's resolution is more than 1920 x 1080) Go to playstore and download Easy DPI Changer (or https://www.apkmirror.com/apk/chornerman_studio/easy-dpi-changer-root/), resize your phone to 1080 x 1920, reset it when you are not running the script
+3. (Optional, if your phone's resolution is more than 1920 x 1080) Go to playstore and download Easy DPI Changer (or https://www.apkmirror.com/apk/chornerman_studio/easy-dpi-changer-root/), resize your phone to 1080 x 1920, reset it when you are not running the script. (**Update**: The bot now auto change your phone size. However, it's handy to have this app installed in case the bot is unable to reset back your phone to orginal screen resolution.)
 4. Your Pokemon Go Game MUST BE English
 5. When running the scripts at your computer, the following app/services must be running on your phone
 - GPS Joystick (running on a looped route)
-- (optional) Pokemod Public Version or Pokemond Explorer Version
+- (optional) Pokemod Public Version or HAL
 - Pokemon Go
    
 ## Pokemod/HAL Settings
