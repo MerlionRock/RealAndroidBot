@@ -4,7 +4,7 @@
 - First Commit
 
 ## Discord
-Join our [Discord Channel](https://discord.gg/WecNxXvs)
+Join our [Discord Channel](https://discord.gg/HZXCzDXXJJ)
 
 ## Features
 - Auto Catch
