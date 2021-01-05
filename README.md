@@ -136,20 +136,21 @@ Follow the 2 links below to install Git and Build Tools
 7. (Mac and Linux) `source RealAndroidBot/bin/activate` (Windows) `RealAndroidBot\Scripts\activate`
 8. `cd RealAndroidBot`
 9. Copy config.example.yaml to rab/config.yaml and configure it.
-10. `pip3 install -r requirements.txt`
+10. `pip install -r requirements.txt`
 11. `cd rab`
 12. Setup your phone according to app requirements as instructed above and run all required apps on phone
 13. Make sure your Pokemon Go is at map page and **zoomed out to the max**.
 14. Make sure your device are connected to your machine, run this command
-   `python3 run.py`
+   `python run.py`
 15. Allow installation of automator on your Phone
 16. To run multiple devices, first run adb devices to get all your device ID connected to your computer
 14. Then run each command on their own terminal/shell console
-    `python3 run.py --device-id YOUR_DEVICE_ID`
+    `python run.py --device-id YOUR_DEVICE_ID`
 15. To use a different config file (good for multiple devices setup) run
-    `python3 run.py --device-id YOUR_DEVICE_ID --config-filename YOUR_CONFIG_FILE_NAME`
+    `python run.py --device-id YOUR_DEVICE_ID --config-filename YOUR_CONFIG_FILE_NAME`
 16. Ctrl + C to terminate the program (you might have to do it more than once)
-17. To update your files from github repo, type `git pull`
+17. Whenever you want to run the scripts again, remember to run Step 7 first follow by (mac/linux) `cd RealAndroidBot/rab` or (Windows) `cd RealAndroidBot\rab`
+18. To update your files from github repo, type `git pull`
 
 ## Disclaimer
 ©2016 Niantic, Inc. ©2016 Pokémon. ©1995–2016 Nintendo / Creatures Inc. / GAME FREAK inc. © 2016 Pokémon/Nintendo Pokémon and Pokémon character names are trademarks of Nintendo. Other trademarks are the property of their respective owners.
