@@ -132,7 +132,7 @@ Follow the 2 links below to install Git and Build Tools
 4. (Mac and Linux) Install Python 3.7 or later (https://www.python.org/downloads/)
 5. `git clone --recursive https://github.com/MerlionRock/RealAndroidBot.git`
 6. `python3 -m venv RealAndroidBot`
-7. (Mac and Linux) `source RealAndroidBot/bin/activate` (Windows) `source RealAndroidBot\Scripts\activate`
+7. (Mac and Linux) `source RealAndroidBot/bin/activate` (Windows) `RealAndroidBot\Scripts\activate`
 8. `cd RealAndroidBot`
 9. Copy config.example.yaml to rab/config.yaml and configure it.
 10. `pip3 install -r requirements.txt`
