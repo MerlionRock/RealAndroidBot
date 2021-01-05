@@ -110,12 +110,19 @@ brew cask install android-platform-tools
 adb devices
 ```
 
-## Windows User/Linux
+### Windows User/Linux
 
 Follow this Guide, follow the instructions for Windows/Linux
 1. [Install ADB](https://www.xda-developers.com/install-adb-windows-macos-linux/)
 
 Then set your ADB to PATH system variable, follow this [guide](https://www.xda-developers.com/adb-fastboot-any-directory-windows-linux/)
+
+## Install Git (Windows User Only)
+### For Windows
+
+Follow this guide to install git to enable git command
+
+1. [Install Git](https://www.computerhope.com/issues/ch001927.htm)
 
 ## Setting up the project
 1. Install Python 3.7 or later (https://www.python.org/downloads/)
