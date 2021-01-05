@@ -148,6 +148,7 @@ Follow the 2 links below to install Git and Build Tools
 15. To use a different config file (good for multiple devices setup) run
     `python3 run.py --device-id YOUR_DEVICE_ID --config-filename YOUR_CONFIG_FILE_NAME`
 16. Ctrl + C to terminate the program (you might have to do it more than once)
+17. To update your files from github repo, type `git pull`
 
 ## Disclaimer
 ©2016 Niantic, Inc. ©2016 Pokémon. ©1995–2016 Nintendo / Creatures Inc. / GAME FREAK inc. © 2016 Pokémon/Nintendo Pokémon and Pokémon character names are trademarks of Nintendo. Other trademarks are the property of their respective owners.
