@@ -117,28 +117,32 @@ Follow this Guide, follow the instructions for Windows/Linux
 
 Then set your ADB to PATH system variable, follow this [guide](https://www.xda-developers.com/adb-fastboot-any-directory-windows-linux/)
 
-## Install Git (Windows User Only)
+## Install Git And Build Tools for C++ (Windows User Only)
 ### For Windows
 
-Follow this guide to install git to enable git command
+Follow the 2 links below to install Git and Build Tools
 
 1. [Install Git](https://www.computerhope.com/issues/ch001927.htm)
+2. Install [C++ Build Tools](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=BuildTools&rel=16) 
 
 ## Setting up the project
-1. Install Python 3.7 or later (https://www.python.org/downloads/)
-2. `git clone --recursive https://github.com/MerlionRock/RealAndroidBot.git`
-3. `python3 -m venv RealAndroidBot`
-4. `source RealAndroidBot/bin/activate`
-5. `cd RealAndroidBot`
-6. Copy config.example.yaml to rab/config.yaml and configure it.
-7. `pip3 install -r requirements.txt`
-8. `cd rab`
-9. Setup your phone according to app requirements as instructed above and run all required apps on phone
-10. Make sure your Pokemon Go is at map page and **zoomed out to the max**.
-11. Make sure your device are connected to your machine, run this command
+1. (Windows Only) Start --> Windows Powershell (expand the folder) --> Right click, run as Administrator
+2. (Windows Only) Type `python3` in Powershell, this will bring up Window store and will install Python 3 to your system
+3. (Windows Only) `Set-ExecutionPolicy RemoteSigned` Enter Y to allow execution of scripts
+4. (Mac and Linux) Install Python 3.7 or later (https://www.python.org/downloads/)
+5. `git clone --recursive https://github.com/MerlionRock/RealAndroidBot.git`
+6. `python3 -m venv RealAndroidBot`
+7. (Mac and Linux) `source RealAndroidBot/bin/activate` (Windows) `source RealAndroidBot\Scripts\activate`
+8. `cd RealAndroidBot`
+9. Copy config.example.yaml to rab/config.yaml and configure it.
+10. `pip3 install -r requirements.txt`
+11. `cd rab`
+12. Setup your phone according to app requirements as instructed above and run all required apps on phone
+13. Make sure your Pokemon Go is at map page and **zoomed out to the max**.
+14. Make sure your device are connected to your machine, run this command
    `python3 run.py`
-12. Allow installation of automator on your Phone
-13. To run multiple devices, first run adb devices to get all your device ID connected to your computer
+15. Allow installation of automator on your Phone
+16. To run multiple devices, first run adb devices to get all your device ID connected to your computer
 14. Then run each command on their own terminal/shell console
     `python3 run.py --device-id YOUR_DEVICE_ID`
 15. To use a different config file (good for multiple devices setup) run

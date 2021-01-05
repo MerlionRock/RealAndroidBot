@@ -1,5 +1,4 @@
 Pillow
-beepy
 telethon
 colorlog==4.0.2
 SQLAlchemy>=1.2.12
