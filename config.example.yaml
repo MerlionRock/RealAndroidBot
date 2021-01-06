@@ -5,6 +5,7 @@ client:
     skip_encounter_intro: true # Set to false if not using Pokemod's Skip Encounter Intro
     encounter_iv: true # Set to false if not using Pokemod's Show Encounter IV
     transfer_on_catch: false # Is transfer on catch enabled in Pokemod? (Please enable instant catch too)
+    manual_set_resolution: false # Bot will attempt to auto resize screen resolution if set to false. If you prefer to resize it manually, set this to true
 
 ## Telegram snipe/shiny check
 ## Get your own api_id and api_hash from https://my.telegram.org, under API Development
