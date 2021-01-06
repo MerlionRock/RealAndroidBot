@@ -68,6 +68,7 @@ catch:
     shadow_mon_to_keep: ['Skarmory']
 
 berry_selection:
+    use_berry: true # Default auto use berries. Set to false if you do not want to use berries
     shiny_or_high_lvl: ['golden razz berry', 'razz berry']
     mid_lvl: ['pinap berry', 'nanab berry', 'razz berry']
     low_lvl_or_unknown: ['razz berry', 'nanab berry', 'pinap berry']
