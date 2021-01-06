@@ -1,8 +1,6 @@
 # RealAndoridBot
 
-![RAB Demo](https://img.youtube.com/vi/d6oTZB25FqI/0.jpg)
-
-[Video Demo](https://www.youtube.com/watch?v= d6oTZB25FqI)
+[![RAB Video Demo](https://img.youtube.com/vi/d6oTZB25FqI/0.jpg)](https://www.youtube.com/watch?v=d6oTZB25FqI)
 
 ## Changelog
 ### RAB 1.0
