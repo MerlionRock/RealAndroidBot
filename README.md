@@ -2,7 +2,6 @@
 ## Changelog
 ### RAB 1.0
 - First Commit
-- **Currently DO NOT WORK FOR WINDOW SYSTEM**
 
 ## Discord
 Join our [Discord Channel](https://discord.gg/HZXCzDXXJJ)
@@ -90,9 +89,14 @@ brew install tesseract (install homebrew if you have not)
 ### Windows
 - Install from [tesseract](https://github.com/UB-Mannheim/tesseract/wiki)
 - [Full Installation Instructions](https://tesseract-ocr.github.io/tessdoc/Home.html)
+- Note down your installation path. Example `c:\Program Files\Tesseract-OCR\`
+- On your Windows search bar type `env`, click on Edit the system environment variables
+- Under Advance click Environment Variables, select path, click edit, click new and enter the Tesseract installation path that you note down in pervious step.
+- Restart your windows
+- After restart, run `tesseract -v` in PowerShell or Command Prompt. The bot will not work if this step is not done correctly.
 
 
-*To test if you have successfully install Tesseract, run "tesseract" at your OS's terminal/command prompt.*
+*To test if you have successfully install Tesseract, run "tesseract -v" at your OS's terminal/command prompt/power shell. The bot will only works if Tesseract is installed correctly*
 
 ## Install ADB
 
