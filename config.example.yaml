@@ -75,6 +75,7 @@ berry_selection:
     low_lvl_or_unknown: ['razz berry', 'nanab berry', 'pinap berry']
 
 ball_selection:
+    select_ball: true # Default auto select ball. Set to false to use default ball without selecting
     shiny_or_high_lvl: ['ultra ball', 'great ball', 'poke ball']
     mid_lvl: ['great ball', 'poke ball', 'ultra ball']
     low_lvl_or_unknown: ['poke ball', 'great ball', 'ultra ball']
