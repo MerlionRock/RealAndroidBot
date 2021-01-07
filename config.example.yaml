@@ -38,8 +38,9 @@ snipe:
     default_route_name: 'Your Route Name' # Bot will start from this route after snipe
 
 quest:
-   enable_check_quest: true
-   clear_quest_interval: 10
+    enable_check_quest: true
+    power_up_lvl: 5 # How many times to you want to powerup a level 1 pokemon on catch to clear power up quest. Default is 5. Set to 0 if you do not want to do any power up.
+    clear_quest_interval: 10
 
 ## Screenshots
 screenshot:
