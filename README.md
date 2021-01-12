@@ -3,8 +3,8 @@
 [![RAB Video Demo](https://img.youtube.com/vi/d6oTZB25FqI/0.jpg)](https://www.youtube.com/watch?v=d6oTZB25FqI)
 
 ## Changelog
-### RAB 1.02r1
-- Hot Fix: Stuck at berry selection page
+### RAB 1.02r2
+- Hot Fix: Auto Max (HAL Only)
 
 [Changelog History](https://github.com/MerlionRock/RealAndroidBot/blob/master/Changelog.md)
 

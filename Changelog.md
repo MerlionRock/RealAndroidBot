@@ -1,4 +1,7 @@
 # Changelog
+### RAB 1.02r2
+- Hot Fix: Auto Max (HAL Only)
+
 ### RAB 1.02r1
 - Hot Fix: Stuck at berry selection page
 
