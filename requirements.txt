@@ -1,4 +1,5 @@
 Pillow
+beepy
 telethon
 colorlog==4.0.2
 SQLAlchemy>=1.2.12
@@ -18,3 +19,4 @@ numpy>=1.19.1
 imutils==0.5.3
 uiautomator2
 sourcedefender
+protobuf

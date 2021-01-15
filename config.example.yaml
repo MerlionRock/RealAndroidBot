@@ -1,11 +1,21 @@
 ## 3rd Party Client Related
 client:
-    team_rocket_blastoff: true # Set to false if not using Pokemod's Team Rocket Blastoff (Explorer Feature)
-    instant_spin: true # Set to false if not using Pokemod's Instant Spin (Explorer Feature)
-    skip_encounter_intro: true # Set to false if not using Pokemod's Skip Encounter Intro
-    encounter_iv: true # Set to false if not using Pokemod's Show Encounter IV
-    transfer_on_catch: false # Is transfer on catch enabled in Pokemod? (Please enable instant catch too)
+    client: 'Pokemod' # Support 'Pokemod' | 'HAL' | 'Polygon'. Leave it empty if not using any client. The bot will operate differently for Polygon
+    team_rocket_blastoff: true # Set to false if not using Pokemod's Team Rocket Blastoff (Explorer Feature) or Polygon's Rocket Battle Autowin
+    instant_spin: true # Set to false if not using Pokemod's Instant Spin (Explorer Feature) or Polygon's Pokestop Autospin
+    skip_encounter_intro: true # Set to false if not using Pokemod's Skip Encounter Intro | Polygon users please set this to true
+    encounter_iv: true # Set to false if not using Pokemod's Show Encounter IV or Polygon's nameplate
+    transfer_on_catch: false # Is transfer on catch enabled in Pokemod? (Please enable instant catch too) | Polygon Users please set this to true as Polygon force instant catch
     manual_set_resolution: false # Bot will attempt to auto resize screen resolution if set to false. If you prefer to resize it manually, set this to true
+
+## Setting for Polygon to connect to the computer
+## Under Polygon Advance settings, set Send data to custom backend to true
+## Backend IP Address to your computer's IP
+## Make sure both Phone and Computer are on the same network
+
+network:
+    host: '0.0.0.0' # local computer's hostname or IP address.
+    port: 5120 # The port used by the server, must be different port for each device
 
 ## Telegram snipe/shiny check
 ## Get your own api_id and api_hash from https://my.telegram.org, under API Development
@@ -26,6 +36,7 @@ shiny_check:
     mon_at_high_location: ['Burmy']
     src_telegram: [] # Telegram ID Example: [-10012345678, -1003254618, '@myChannel']
 
+# polygon users, please disable Auto Release Module for pvp snipe to work
 snipe:
     enabled: false
     snipe_max_cd: 12 # Only Snip if CD is below this timing in mins, set above 120 to snipe as long as it appear
@@ -55,7 +66,7 @@ spin_pokestop: false # Spin pokestop if instant spin is not enabled?
 
 ## Catch Related
 catch:
-    enable_keep_mon: true
+    enable_keep_mon: true # Polygon users, setting related to keeping poke will not work as Polygon force instant catch
     min_atk: 15
     min_def: 15
     min_sta: 15
@@ -67,6 +78,9 @@ catch:
                         'Gastly', 'Hoppip', 'Hitmonlee', 'Trubbish'] # List of Pokemon that requires high throw in order to catch them
     mon_to_keep: ['Gible','Mewtwo','Vullaby','Scraggy','Pawniard','Deino', 'Gengar', 'Axew', 'Victini', 'Spiritomb', 'Cottonee', 'Pawniard']
     shadow_mon_to_keep: ['Skarmory']
+    stop_at_ball: 10 # NEW OPTION: Polygon Only. Stop catching when balls reach this number
+    resume_at_ball: 100  # NEW OPTION: Polygon Only. Start catching when balls reach this number
+    catchpoke_every_x_spin: 10 # NEW OPTION: Polygon Only. Try Catch a poke after every x spin (In Spin Mode). This is to help bot to refresh item list
 
 berry_selection:
     use_berry: true # Default auto use berries. Set to false if you do not want to use berries
@@ -84,7 +98,7 @@ ball_selection:
 ## gl_to_keep and ul_to_keep is list of Pokedex number of Pokemons to keep if they meet conditions. 
 ## Example [3,6,9] Empty box to keep all that meet conditions
 pvp:
-    enable_keep_pvp: true
+    enable_keep_pvp: true # Polygon users, setting related to keeping poke will not work as Polygon force instant catch
     gl_to_keep: ['Aerodactyl','Skarmory','Cottonee', 'Minccino', 'Cubchoo']
     gl_rating: 99.0
     gl_cp: 1450

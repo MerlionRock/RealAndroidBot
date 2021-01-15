@@ -1,4 +1,17 @@
 # Changelog
+### RAB 1.03b
+This version is considered as a beta version.
+What used to work might not work anymore in this version.
+Please submit issue request to help us improves this version.
+
+- Added Polygon Support. (Please do `pip install -r requirements.txt` to get new requirements needed.
+- Added client type option in config.
+- Added network settings. (Polygon Only)
+- Added `stop_at_ball` and `resume_at_ball` options (Polygon Only)
+- added `catchpoke_every_x_spin` option. Catch a poke in between x pokestop spinning. (Polygon Only)
+- Snipe support for Polygon#. Works differently from Pokemod/HAL. (Snipe is still not availibe for public, more information will be release in our Discord Channel)
+- Auto catch shiny Pokemon detected by Polygon. (Polygon Only)
+
 ### RAB 1.02r2
 - Hot Fix: Auto Max (HAL Only)
 
