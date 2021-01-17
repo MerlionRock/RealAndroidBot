@@ -169,7 +169,7 @@ Follow the 2 links below to install Git and Build Tools
 
 ## Setting up the project
 1. (Windows Only) Start --> Windows Powershell (expand the folder) --> Right click, run as Administrator. Type `cd c:\` 
-1.1 (Linux/Ubuntu Open terminal and type `cd ~/`
+1.1. (Ubuntu/Linux) Open terminal and type: `cd ~/`
 2. (Windows Only) Type `python3` in Powershell, this will bring up Window store and will install Python 3 to your system
 3. (Windows Only) `Set-ExecutionPolicy RemoteSigned` Enter Y to allow execution of scripts
 4. (Mac and Linux) Install Python 3.7 or later (https://www.python.org/downloads/)
