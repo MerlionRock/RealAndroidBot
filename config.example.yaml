@@ -52,6 +52,7 @@ quest:
     enable_check_quest: true
     power_up_lvl: 5 # How many times to you want to powerup a level 1 pokemon on catch to clear power up quest. Default is 5. Set to 0 if you do not want to do any power up.
     clear_quest_interval: 10
+    last_quest_quit: '' # A short name that will trigger a quit from quest special page. This will save time.
 
 ## Screenshots
 screenshot:
@@ -113,6 +114,7 @@ item_management:
     clear_item_on_start: false
     reset_bagfull_interval: 20 # In mins
     auto_max: false # New HAL Feature, items are auto maxed, just need to confirm delete without press and hold
+    last_item_quit: '' # Name of item that will trigger RAB to quit scrolling item page. This will save time.
 
 ## Item Options
 item_config:
