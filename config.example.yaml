@@ -82,6 +82,8 @@ catch:
     stop_at_ball: 10 # NEW OPTION: Polygon Only. Stop catching when balls reach this number
     resume_at_ball: 100  # NEW OPTION: Polygon Only. Start catching when balls reach this number
     catchpoke_every_x_spin: 10 # NEW OPTION: Polygon Only. Try Catch a poke after every x spin (In Spin Mode). This is to help bot to refresh item list
+    go_after_shiny: true # NEW OPTION: Polygon Only. If Polygon alert shiny, teleport and try catch it
+    go_after_100IV: true # NEW OPTION: Polygon Only. If Polygon alert 100IV, teleport and try catch it
 
 berry_selection:
     use_berry: true # Default auto use berries. Set to false if you do not want to use berries
