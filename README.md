@@ -4,10 +4,6 @@
 
 ## Changelog
 ### RAB 1.03
-This version is considered as a beta version.
-What used to work might not work anymore in this version.
-Please submit issue request to help us improves this version.
-
 - Added Polygon Support. (Please do `pip install -r requirements.txt` to get new requirements needed.
 - Added client type option in config.
 - Added network settings. (Polygon Only)
@@ -15,6 +11,8 @@ Please submit issue request to help us improves this version.
 - added `catchpoke_every_x_spin` option. Catch a poke in between x pokestop spinning. (Polygon Only)
 - Snipe support for Polygon#. Works differently from Pokemod/HAL. (Snipe is still not availibe for public, more information will be release in our Discord Channel)
 - Auto catch shiny Pokemon detected by Polygon. (Polygon Only)
+- Added `last_item_quit` to item_management option. Set something here for the bot to know when to quit item page. Example set to `Incense` and RAB will auto quit when it see Incense in item page
+- Added `last_quest_quit` to quest option. RAB will auto quit when it sees the key word here. Example, if you set to `Mythical`, RAB will quit special research page when it sees the quest A Mythical Discovery.
 
 [Changelog History](https://github.com/MerlionRock/RealAndroidBot/blob/master/Changelog.md)
 
