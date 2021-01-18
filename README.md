@@ -29,6 +29,8 @@ Join our [Discord Channel](https://discord.gg/HZXCzDXXJJ)
 - Auto Clear Quests
 - Auto Hatch
 - Auto Item management
+- Auto Team Rocket Battle (HAL & Polygon# Only)
+- Catch Shiny that 3rd Party App Found (Polygon# Only)
 - Integration with Telegram feed to allow PvP/100IV Snipe
 - Integration with Telegram feed to allow Shiny Checking
 
