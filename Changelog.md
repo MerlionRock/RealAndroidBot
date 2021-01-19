@@ -1,4 +1,7 @@
 # Changelog
+### RAB 1.04
+- Added PGSharp (Free Version) Support. 
+
 ### RAB 1.03
 - Added Polygon Support. (Please do `pip install -r requirements.txt` to get new requirements needed.
 - Added client type option in config.

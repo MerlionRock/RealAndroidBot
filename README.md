@@ -3,16 +3,8 @@
 [![RAB Video Demo](https://img.youtube.com/vi/d6oTZB25FqI/0.jpg)](https://www.youtube.com/watch?v=d6oTZB25FqI)
 
 ## Changelog
-### RAB 1.03
-- Added Polygon Support. (Please do `pip install -r requirements.txt` to get new requirements needed.
-- Added client type option in config.
-- Added network settings. (Polygon Only)
-- Added `stop_at_ball` and `resume_at_ball` options (Polygon Only)
-- added `catchpoke_every_x_spin` option. Catch a poke in between x pokestop spinning. (Polygon Only)
-- Snipe support for Polygon#. Works differently from Pokemod/HAL. (Snipe is still not availibe for public, more information will be release in our Discord Channel)
-- Auto catch shiny Pokemon detected by Polygon. (Polygon Only)
-- Added `last_item_quit` to item_management option. Set something here for the bot to know when to quit item page. Example set to `Incense` and RAB will auto quit when it see Incense in item page
-- Added `last_quest_quit` to quest option. RAB will auto quit when it sees the key word here. Example, if you set to `Mythical`, RAB will quit special research page when it sees the quest A Mythical Discovery.
+### RAB 1.04
+- Added PGSharp (Free Version) Support. 
 
 [Changelog History](https://github.com/MerlionRock/RealAndroidBot/blob/master/Changelog.md)
 
@@ -31,13 +23,15 @@ Join our [Discord Channel](https://discord.gg/HZXCzDXXJJ)
 - Catch Shiny that 3rd Party App Found (Polygon# Only)
 - Integration with Telegram feed to allow PvP/100IV Snipe
 - Integration with Telegram feed to allow Shiny Checking
+- Basic Non rooted support with PGSharp (**NO NOT USE IT ON MAIN ACCOUNT**)
 
 ## Phone Requirements
-1. Magisk Rooted
-2. USB Debugging Enabled (Under Developer Options)
-3. Recommended phone with Screen Resolution 1080 x 1920 and above (Additional App needed for devices above 1080 x 1920)
-4. 4GB RAM and above
-5. Snapdragon 625 and above
+1. Rooted (Optional)
+2. Your phone must be able to run Pokemon Go if it's rooted
+3. USB Debugging Enabled ([Under Developer Options](https://developer.android.com/studio/debug/dev-options))
+4. Recommended phone with Screen Resolution 1080 x 1920 and above (Additional App needed for devices above 1080 x 1920)
+5. 4GB RAM and above
+6. Snapdragon 625 and above
 
 ## Setting up USB Debugging mode option
 1. Launch the Settings application on your phone.
@@ -48,15 +42,16 @@ Join our [Discord Channel](https://discord.gg/HZXCzDXXJJ)
 
 ## Additional Apps needed and their settings
 
-1. (Optional) Install [Pokemod Public or HAL](https://pokemod.dev/) Please set the correct client settings in config file
-2. GPS Joystick, unlock version. Download from their [official website](http://gpsjoystick.theappninjas.com/faq/)
-- Create/download a GPX Route and run it in background. Make sure joystick are hidden from view.
-- Recommended Speed 7km per hour or less
+1. (Optional) Install [Pokemod or HAL](https://pokemod.dev/) or [Polygon#](https://discord.gg/QURp9gA) or [PGSharp](https://www.pgsharp.com/) Please set the correct client settings in config file
+2. (Pokemod, HAL and Polygon# Only) GPS Joystick, unlock version. Download from their [official website](http://gpsjoystick.theappninjas.com/faq/) 
+- (Pokemod, HAL Only) Create/download a GPX Route and run it in background. Make sure joystick are hidden from view.
+- (Polygon#) Just spoof to a location with lot's of pokestops. RAB will handle the rest.
+- (Pokemod and HAL Only) Recommended Speed 7km per hour or less
 3. (Optional, if your phone's resolution is more than 1920 x 1080) Go to playstore and download Easy DPI Changer (or https://www.apkmirror.com/apk/chornerman_studio/easy-dpi-changer-root/), resize your phone to 1080 x 1920, reset it when you are not running the script. (**Update**: The bot now auto change your phone size. However, it's handy to have this app installed in case the bot is unable to reset back your phone to orginal screen resolution.)
 4. Your Pokemon Go Game MUST BE English
 5. When running the scripts at your computer, the following app/services must be running on your phone
-- GPS Joystick (running on a looped route)
-- (optional) Pokemod Public Version or HAL
+- GPS Joystick (Not needed for PGSharp)
+- (optional) Pokemod, HAL, Polygon# or PGSharp
 - Pokemon Go
    
 ## Pokemod/HAL Support
@@ -86,7 +81,7 @@ Join our [Discord Channel](https://discord.gg/HZXCzDXXJJ)
 
 ## Polygon# Enhancer Support
 
-- Note that as Instant catch cannot be disabled for Polygon#, settings related to keeping Pokemon in config will not apply to Polygon#
+- Instant catch is not recommended to be disabled for Polygon#, settings related to keeping Pokemon in config will not apply to Polygon#
 - Note that RAB will attempt to gather a few information from Polygon# first before starting to catch Pokemon. As such you might see RAB attempt to spin pokestops continously for a few mintues before catching. It is normal.
 
 ### Advanced
@@ -97,12 +92,16 @@ Join our [Discord Channel](https://discord.gg/HZXCzDXXJJ)
 - Encounter nameplates format `{default} LVL{lvl}\nIV{prc0}% {ivs}`
 - Pokemon panel nameplate format `{default}`
 
-### Settings
-- Disable Joystick (Please use GPS Joystick)
-- All moudles can be enabled except Joystick
+## PGSharp Support
 
-### Others
-- After you have started Polygon#, move the floating icon away from clicking by the bot or blocking the nameplate at encounter screen.
+- Currently the free version only! Paid version will be suppported in future.
+
+### Settings
+- Spoofing Enabled
+- Hide PGSharp Enabled
+- Enhanced Throw on Excellent and Curved
+- Tap to `Teleport` Enabled. By default this option is tap to walk, it will not work for free version. Please change to Tap to Teleport
+- Set a location with the Map or enter coordinates 
 
 *Enable or disable the modules in config.yaml accordingly*
 
