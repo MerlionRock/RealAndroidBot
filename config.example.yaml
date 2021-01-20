@@ -1,6 +1,6 @@
 ## 3rd Party Client Related
 client:
-    client: 'Pokemod' # Support 'Pokemod' | 'HAL' | 'Polygon'. Leave it empty if not using any client. The bot will operate differently for Polygon
+    client: 'Pokemod' # Support 'PGSharp' | Pokemod' | 'HAL' | 'Polygon'. Leave it empty if not using any client. The bot will operate differently for Polygon
     team_rocket_blastoff: true # Set to false if not using Pokemod's Team Rocket Blastoff (Explorer Feature) or Polygon's Rocket Battle Autowin
     instant_spin: true # Set to false if not using Pokemod's Instant Spin (Explorer Feature) or Polygon's Pokestop Autospin
     skip_encounter_intro: true # Set to false if not using Pokemod's Skip Encounter Intro | Polygon users please set this to true
