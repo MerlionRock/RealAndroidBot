@@ -3,8 +3,10 @@
 [![RAB Video Demo](https://img.youtube.com/vi/d6oTZB25FqI/0.jpg)](https://www.youtube.com/watch?v=d6oTZB25FqI)
 
 ## Changelog
-### RAB 1.04
-- Added PGSharp (Free Version) Support. 
+### RAB 1.05
+- PGSharp is now fully supported. Paid users try to shift your joystick to somewhere that wont be click on or block important text.
+- Added `auto_route` option under `client`. PGSharp free users and Polygon# users please set this to false. PGSharp Paid users please set this to true if using auto walk or route.
+- Added `screen_offset` option. Some phones, especially those with front camera build right atb the top middle of the screen, certain page in Pokemon Go will be shifted slightly downwards. To test if you need to add a number here, set clear_item_on_start to true, and see if the name of the items are correctly captured. If not, set a number here or seek help in discord. (try 80)
 
 [Changelog History](https://github.com/MerlionRock/RealAndroidBot/blob/master/Changelog.md)
 
