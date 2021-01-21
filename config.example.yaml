@@ -5,7 +5,7 @@ client:
     instant_spin: true # Set to false if not using Pokemod's Instant Spin (Explorer Feature) or Polygon's Pokestop Autospin | PGSharp user set this to false
     skip_encounter_intro: true # Set to false if not using Pokemod's Skip Encounter Intro | Polygon users please set this to true | PGSharp user set this to false
     encounter_iv: true # Set to false if not using Pokemod's Show Encounter IV or Polygon's nameplate | PGSharp Paid User please do not hide PGSharp if you enable this option
-    transfer_on_catch: false # Is transfer on catch enabled in Pokemod? (Please enable instant catch too) | Polygon Users please set this to true as Polygon force instant catch | PGSharp user, please manually do pokemon management as there's only instant catch but without auto transfer
+    transfer_on_catch: false # Is transfer on catch enabled in Pokemod? (Please enable instant catch too) | Polygon Users please set this to true (Enabled by default for enhanced catch) | PGSharp users, this option is call Quick Catch. Enable if you use quick catch. Use Pokemon Management options to transfer Pokemon when bag is full (please test that it work for you). Else set this option as false. 
     manual_set_resolution: false # Bot will attempt to auto resize screen resolution if set to false. If you prefer to resize it manually, set this to true
     auto_route: true # Are you using auto walk or gpx? Polygon# and PGSharp Free users please set this to false. PGSharp Paid users please use auto walk or gpx. 
     screen_offset: 0 # Some phones, especially those with front camera build right on the screen in the center, your Pokemon Go screen will be shifted slight downwards. To test if you need to add a number here, set clear_item_on_start to true, and see if the name of the items are correctly captured. If not, set a number here. (try 80)
@@ -68,6 +68,7 @@ screenshot:
 spin_pokestop: false # Spin pokestop if instant spin is not enabled?
 
 ## Catch Related
+## Options related to keeping or releasing pokemons here are also applied to Pokemon Management options
 catch:
     enable_keep_mon: true # Polygon users, setting related to keeping poke will not work as Polygon force instant catch
     min_atk: 15
@@ -75,6 +76,8 @@ catch:
     min_sta: 15
     min_lvl: 1
     enable_keep_shiny: true
+    keep_strong_shadow: false # Strong shdaow is defined as IV >= 86 or Atk IV = 0 
+    keep_legendary: true # inclusive of mythical Pokemon
     high_far_pokemon: ['Zubat', 'Golbat', 'Magmar', 'Aerodactyl', 'Tentacruel', 'Tangela', 'Electabuzz', 'Abra', 
                         'Lapras', 'Yanma', 'Sawk', 'Growlithe', 'Weepinbell', 'Porygon', 'Magmar', 'Snorlax', 
                         'Doduo', 'Mantine', 'Arbok', 'Jynx', 'Dunsparce', 'Hariyama', 'Lickilicky', 'Shuppet', 
@@ -102,14 +105,25 @@ ball_selection:
 ## Keep Pokemon according to PvP rating
 ## gl_to_keep and ul_to_keep is list of Pokedex number of Pokemons to keep if they meet conditions. 
 ## Example [3,6,9] Empty box to keep all that meet conditions
+## Options related to keeping or releasing pokemons here are also applied to Pokemon Management options
 pvp:
-    enable_keep_pvp: true # Polygon users, setting related to keeping poke will not work as Polygon force instant catch
+    enable_keep_pvp: true # For Polygon users, these settings will apply to Pokemon Management options
     gl_to_keep: ['Aerodactyl','Skarmory','Cottonee', 'Minccino', 'Cubchoo']
     gl_rating: 99.0
     gl_cp: 1450
     ul_to_keep: []
     ul_rating: 99.0
     ul_cp: 2400
+
+## Pokemon Inventory Management
+## Release will be base on rules set in catch and pvp above
+## Shiny, Legendary and Mythical Pokemon will be kept during final confirmation. If your 3rd party app has Transfer any pokemon option, make sure it is DISABLED.
+## Please do a test run by setting manage_poke_on_start to true and ensure it perform as it should before trusting this module! 
+poke_management:
+    enable_poke_management: true # call it when Pokemon Storage is full message appear?
+    manage_poke_on_start: false # call it right at the start?
+    inventory_iv: false # check iv at mon details page (Currently only support PGSharp Paid)
+    stop_check_at: 50 # Total no. of pokemon to look through before quiting the page
 
 ## Item Management
 item_management:

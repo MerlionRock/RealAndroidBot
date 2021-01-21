@@ -3,10 +3,10 @@
 [![RAB Video Demo](https://img.youtube.com/vi/d6oTZB25FqI/0.jpg)](https://www.youtube.com/watch?v=d6oTZB25FqI)
 
 ## Changelog
-### RAB 1.05
-- PGSharp is now fully supported. Paid users try to shift your joystick to somewhere that wont be click on or block important text.
-- Added `auto_route` option under `client`. PGSharp free users and Polygon# users please set this to false. PGSharp Paid users please set this to true if using auto walk or route.
-- Added `screen_offset` option. Some phones, especially those with front camera build right atb the top middle of the screen, certain page in Pokemon Go will be shifted slightly downwards. To test if you need to add a number here, set clear_item_on_start to true, and see if the name of the items are correctly captured. If not, set a number here or seek help in discord. (try 80)
+### RAB 1.06
+- Added Pokemon Inventory Mangement. RAB will now auto keep or release pokemon in your bag when it is full
+- New options for Pokemon Inventory Mangement are `enable_poke_management`, `manage_poke_on_start`, `inventory_iv` and `stop_check_at`. Please check config.example.yaml and update your exising config accordingly.
+- `keep_strong_shadow` and `keep_legendary` options added under catch
 
 [Changelog History](https://github.com/MerlionRock/RealAndroidBot/blob/master/Changelog.md)
 
@@ -15,38 +15,40 @@ Join our [Discord Channel](https://discord.gg/HZXCzDXXJJ)
 
 ## Features
 - Auto Catch
-- Keep or Transfer base on IV (100 or PvP)
+- Auto Keep or Transfer base on IV (100 or PvP)
 - Auto Select Berries
 - Auto Select Balls
 - Auto Clear Quests
 - Auto Hatch
 - Auto Item management
+- (NEW) Auto Pokemon Bag management
 - Auto Team Rocket Battle (HAL & Polygon# Only)
 - Catch Shiny that 3rd Party App Found (Polygon# Only)
-- Integration with Telegram feed to allow PvP/100IV Snipe
-- Integration with Telegram feed to allow Shiny Checking
-- Basic Non rooted support with PGSharp (**NO NOT USE IT ON MAIN ACCOUNT**)
+- Integration with Telegram feed to allow PvP/100IV Snipe (Not Live Yet)
+- Integration with Telegram feed to allow Shiny Checking (Not Live Yet)
+- Non rooted support with PGSharp Free or Paid version (**NO NOT USE IT ON MAIN ACCOUNT**)
 
 ## Phone Requirements
 1. Rooted (Optional)
 2. Your phone must be able to run Pokemon Go if it's rooted
 3. USB Debugging Enabled ([Under Developer Options](https://developer.android.com/studio/debug/dev-options))
-4. Recommended phone with Screen Resolution 1080 x 1920 and above (Additional App needed for devices above 1080 x 1920)
-5. 4GB RAM and above
-6. Snapdragon 625 and above
+4. Recommended phone with Screen Resolution 1080 x 1920 and above
+5. Recommended 4GB RAM and above
+6. Recommended Snapdragon 625 and above
 
 ## Setting up USB Debugging mode option
 1. Launch the Settings application on your phone.
 2. Tap the About Phone option generally near the bottom of the list.
 3. Then tap the Build Number option 7 times to enable Developer Mode. You will see a toast message when it is done.
 4. Now go back to the main Settings screen and you should see a new Developer Options menu you can access.
-5. Go in there and enable the USB Debugging mode option.
+5. Go in there and enable the USB Debugging mode option. Some Phones will have Install via USB option and USB debugging (Security settings) options or any options that's related simulating input, enable them too.
 
 ## Additional Apps needed and their settings
 
 1. (Optional) Install [Pokemod or HAL](https://pokemod.dev/) or [Polygon#](https://discord.gg/QURp9gA) or [PGSharp](https://www.pgsharp.com/) Please set the correct client settings in config file
 2. (Pokemod, HAL and Polygon# Only) GPS Joystick, unlock version. Download from their [official website](http://gpsjoystick.theappninjas.com/faq/) 
 - (Pokemod, HAL Only) Create/download a GPX Route and run it in background. Make sure joystick are hidden from view.
+- (PGSharp Paid Only) Create/download a GPX Route and run it. Do not hide PGSharp. Move joystick away from location that will block text.
 - (Polygon#) Just spoof to a location with lot's of pokestops. RAB will handle the rest.
 - (Pokemod and HAL Only) Recommended Speed 7km per hour or less
 3. (Optional, if your phone's resolution is more than 1920 x 1080) Go to playstore and download Easy DPI Changer (or https://www.apkmirror.com/apk/chornerman_studio/easy-dpi-changer-root/), resize your phone to 1080 x 1920, reset it when you are not running the script. (**Update**: The bot now auto change your phone size. However, it's handy to have this app installed in case the bot is unable to reset back your phone to orginal screen resolution.)
@@ -96,14 +98,23 @@ Join our [Discord Channel](https://discord.gg/HZXCzDXXJJ)
 
 ## PGSharp Support
 
-- Currently the free version only! Paid version will be suppported in future.
-
-### Settings
+### Settings for Free Version
 - Spoofing Enabled
 - Hide PGSharp Enabled
 - Enhanced Throw on Excellent and Curved
 - Tap to `Teleport` Enabled. By default this option is tap to walk, it will not work for free version. Please change to Tap to Teleport
 - Set a location with the Map or enter coordinates 
+
+### Settings for Paid Version
+- Spoofing Enabled
+- Hide PGSharp Disabled, move joystick to somewhere that wont block the screen
+- Enhanced Throw on Excellent and Curved throw is preferred for faster catching
+- Tap to `Walk` or `Teleport` Disabled. 
+- `Inventory IV` Enabled
+- `Encounter IV` Enabled
+- `Quick Catch` Optional. Set `transfer on catch` to true in RAB config if you set this option to true.
+- The rest of options are optional
+- Then click on PGSharp's icon and choose either auto walk or GPX route (this option is in map)
 
 *Enable or disable the modules in config.yaml accordingly*
 

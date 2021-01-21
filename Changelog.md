@@ -1,4 +1,9 @@
 # Changelog
+### RAB 1.06
+- Added Pokemon Inventory Mangement. RAB will now auto keep or release pokemon in your bag when it is full
+- New options for Pokemon Inventory Mangement are `enable_poke_management`, `manage_poke_on_start`, `inventory_iv` and `stop_check_at`. Please check config.example.yaml and update your exising config accordingly.
+- `keep_strong_shadow` and `keep_legendary` options added under catch
+
 ### RAB 1.05
 - PGSharp is now fully supported. Paid users try to shift your joystick to somewhere that wont be click on or block important text.
 - Added `auto_route` option under `client`. PGSharp free users and Polygon# users please set this to false. PGSharp Paid users please set this to true if using auto walk or route.
