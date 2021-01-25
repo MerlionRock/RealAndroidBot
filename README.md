@@ -185,16 +185,16 @@ Follow the 2 links below to install Git and Build Tools
 2. (Windows Only) Type `python3` in Powershell, this will bring up Window store and will install Python 3 to your system
 3. (Windows Only) `Set-ExecutionPolicy RemoteSigned` Enter Y to allow execution of scripts
 4. (Mac and Linux) Install Python 3.7 or later (https://www.python.org/downloads/)
-5. `git clone --recursive https://github.com/MerlionRock/RealAndroidBot.git`
-6. `python3 -m venv RealAndroidBot`
-7. (Mac and Linux) `source RealAndroidBot/bin/activate` (Windows) `RealAndroidBot\Scripts\activate`
-8. `cd RealAndroidBot`
+5. Still at your terminal or PowerShell, type `git clone --recursive https://github.com/MerlionRock/RealAndroidBot.git`
+6. Follow by `python3 -m venv RealAndroidBot`
+7. Follow by (Mac and Linux) `source RealAndroidBot/bin/activate` (Windows) `RealAndroidBot\Scripts\activate`
+8. Follow by `cd RealAndroidBot`
 9. Copy config.example.yaml to rab/config.yaml and configure it.
-10. `pip install -r requirements.txt`
-11. `cd rab`
+10. Back to Terminal or PowerShell, type `pip install -r requirements.txt`
+11. Follow by `cd rab`
 12. Setup your phone according to app requirements as instructed above and run all required apps on phone
 13. Make sure your Pokemon Go is at map page and **zoomed out to the max**.
-14. Make sure your device are connected to your machine, run this command
+14. Make sure your device are connected to your machine, run this command in Terminal or PowerShell
    `python run.py`
 15. Allow installation of automator on your Phone
 16. To run multiple devices, first run adb devices to get all your device ID connected to your computer
