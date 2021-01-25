@@ -190,7 +190,7 @@ Follow the 2 links below to install Git and Build Tools
 6. Follow by `python3 -m venv RealAndroidBot`
 7. Follow by (Mac and Linux) `source RealAndroidBot/bin/activate` (Windows) `RealAndroidBot\Scripts\activate`
 8. Follow by `cd RealAndroidBot`
-9. Copy config.example.yaml to rab/config.yaml and configure it.
+9. Copy config.example.yaml to rab/config.yaml and configure it by using either notepad or notepad++. 
 10. Back to Terminal or PowerShell, type `pip install -r requirements.txt`
 11. Follow by `cd rab`
 12. Setup your phone according to app requirements as instructed above and run all required apps on phone
