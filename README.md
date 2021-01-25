@@ -177,6 +177,7 @@ Then set your ADB to PATH system variable, follow this [guide](https://www.xda-d
 Follow the 2 links below to install Git and Build Tools
 
 1. [Install Git](https://www.computerhope.com/issues/ch001927.htm)
+- Please ensure that in the **Adjusting your PATH environment** section, you keep the default **Use Git from the command line and also from 3rd-party software** option!
 2. Install [C++ Build Tools](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=BuildTools&rel=16) 
 
 ## Setting up the project
