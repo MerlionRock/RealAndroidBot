@@ -10,11 +10,21 @@ client:
     auto_route: true # Are you using auto walk or gpx? Polygon# and PGSharp Free users please set this to false. PGSharp Paid users please use auto walk or gpx. 
     screen_offset: 0 # Some phones, especially those with front camera build right on the screen in the center, your Pokemon Go screen will be shifted slight downwards. To test if you need to add a number here, set clear_item_on_start to true, and see if the name of the items are correctly captured. If not, set a number here. (try 80)
 
+## discord Webhook, Currently only support sending to Discord
+## Set what notification you want to get from RAB
+discord:
+    enabled: false # Do you want to enable sending to discord
+    webhook_url: '' # Refer to Create Webhook at https://docs.gitlab.com/ee/user/project/integrations/discord_notifications.html
+    notify_encountered: false # Notify shiny/max iv/pvp iv when encountered it.
+    notify_caught_fled: true # Notify shiny/max iv/pvp iv when caught or flee. Depend on which client you are using and the settings you used (example: transfer on catch), you will get notified too if RAB is unable to determine if this poke has fled or caught
+    notify_shiny: true
+    notify_max_iv: true
+    notify_pvp_iv: true
+
 ## Setting for Polygon to connect to the computer
 ## Under Polygon Advance settings, set Send data to custom backend to true
 ## Backend IP Address to your computer's IP
 ## Make sure both Phone and Computer are on the same network
-
 network:
     host: '0.0.0.0' # local computer's hostname or IP address.
     port: 5120 # The port used by the server, must be different port for each device
@@ -65,7 +75,7 @@ screenshot:
     exception: false
 
 # Spin Pokestop
-spin_pokestop: false # Spin pokestop if instant spin is not enabled?
+spin_pokestop: true # Spin pokestop if instant spin is not enabled?
 
 ## Catch Related
 ## Options related to keeping or releasing pokemons here are also applied to Pokemon Management options
