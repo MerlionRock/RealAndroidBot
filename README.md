@@ -151,9 +151,9 @@ sudo apt-get install adb
    ```Set-ExecutionPolicy AllSigned``` **or** ```Set-ExecutionPolicy Bypass -Scope Process```
    Run any of the commands given press 'y' and enter. 
 3. Now run the command
-   ```
-   Set-ExecutionPolicy Bypass -Scope Process -Force; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1')) 
-   ```
+```
+Set-ExecutionPolicy Bypass -Scope Process -Force; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1')) 
+```
 
 
 ## Setting up the project
