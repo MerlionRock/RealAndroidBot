@@ -149,6 +149,7 @@ sudo apt-get install adb
 1. Open the powershell as administrator
 2. You must ensure Get-ExecutionPolicy is not Restricted, for that you can use the following commands on the powershell
    ```Set-ExecutionPolicy AllSigned``` **or** ```Set-ExecutionPolicy Bypass -Scope Process```
+   Run any of the commands given press 'y' and enter. 
 3. Now run the command
    ```
    Set-ExecutionPolicy Bypass -Scope Process -Force; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1')) 
