@@ -133,52 +133,18 @@ brew install tesseract (install homebrew if you have not)
 ```
 
 ### Linux
-```sudo apt-get install tesseract-ocr```
-
-### Windows
-- Install from [tesseract](https://github.com/UB-Mannheim/tesseract/wiki)
-- [Full Installation Instructions](https://tesseract-ocr.github.io/tessdoc/Home.html)
-- Note down your installation path. Example `c:\Program Files\Tesseract-OCR\`
-- On your Windows search bar type `env`, click on Edit the system environment variables
-- Under Advance click Environment Variables, select path, click edit, click new and enter the Tesseract installation path that you note down in pervious step.
-- Restart your windows
-- After restart, run `tesseract -v` in PowerShell or Command Prompt. The bot will not work if this step is not done correctly.
-
-
-*To test if you have successfully install Tesseract, run "tesseract -v" at your OS's terminal/command prompt/power shell. The bot will only works if Tesseract is installed correctly*
-
-## Install ADB
-
-### Mac User
-
-1. Using Terminal, install homebrew if you do not have it
+1. Install tesseract via apt by using the command
 ```
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+sudo apt-get install tesseract-ocr
 ```
-2. Install adb
+2. Install adb via apt by using the command
 ```
-brew cask install android-platform-tools
-```
-3. Connect your device to your mac and run the following to see if it can detect your device
-```
-adb devices
+sudo apt-get install adb
 ```
 
-### Windows User/Linux
 
-Follow this Guide, follow the instructions for Windows/Linux
-1. [Install ADB](https://www.xda-developers.com/install-adb-windows-macos-linux/)
+## Installing all dependencies via choclatey (Windows User Only)
 
-Then set your ADB to PATH system variable, follow this [guide](https://www.xda-developers.com/adb-fastboot-any-directory-windows-linux/)
-
-## Install Git And Build Tools for C++ (Windows User Only)
-### For Windows
-
-Follow the 2 links below to install Git and Build Tools
-
-1. [Install Git](https://www.computerhope.com/issues/ch001927.htm)
-- Please ensure that in the **Adjusting your PATH environment** section, you keep the default **Use Git from the command line and also from 3rd-party software** option!
-2. Install [C++ Build Tools](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=BuildTools&rel=16) 
 
 ## Setting up the project
 1. (Windows Only) Start --> Windows Powershell (expand the folder) --> Right click, run as Administrator. Type `cd c:\`
