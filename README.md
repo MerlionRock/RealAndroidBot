@@ -148,12 +148,19 @@ sudo apt-get install adb
 ### Installing Choclatey
 1. Open the powershell as administrator
 2. You must ensure Get-ExecutionPolicy is not Restricted, for that you can use the following commands on the powershell
-   ```Set-ExecutionPolicy AllSigned``` **or** ```Set-ExecutionPolicy Bypass -Scope Process```
+   ```Set-ExecutionPolicy Unrestricted``` **or** ```Set-ExecutionPolicy Bypass -Scope Process```
    Run any of the commands given press 'y' and enter. 
 3. Now run the command
 ```
 Set-ExecutionPolicy Bypass -Scope Process -Force; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1')) 
 ```
+this will install choclatey on your pc
+### Installing Git with Choclatey and downloading RAB
+1. Open the powershell as administrator
+2. Use this command to install git ```choco install git -y```
+3. After git is installed use ```cd C:\``` to go into the C drive directory, and then use the following command to clone this repo
+```git clone --recursive https://github.com/MerlionRock/RealAndroidBot.git```
+After this you can find the RealAndroidBot folder present in your C drive
 
 
 ## Setting up the project
