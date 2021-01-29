@@ -1,4 +1,19 @@
 # Changelog
+### RAB 1.07
+**NOTE:** Due to the recent announcement by Polygon#, we will be removing Network mode of Polygon# from RAB. What does this mean? It mean Polygon# users will no longer be able to teleport to exactly where pokestops/pokemon are. No longer able to automatically capture shiny or 100 Polygon# found. All features of Polygon# will be removed.
+
+Due to this sudden changes, we are unable to fully optimize support for Polygon# users and you might see your avatar stuck at different places frequently. As such I suggest you switch to Pokemod temporary.
+
+- Added send enounter/caught information to Discord
+- Changed default `spin_pokestop` from false to true
+- Bug Fix: Team Rocket manage pokemon button not recognized 
+- Bug Fix: Not feeding berries
+- Auto scripts for Windows User to simplify installation process
+- Remove network setting for Polygon#. Now Polygon# will work just like HAL. 
+- Options orginally meant for Polygon# are removed
+- Added only_shiny mode. Also known as shiny tap. It will only catch if poke is shiny, else flee.
+- Added navigation_offset option. For phones with buttons and you can't disable/remove them, we now have an option for you to remove it. Set the height of your navigation bar here.
+
 ### RAB 1.06
 - Added Pokemon Inventory Mangement. RAB will now auto keep or release pokemon in your bag when it is full
 - New options for Pokemon Inventory Mangement are `enable_poke_management`, `manage_poke_on_start`, `inventory_iv` and `stop_check_at`. Please check config.example.yaml and update your exising config accordingly.

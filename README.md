@@ -3,10 +3,20 @@
 [![RAB Video Demo](https://img.youtube.com/vi/wtpJ9_av-qc/0.jpg)](https://www.youtube.com/watch?v=wtpJ9_av-qc)
 
 ## Changelog
-### RAB 1.06
-- Added Pokemon Inventory Mangement. RAB will now auto keep or release pokemon in your bag when it is full
-- New options for Pokemon Inventory Mangement are `enable_poke_management`, `manage_poke_on_start`, `inventory_iv` and `stop_check_at`. Please check config.example.yaml and update your exising config accordingly.
-- `keep_strong_shadow` and `keep_legendary` options added under catch
+### RAB 1.07
+**NOTE:** Due to the recent announcement by Polygon#, we will be removing Network mode of Polygon# from RAB. What does this mean? It mean Polygon# users will no longer be able to teleport to exactly where pokestops/pokemon are. No longer able to automatically capture shiny or 100 Polygon# found. All features of Polygon# will be removed.
+
+Due to this sudden changes, we are unable to fully optimize support for Polygon# users and you might see your avatar stuck at different places frequently. As such I suggest you switch to Pokemod temporary.
+
+- Added send enounter/caught information to Discord
+- Changed default `spin_pokestop` from false to true
+- Bug Fix: Team Rocket manage pokemon button not recognized 
+- Bug Fix: Not feeding berries
+- Auto scripts for Windows User to simplify installation process
+- Remove network setting for Polygon#. Now Polygon# will work just like HAL. 
+- Options orginally meant for Polygon# are removed
+- Added only_shiny mode. Also known as shiny tap. It will only catch if poke is shiny, else flee.
+- Added navigation_offset option. For phones with buttons and you can't disable/remove them, we now have an option for you to remove it. Set the height of your navigation bar here.
 
 [Changelog History](https://github.com/MerlionRock/RealAndroidBot/blob/master/Changelog.md)
 
@@ -23,7 +33,6 @@ Join our [Discord Channel](https://discord.gg/HZXCzDXXJJ)
 - Auto Item management
 - (NEW) Auto Pokemon Bag management
 - Auto Team Rocket Battle (HAL & Polygon# Only)
-- Catch Shiny that 3rd Party App Found (Polygon# Only)
 - Integration with Telegram feed to allow PvP/100IV Snipe (Not Live Yet)
 - Integration with Telegram feed to allow Shiny Checking (Not Live Yet)
 - Non rooted support with PGSharp Free or Paid version (**NO NOT USE IT ON MAIN ACCOUNT**)
@@ -47,10 +56,9 @@ Join our [Discord Channel](https://discord.gg/HZXCzDXXJJ)
 
 1. (Optional) Install [Pokemod or HAL](https://pokemod.dev/) or [Polygon#](https://discord.gg/QURp9gA) or [PGSharp](https://www.pgsharp.com/) Please set the correct client settings in config file
 2. (Pokemod, HAL and Polygon# Only) GPS Joystick, unlock version. Download from their [official website](http://gpsjoystick.theappninjas.com/faq/) 
-- (Pokemod, HAL Only) Create/download a GPX Route and run it in background. Make sure joystick are hidden from view.
+- (Pokemod, HAL, Polygon# Only) Create/download a GPX Route and run it in background. Make sure joystick are hidden from view.
 - (PGSharp Paid Only) Create/download a GPX Route and run it. Do not hide PGSharp. Move joystick away from location that will block text.
-- (Polygon#) Just spoof to a location with lot's of pokestops. RAB will handle the rest.
-- (Pokemod and HAL Only) Recommended Speed 7km per hour or less
+- (Pokemod, HAL, Polygon# Only) Recommended Speed 7km per hour or less
 3. (Optional, if your phone's resolution is more than 1920 x 1080) Go to playstore and download Easy DPI Changer (or https://www.apkmirror.com/apk/chornerman_studio/easy-dpi-changer-root/), resize your phone to 1080 x 1920, reset it when you are not running the script. (**Update**: The bot now auto change your phone size. However, it's handy to have this app installed in case the bot is unable to reset back your phone to orginal screen resolution.)
 4. Your Pokemon Go Game MUST BE English
 5. When running the scripts at your computer, the following app/services must be running on your phone
@@ -84,15 +92,7 @@ Join our [Discord Channel](https://discord.gg/HZXCzDXXJJ)
 *Enable or disable the modules in config.yaml accordingly*
 
 ## Polygon# Enhancer Support
-
-- Instant catch is not recommended to be disabled for Polygon#, settings related to keeping Pokemon in config will not apply to Polygon#
-- Note that RAB will attempt to gather a few information from Polygon# first before starting to catch Pokemon. As such you might see RAB attempt to spin pokestops continously for a few mintues before catching. It is normal.
-
 ### Advanced
-- Enable `Send data to custom backend`
-- Set backend IP Address to the IP of the machine that you are running RAB
-- How to find your machine's IP Guide [Windows](https://www.wikihow.com/Check-a-Computer-IP-Address) | [Mac](https://www.hellotech.com/guide/for/how-to-find-ip-address-on-mac)
-- Enter a port number that you set in config. Default 5120. If you are using more than one device, each device must have their own config and with their own port number set.
 - Encounter nameplates format `{default} LVL{lvl}\nIV{prc0}% {ivs}`
 - Pokemon panel nameplate format `{default}`
 

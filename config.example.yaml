@@ -1,14 +1,15 @@
 ## 3rd Party Client Related
 client:
-    client: 'Pokemod' # Support 'PGSharp' | Pokemod' | 'HAL' | 'Polygon'. Leave it empty if not using any client. The bot will operate differently for Polygon
+    client: 'Pokemod' # Support 'PGSharp' | Pokemod' | 'HAL' | 'Polygon'. 
     team_rocket_blastoff: true # Set to false if not using Pokemod's Team Rocket Blastoff (Explorer Feature) or Polygon's Rocket Battle Autowin | PGSharp user set this to false
     instant_spin: true # Set to false if not using Pokemod's Instant Spin (Explorer Feature) or Polygon's Pokestop Autospin | PGSharp user set this to false
     skip_encounter_intro: true # Set to false if not using Pokemod's Skip Encounter Intro | Polygon users please set this to true | PGSharp user set this to false
     encounter_iv: true # Set to false if not using Pokemod's Show Encounter IV or Polygon's nameplate | PGSharp Paid User please do not hide PGSharp if you enable this option
     transfer_on_catch: false # Is transfer on catch enabled in Pokemod? (Please enable instant catch too) | Polygon Users please set this to true (Enabled by default for enhanced catch) | PGSharp users, this option is call Quick Catch. Enable if you use quick catch. Use Pokemon Management options to transfer Pokemon when bag is full (please test that it work for you). Else set this option as false. 
     manual_set_resolution: false # Bot will attempt to auto resize screen resolution if set to false. If you prefer to resize it manually, set this to true
-    auto_route: true # Are you using auto walk or gpx? Polygon# and PGSharp Free users please set this to false. PGSharp Paid users please use auto walk or gpx. 
+    auto_route: true # Are you using auto walk or gpx? PGSharp Free users please set this to false. PGSharp Paid users please use auto walk or gpx. 
     screen_offset: 0 # Some phones, especially those with front camera build right on the screen in the center, your Pokemon Go screen will be shifted slight downwards. To test if you need to add a number here, set clear_item_on_start to true, and see if the name of the items are correctly captured. If not, set a number here. (try 80)
+    navigation_offset: 0 # Some phones have on screen navigation buttons that cannot be removed. Set this to the height of the navigation button to hide it
 
 ## discord Webhook, Currently only support sending to Discord
 ## Set what notification you want to get from RAB
@@ -20,14 +21,6 @@ discord:
     notify_shiny: true
     notify_max_iv: true
     notify_pvp_iv: true
-
-## Setting for Polygon to connect to the computer
-## Under Polygon Advance settings, set Send data to custom backend to true
-## Backend IP Address to your computer's IP
-## Make sure both Phone and Computer are on the same network
-network:
-    host: '0.0.0.0' # local computer's hostname or IP address.
-    port: 5120 # The port used by the server, must be different port for each device
 
 ## Telegram snipe/shiny check
 ## Get your own api_id and api_hash from https://my.telegram.org, under API Development
@@ -80,7 +73,7 @@ spin_pokestop: true # Spin pokestop if instant spin is not enabled?
 ## Catch Related
 ## Options related to keeping or releasing pokemons here are also applied to Pokemon Management options
 catch:
-    enable_keep_mon: true # Polygon users, setting related to keeping poke will not work as Polygon force instant catch
+    enable_keep_mon: true # For Polygon users, these settings will apply to Pokemon Management options
     min_atk: 15
     min_def: 15
     min_sta: 15
@@ -94,11 +87,7 @@ catch:
                         'Gastly', 'Hoppip', 'Hitmonlee', 'Trubbish'] # List of Pokemon that requires high throw in order to catch them
     mon_to_keep: ['Gible','Mewtwo','Vullaby','Scraggy','Pawniard','Deino', 'Gengar', 'Axew', 'Victini', 'Spiritomb', 'Cottonee', 'Pawniard']
     shadow_mon_to_keep: ['Skarmory']
-    stop_at_ball: 10 # NEW OPTION: Polygon Only. Stop catching when balls reach this number
-    resume_at_ball: 100  # NEW OPTION: Polygon Only. Start catching when balls reach this number
-    catchpoke_every_x_spin: 10 # NEW OPTION: Polygon Only. Try Catch a poke after every x spin (In Spin Mode). This is to help bot to refresh item list
-    go_after_shiny: true # NEW OPTION: Polygon Only. If Polygon alert shiny, teleport and try catch it
-    go_after_100IV: true # NEW OPTION: Polygon Only. If Polygon alert 100IV, teleport and try catch it
+    only_shiny: false # NEW OPTION: Only catch shiny. Flee for the rest, note that there will be a chance of RAB clicking that same poke again....
 
 berry_selection:
     use_berry: true # Default auto use berries. Set to false if you do not want to use berries
