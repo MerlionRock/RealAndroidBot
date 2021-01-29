@@ -158,17 +158,19 @@ Set-ExecutionPolicy Bypass -Scope Process -Force; iex ((New-Object System.Net.We
 1. Open PowerShell as administrator
 2. Use the command ```choco install git -y``` to install git. (Type "y" and enter if it prompts to).
 3. Enter the C drive directory by using ```cd C:\```
-4. Clone this repo by using the command ```git clone --recursive https://github.com/MerlionRock/RealAndroidBot.git``` \n You will find the RealAndroidBot folder present in the C drive directory after executing this command 
+4. Clone this repo by using the command ```git clone --recursive https://github.com/MerlionRock/RealAndroidBot.git```
+You will find the RealAndroidBot folder present in the C drive directory after executing this command 
 
 ## Setting up the project
-1. (Windows Only) Start --> Windows Powershell (expand the folder) --> Right click, run as Administrator. Type `cd c:\`
+1. (Windows Only) ==> Open the RealAndroidBot folder (Which is present in the C drive) in FileExplorer.
    - 1.1 (Ubuntu/Linux) Open terminal and type: `cd ~/`
-2. (Windows Only) Follow [this guide (Method 1)](https://datatofish.com/add-python-to-windows-path/) to install Python 3 into your system. Install version 3.7 or above version.
-3. (Windows Only) `Set-ExecutionPolicy RemoteSigned` Enter Y to allow execution of scripts
+2. (Windows Only) ==> Right click on the Auto_1.ps1 and select 'Run with PowerShell'
+3. (Windows Only) ==> The installation will take a little time and it will prompt you for confirmation to reboot, press y and enter to reboot (While the process is ongoing the powershell may ask you to prompt for installation, for that just type 'y' and enter everytime).
 4. (Mac and Linux) Install Python 3.7 or later (https://www.python.org/downloads/)
-5. Still at your terminal or PowerShell, type `git clone --recursive https://github.com/MerlionRock/RealAndroidBot.git`
-6. Follow by `python3 -m venv RealAndroidBot`
-   - **Note:** If your screen return `python` after this command, please type in this instead `python -m venv RealAndroidBot`
+5. (Windows Only) ==> After the reboot go to the c:\RealAndroidBot again in your FileExplorer and right click on Auto_2.ps1 and select 'Run with PowerShell'(This will install the visual c++ build tools).
+6. (Windows Only) ==> Now use `cd ..` and Follow by using `python3 -m venv RealAndroidBot`
+Note: If your screen return python after this command, please type in this instead `python -m venv RealAndroidBot` 
+(Mac and Linux) Follow the same step but skip the `cd ..` part
 7. Follow by (Mac and Linux) `source RealAndroidBot/bin/activate` (Windows) `RealAndroidBot\Scripts\activate`
 8. Follow by `cd RealAndroidBot`
 9. Copy config.example.yaml to rab/config.yaml and configure it by using either notepad or notepad++. 
