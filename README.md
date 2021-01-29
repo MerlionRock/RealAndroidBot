@@ -147,9 +147,8 @@ sudo apt-get install adb
 - For those who don't know what choclatey is, it's just like apt-get in ubuntu/Debian if u know what it is. If u want to know more about it before you use it please visit this [link](https://chocolatey.org/) 
 ### Installing Choclatey
 1. Open the powershell as administrator
-2. You must ensure Get-ExecutionPolicy is not Restricted, for that you can use the following commands on the powershell
-   ```Set-ExecutionPolicy AllSigned``` **or** ```Set-ExecutionPolicy Bypass -Scope Process```
-   ==> [Run any of the commands given, press 'y' and enter]. 
+2. You must ensure Get-ExecutionPolicy is not Restricted, for that you can use the following command in the powershell
+   ```Set-ExecutionPolicy Unrestricted```
 3. Now run the command
 ```
 Set-ExecutionPolicy Bypass -Scope Process -Force; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1')) 
