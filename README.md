@@ -168,7 +168,7 @@ You will find the RealAndroidBot folder present in the C drive directory after e
 3. (Windows Only) ==> The installation will take a little time and it will prompt you for confirmation to reboot, press y and enter to reboot (While the process is ongoing the powershell may ask you to prompt for installation, for that just type 'y' and enter everytime).
 4. (Mac and Linux) Install Python 3.7 or later (https://www.python.org/downloads/)
 5. (Windows Only) ==> After the reboot go to the c:\RealAndroidBot again in your FileExplorer and right click on Auto_2.ps1 and select 'Run with PowerShell'(This will install the visual c++ build tools).
-6. (Windows Only) ==> Now use `cd ..` and Follow by using `python3 -m venv RealAndroidBot`
+6. (Windows Only) ==> Now use `cd C:\` and Follow by using `python3 -m venv RealAndroidBot`
 Note: If your screen return python after this command, please type in this instead `python -m venv RealAndroidBot` 
 (Mac and Linux) Follow the same step but skip the `cd ..` part
 7. Follow by (Mac and Linux) `source RealAndroidBot/bin/activate` (Windows) `RealAndroidBot\Scripts\activate`
