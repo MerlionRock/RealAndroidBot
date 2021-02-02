@@ -88,6 +88,7 @@ catch:
     mon_to_keep: ['Gible','Mewtwo','Vullaby','Scraggy','Pawniard','Deino', 'Gengar', 'Axew', 'Victini', 'Spiritomb', 'Cottonee', 'Pawniard']
     shadow_mon_to_keep: ['Skarmory']
     only_shiny: false # NEW OPTION: Only catch shiny. Flee for the rest, note that there will be a chance of RAB clicking that same poke again....
+    delay_before_appraisal: 1.0 # NEW OPTION: Number of secs of delay before doing appraisal. Increase this value if you often see misclick when RAB trying to do appraisal
 
 berry_selection:
     use_berry: true # Default auto use berries. Set to false if you do not want to use berries
