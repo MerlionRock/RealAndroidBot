@@ -41,9 +41,10 @@ Join our [Discord Channel](https://discord.gg/HZXCzDXXJJ)
 1. Rooted (Optional)
 2. Your phone must be able to run Pokemon Go if it's rooted
 3. USB Debugging Enabled ([Under Developer Options](https://developer.android.com/studio/debug/dev-options))
-4. Recommended phone with Screen Resolution 1080 x 1920 and above
-5. Recommended 4GB RAM and above
+4. Phone with Screen Resolution 1080 x 1920 and above
+5. Recommended 2GB RAM and above
 6. Recommended Snapdragon 625 and above
+7. Full screen mode (or guesture mode) without navigation butttons on screen
 
 ## Setting up USB Debugging mode option
 1. Launch the Settings application on your phone.
