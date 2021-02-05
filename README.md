@@ -81,7 +81,6 @@ Join our [Discord Channel](https://discord.gg/HZXCzDXXJJ)
 - Replace Names with IVs in Encounters
 
 ### Disable Modules
-- Disable Replace Names with IVs in Encounters
 - Disable Block Non-Shiny Encounters 
 - Disable Mass Transfer any Pokémon (To prevent accident transfer of your fav lengenary Pokemon)
 
