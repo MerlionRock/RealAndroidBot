@@ -10,7 +10,8 @@ client:
     auto_route: true # Are you using auto walk or gpx? PGSharp Free users please set this to false. PGSharp Paid users please use auto walk or gpx. 
     screen_offset: 0 # Some phones, especially those with front camera build right on the screen in the center, your Pokemon Go screen will be shifted slight downwards. To test if you need to add a number here, set clear_item_on_start to true, and see if the name of the items are correctly captured. If not, set a number here. (try 80)
     navigation_offset: 0 # Some phones have on screen navigation buttons that cannot be removed. Set this to the height of the navigation button to hide it
-
+    screenshot_shift: 0 # When taking screenshot of Pokemon Go during running of RAB, black bar is seen at top and bottom of the screenshot. Set a number to the first visible pixel that's not black
+ 
 ## discord Webhook, Currently only support sending to Discord
 ## Set what notification you want to get from RAB
 discord:
