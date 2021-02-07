@@ -131,6 +131,14 @@ Join our [Discord Channel](https://discord.gg/HZXCzDXXJJ)
 ```
 brew install tesseract (install homebrew if you have not)
 ```
+3. Install ADB
+```
+brew cask install android-platform-tools
+```
+4. Connect your device to your mac and run the following to see if it can detect your device
+```
+adb devices
+```
 
 ### Linux
 1. Install tesseract via apt by using the command
