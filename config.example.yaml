@@ -1,6 +1,6 @@
 ## 3rd Party Client Related
 client:
-    client: 'Pokemod' # Support 'PGSharp' | Pokemod' | 'HAL' | 'Polygon'. 
+    client: 'Pokemod' # Support 'PGSharp' | Pokemod' | 'HAL' | 'Polygon' | 'Polygon Paid'. 
     team_rocket_blastoff: true # Set to false if not using Pokemod's Team Rocket Blastoff (Explorer Feature) or Polygon's Rocket Battle Autowin | PGSharp user set this to false
     instant_spin: true # Set to false if not using Pokemod's Instant Spin (Explorer Feature) or Polygon's Pokestop Autospin | PGSharp user set this to false
     skip_encounter_intro: true # Set to false if not using Pokemod's Skip Encounter Intro | Polygon users please set this to true | PGSharp user set this to false
@@ -11,7 +11,8 @@ client:
     screen_offset: 0 # Some phones, especially those with front camera build right on the screen in the center, your Pokemon Go screen will be shifted slight downwards. To test if you need to add a number here, set clear_item_on_start to true, and see if the name of the items are correctly captured. If not, set a number here. (try 80)
     navigation_offset: 0 # Some phones have on screen navigation buttons that cannot be removed. Set this to the height of the navigation button to hide it
     screenshot_shift: 0 # When taking screenshot of Pokemon Go during running of RAB, black bar is seen at top and bottom of the screenshot. Set a number to the first visible pixel that's not black
- 
+    auto_offset: true # RAB will attempt to give you a screen_offset value. After you got this vlaye, Use this value at screen_offset above and set auto_offset to off
+
 ## discord Webhook, Currently only support sending to Discord
 ## Set what notification you want to get from RAB
 discord:
@@ -22,6 +23,14 @@ discord:
     notify_shiny: true
     notify_max_iv: true
     notify_pvp_iv: true
+
+## Setting for Polygon (Paid Enchancer) to connect to the computer
+## Under Polygon Advance settings, set Send data to custom backend to true
+## Backend IP Address to your computer's IP
+## Make sure both Phone and Computer are on the same network
+network:
+    host: '0.0.0.0' # local computer's hostname or IP address (Suggest to leave it as 0.0.0.0).
+    port: 5120 # The port used by the server, must be different port for each device
 
 ## Telegram snipe/shiny check
 ## Get your own api_id and api_hash from https://my.telegram.org, under API Development
@@ -62,7 +71,7 @@ quest:
 
 ## Screenshots
 screenshot:
-    start: false
+    start: true
     catch: false
     shiny: true
     appraisal: true
@@ -82,6 +91,7 @@ catch:
     enable_keep_shiny: true
     keep_strong_shadow: false # Strong shdaow is defined as IV >= 86 or Atk IV = 0 
     keep_legendary: true # inclusive of mythical Pokemon
+	keep_lucky: true # pokemon management option
     high_far_pokemon: ['Zubat', 'Golbat', 'Magmar', 'Aerodactyl', 'Tentacruel', 'Tangela', 'Electabuzz', 'Abra', 
                         'Lapras', 'Yanma', 'Sawk', 'Growlithe', 'Weepinbell', 'Porygon', 'Magmar', 'Snorlax', 
                         'Doduo', 'Mantine', 'Arbok', 'Jynx', 'Dunsparce', 'Hariyama', 'Lickilicky', 'Shuppet', 
@@ -90,6 +100,11 @@ catch:
     shadow_mon_to_keep: ['Skarmory']
     only_shiny: false # NEW OPTION: Only catch shiny. Flee for the rest, note that there will be a chance of RAB clicking that same poke again....
     delay_before_appraisal: 1.0 # NEW OPTION: Number of secs of delay before doing appraisal. Increase this value if you often see misclick when RAB trying to do appraisal
+    stop_at_ball: 10 # NEW OPTION: Polygon Only. Stop catching when balls reach this number
+    resume_at_ball: 100  # NEW OPTION: Polygon Only. Start catching when balls reach this number
+    catchpoke_every_x_spin: 10 # NEW OPTION: Polygon Only. Try Catch a poke after every x spin (In Spin Mode). This is to help bot to refresh item list
+    go_after_shiny: true # NEW OPTION: Polygon Only. If Polygon alert shiny, teleport and try catch it
+    go_after_100IV: true # NEW OPTION: Polygon Only. If Polygon alert 100IV, teleport and try catch
 
 berry_selection:
     use_berry: true # Default auto use berries. Set to false if you do not want to use berries

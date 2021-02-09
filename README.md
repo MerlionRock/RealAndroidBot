@@ -3,20 +3,18 @@
 [![RAB Video Demo](https://img.youtube.com/vi/wtpJ9_av-qc/0.jpg)](https://www.youtube.com/watch?v=wtpJ9_av-qc)
 
 ## Changelog
-### RAB 1.07
-**NOTE:** Due to the recent announcement by Polygon#, we will be removing Network mode of Polygon# from RAB. What does this mean? It mean Polygon# users will no longer be able to teleport to exactly where pokestops/pokemon are. No longer able to automatically capture shiny or 100 Polygon# found. All features of Polygon# will be removed.
+### RAB 1.08
 
-Due to this sudden changes, we are unable to fully optimize support for Polygon# users and you might see your avatar stuck at different places frequently. As such I suggest you switch to Pokemod temporary.
+**Note** Polygon Network mode is back! Only for Polygon# paid user. Free Polygon users please use `Polygon` for the client option and Paid user please use `Polygon Paid` as the option for client.  
 
-- Added send enounter/caught information to Discord
-- Changed default `spin_pokestop` from false to true
-- Bug Fix: Team Rocket manage pokemon button not recognized 
-- Bug Fix: Not feeding berries
-- Auto scripts for Windows User to simplify installation process
-- Remove network setting for Polygon#. Now Polygon# will work just like HAL. 
-- Options orginally meant for Polygon# are removed
-- Added only_shiny mode. Also known as shiny tap. It will only catch if poke is shiny, else flee.
-- Added navigation_offset option. For phones with buttons and you can't disable/remove them, we now have an option for you to remove it. Set the height of your navigation bar here.
+- Added 'Polygon Paid' as an option for client
+- Added back all the feature of Polygon# for Polygon# paid users
+- Added `auto_offset` to config. Defaulted to `true`. RAB will now attempt to auto test your screen to see if it's compatible with RAB. It will then suggest some values where you can add them to your config file. You can then set `auto_offset` to false if you are happy with what RAB suggested to you.
+- Bug Fix (PGSharp): Waited very long to throw a second pokeball
+- Bug Fix: Pokemon Management will be messed up if there's a lucky pokemon
+- Bug Fix: RAB will powerup level 1 pokemon despite quest set to false. This is fixed.
+- Bug Fix: RAB will be stuck at a lot of places using snipe and shiny check feature
+- Bug Fix: Stuck at collect component screen
 
 [Changelog History](https://github.com/MerlionRock/RealAndroidBot/blob/master/Changelog.md)
 
@@ -91,8 +89,28 @@ Join our [Discord Channel](https://discord.gg/HZXCzDXXJJ)
 
 *Enable or disable the modules in config.yaml accordingly*
 
-## Polygon# Enhancer Support
+## Polygon# Enhancer (Free Version) Support
+
+- Use `Polygon` in your config file
+- Set `auto_route` in your config file to `true`
+- Set a route in GPS Joystick and loop it
+
 ### Advanced
+- Encounter nameplates format `{default} LVL{lvl}\nIV{prc0}% {ivs}`
+- Pokemon panel nameplate format `{default}`
+
+## Polygon# Enhancer (Paid Version) Support
+
+- Use `Polygon Paid` in your config file
+- Set `auto_route` in your config file to `false`
+- Instant catch is not recommended to be disabled for Polygon#, settings related to keeping Pokemon in config will not apply to Polygon#
+- Note that RAB will attempt to gather a few information from Polygon# Paid version first before starting to catch Pokemon. As such you might see RAB attempt to spin pokestops continously for a few mintues before catching. It is normal.
+
+### Advanced
+- Enable `Send data to custom backend`
+- Set backend IP Address to the IP of the machine that you are running RAB
+- How to find your machine's IP Guide [Windows](https://www.wikihow.com/Check-a-Computer-IP-Address) | [Mac](https://www.hellotech.com/guide/for/how-to-find-ip-address-on-mac)
+- Enter a port number that you set in config. Default 5120. If you are using more than one device, each device must have their own config and with their own port number set.
 - Encounter nameplates format `{default} LVL{lvl}\nIV{prc0}% {ivs}`
 - Pokemon panel nameplate format `{default}`
 

@@ -1,4 +1,17 @@
 # Changelog
+### RAB 1.08 Beta
+
+**Note** Polygon Network mode is back! Only for Polygon# paid user. Free Polygon users please use `Polygon` for the client option and Paid user please use `Polygon Paid` as the option for client.  
+
+- Added 'Polygon Paid' as an option for client
+- Added back all the feature of Polygon# for Polygon# paid users
+- Added `auto_offset` to config. Defaulted to `true`. RAB will now attempt to auto test your screen to see if it's compatible with RAB. It will then suggest some values where you can add them to your config file. You can then set `auto_offset` to false if you are happy with what RAB suggested to you.
+- Bug Fix (PGSharp): Waited very long to throw a second pokeball
+- Bug Fix: Pokemon Management will be messed up if there's a lucky pokemon
+- Bug Fix: RAB will powerup level 1 pokemon despite quest set to false. This is fixed.
+- Bug Fix: RAB will be stuck at a lot of places using snipe and shiny check feature
+- Bug Fix: Stuck at collect component screen
+
 ### RAB 1.07
 **NOTE:** Due to the recent announcement by Polygon#, we will be removing Network mode of Polygon# from RAB. What does this mean? It mean Polygon# users will no longer be able to teleport to exactly where pokestops/pokemon are. No longer able to automatically capture shiny or 100 Polygon# found. All features of Polygon# will be removed.
 
