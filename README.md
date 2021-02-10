@@ -207,7 +207,7 @@ Note: If your screen return python after this command, please type in this inste
 14. Make sure your device are connected to your machine, run this command in Terminal or PowerShell `python -m uiautomator2 init`. Check your phone and allow installation of automator on your Phone
 15. Please ensure you have copied config.example.yaml to rab/config.yaml and configure it, then run 
    `python run.py` in your terminal or powershell
-16. To run multiple devices, first run adb devices to get all your device ID connected to your computer
+16. To run multiple devices, first run `adb devices` to get all your device ID connected to your computer
 17. Then run each command on their own terminal/shell console
     `python run.py --device-id YOUR_DEVICE_ID`
 18. To use a different config file (good for multiple devices setup) run
