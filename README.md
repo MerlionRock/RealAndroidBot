@@ -190,31 +190,30 @@ You will find the RealAndroidBot folder present in the C drive directory after e
 ## Setting up the project
 1. (Windows Only) ==> Open the RealAndroidBot folder (Which is present in the C drive) in FileExplorer.
    - 1.1 (Ubuntu/Linux) Open terminal and type: `cd ~/`
-2. (Windows Only) ==> Right click on the Auto_1.ps1 and select 'Run with PowerShell'
-3. (Windows Only) ==> The installation will take a little time and it will prompt you for confirmation to reboot, press y and enter to reboot (While the process is ongoing the powershell may ask you to prompt for installation, for that just type 'y' and enter everytime).
+2. (Windows Only) ==> Right click on the `Install.ps1` and select 'Run with PowerShell'
+3. (Windows Only) ==> The installation will take a little time and it will prompt press any key to continue (press any key) and then u will be directed to the `PS C:\Windows\system32>` directory.
 4. (Mac and Linux) Install Python 3.7 or later (https://www.python.org/downloads/)
-5. (Windows Only) ==> After the reboot go to the c:\RealAndroidBot again in your FileExplorer and right click on Auto_2.ps1 and select 'Run with PowerShell'(This will install the visual c++ build tools).
-6. (Windows Only) ==> Now use `cd C:\` and Follow by using `python3 -m venv RealAndroidBot`
+5. (Windows Only) ==> Now use `cd C:\` and Follow by using `python3 -m venv RealAndroidBot`
 Note: If your screen return python after this command, please type in this instead `python -m venv RealAndroidBot` 
 (Mac and Linux) Follow the same step but skip the `cd ..` part
-7. Follow by (Mac and Linux) `source RealAndroidBot/bin/activate` (Windows) `RealAndroidBot\Scripts\activate`
-8. Follow by `cd RealAndroidBot`
-9. Copy config.example.yaml to rab/config.yaml and configure it by using notepad++. Do not use notepad to edit.!
-10. Back to Terminal or PowerShell, type `pip install -r requirements.txt`
-11. Follow by `cd rab`
-12. Setup your phone according to app requirements as instructed above and run all required apps on phone
-13. Make sure your Pokemon Go is at map page and **zoomed out to the max**.
-14. Make sure your device are connected to your machine, run this command in Terminal or PowerShell `python -m uiautomator2 init`. Check your phone and allow installation of automator on your Phone
-15. Please ensure you have copied config.example.yaml to rab/config.yaml and configure it, then run 
+6. Follow by (Mac and Linux) `source RealAndroidBot/bin/activate` (Windows) `RealAndroidBot\Scripts\activate`
+7. Follow by `cd RealAndroidBot`
+8. Copy config.example.yaml to rab/config.yaml and configure it by using notepad++. **Do not use notepad to edit.!**
+9. Back to Terminal or PowerShell, type `pip install -r requirements.txt`
+10. Follow by `cd rab`
+11. Setup your phone according to app requirements as instructed above and run all required apps on phone
+12. Make sure your Pokemon Go is at map page and **zoomed out to the max**.
+13. Make sure your device are connected to your machine, run this command in Terminal or PowerShell `python -m uiautomator2 init`. Check your phone and allow installation of automator on your Phone
+14. Please ensure you have copied config.example.yaml to rab/config.yaml and configure it, then run 
    `python run.py` in your terminal or powershell
-16. To run multiple devices, first run `adb devices` to get all your device ID connected to your computer
-17. Then run each command on their own terminal/shell console
+15. To run multiple devices, first run `adb devices` to get all your device ID connected to your computer
+16. Then run each command on their own terminal/shell console
     `python run.py --device-id YOUR_DEVICE_ID`
-18. To use a different config file (good for multiple devices setup) run
+17. To use a different config file (good for multiple devices setup) run
     `python run.py --device-id YOUR_DEVICE_ID --config-filename YOUR_CONFIG_FILE_NAME`
-19. Ctrl + C to terminate the program (you might have to do it more than once)
-20. Whenever you want to run the scripts again, remember to run Step 7 first follow by (mac/linux) `cd RealAndroidBot/rab` or (Windows) `cd RealAndroidBot\rab`
-21. To update your files from github repo, type `git pull`
+18. Ctrl + C to terminate the program (you might have to do it more than once)
+19. Whenever you want to run the scripts again, remember to run Step 7 first follow by (mac/linux) `cd RealAndroidBot/rab` or (Windows) `cd RealAndroidBot\rab`
+20. To update your files from github repo, type `git pull`
 
 ## Disclaimer
 ©2016 Niantic, Inc. ©2016 Pokémon. ©1995–2016 Nintendo / Creatures Inc. / GAME FREAK inc. © 2016 Pokémon/Nintendo Pokémon and Pokémon character names are trademarks of Nintendo. Other trademarks are the property of their respective owners.
