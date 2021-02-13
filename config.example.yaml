@@ -100,11 +100,12 @@ catch:
     shadow_mon_to_keep: ['Skarmory']
     only_shiny: false # NEW OPTION: Only catch shiny. Flee for the rest, note that there will be a chance of RAB clicking that same poke again....
     delay_before_appraisal: 1.0 # NEW OPTION: Number of secs of delay before doing appraisal. Increase this value if you often see misclick when RAB trying to do appraisal
-    stop_at_ball: 10 # NEW OPTION: Polygon Only. Stop catching when balls reach this number
-    resume_at_ball: 100  # NEW OPTION: Polygon Only. Start catching when balls reach this number
-    catchpoke_every_x_spin: 10 # NEW OPTION: Polygon Only. Try Catch a poke after every x spin (In Spin Mode). This is to help bot to refresh item list
-    go_after_shiny: true # NEW OPTION: Polygon Only. If Polygon alert shiny, teleport and try catch it
-    go_after_100IV: true # NEW OPTION: Polygon Only. If Polygon alert 100IV, teleport and try catch
+    stop_at_ball: 10 # NEW OPTION: Polygon Paid Only. Stop catching when balls reach this number
+    resume_at_ball: 100  # NEW OPTION: Polygon Paid Only. Start catching when balls reach this number
+    catchpoke_every_x_spin: 3 # NEW OPTION: Polygon Paid Only. Try Catch a poke after every x spin (In Spin Mode). This is to help bot to refresh item list
+    go_after_shiny: true # NEW OPTION: Polygon Paid Only. If Polygon alert shiny, teleport and try catch it
+    go_after_100IV: true # NEW OPTION: Polygon Paid Only. If Polygon alert 100IV, teleport and try catch
+    shiny_mode: true # NEW OPTION: Polygon Paid Only. RAB will keep walking until shiny appear and catch it.
 
 berry_selection:
     use_berry: true # Default auto use berries. Set to false if you do not want to use berries
