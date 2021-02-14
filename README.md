@@ -183,8 +183,9 @@ Set-ExecutionPolicy Bypass -Scope Process -Force; iex ((New-Object System.Net.We
 ### Installing Git with choclatey and downloading RAB
 1. Open PowerShell as administrator
 2. Use the command ```choco install git -y``` to install git. (Type "y" and enter if it prompts to).
-3. Enter the C drive directory by using ```cd C:\```
-4. Clone this repo by using the command ```git clone --recursive https://github.com/MerlionRock/RealAndroidBot.git```
+3. Restart your PowerShell or use the command `refreshenv`(Restarting is recommended).  
+4. Enter the C drive directory by using ```cd C:\```
+5. Clone this repo by using the command ```git clone --recursive https://github.com/MerlionRock/RealAndroidBot.git```
 You will find the RealAndroidBot folder present in the C drive directory after executing this command 
 
 ## Setting up the project
