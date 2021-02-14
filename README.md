@@ -190,8 +190,8 @@ You will find the RealAndroidBot folder present in the C drive directory after e
 ## Setting up the project
 1. (Windows Only) ==> Open the RealAndroidBot folder (Which is present in the C drive) in FileExplorer.
    - 1.1 (Ubuntu/Linux) Open terminal and type: `cd ~/`
-2. (Windows Only) ==> Right click on the `Install.ps1` and select 'Run with PowerShell'
-3. (Windows Only) ==> The installation will take a little time and it will prompt press any key to continue (press any key) and then u will be directed to the `PS C:\Windows\system32>` directory.
+2. (Windows Only) ==> Right click on the `Install.ps1` and select 'Run with PowerShell' 
+3. (Windows Only) ==> The installation will take a little time and it will prompt press any key to continue (press any key) and then u will be directed to the `PS C:\Windows\system32>` directory. Restart your PowerShell or use the command `refreshenv`(Restarting is recommended). 
 4. (Mac and Linux) Install Python 3.7 or later (https://www.python.org/downloads/)
 5. (Windows Only) ==> Now use `cd C:\` and Follow by using `python3 -m venv RealAndroidBot`
 Note: If your screen return python after this command, please type in this instead `python -m venv RealAndroidBot` 
