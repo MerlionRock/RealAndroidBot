@@ -147,7 +147,7 @@ Join our [Discord Channel](https://discord.gg/HZXCzDXXJJ)
 
 ## PC/MAC/LINUX Requirements
 
-Windows users who downloaded the release version, you just need to edit config.yaml, configure your phone and plug in to your PC and run RAB.exe will do. **Windows users do not need to follow the steps below.** Remenber to **ctrl+c** when you want to exit from RAB.
+Windows users who **downloaded the release version**, you just need to edit config.yaml, configure your phone and plug in to your PC and run RAB.exe will do. **You do not need to follow the steps below.** Remember to **ctrl+c** when you want to exit from RAB.
 
 ## Install Tesseract
 
