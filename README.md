@@ -44,6 +44,15 @@ Join our [Discord Channel](https://discord.gg/HZXCzDXXJJ)
 6. Recommended Snapdragon 625 and above
 7. Full screen mode (or guesture mode) without navigation butttons on screen
 
+## System Requirements
+64 bit system is required to run RAB
+
+## Release Download
+
+- Window users can download RAB from [here](https://github.com/MerlionRock/RealAndroidBot/releases) 
+- Please read the sections below on how to setup your phone to run RAB
+- There are no release version for Mac and Linux version yet. Please read on for the instructions on how to setup RAB on your system.
+
 ## Setting up USB Debugging mode option
 1. Launch the Settings application on your phone.
 2. Tap the About Phone option generally near the bottom of the list.
@@ -137,6 +146,8 @@ Join our [Discord Channel](https://discord.gg/HZXCzDXXJJ)
 *Enable or disable the modules in config.yaml accordingly*
 
 ## PC/MAC/LINUX Requirements
+
+Windows users who downloaded the release version, you just need to edit config.yaml, configure your phone and plug in to your PC and run RAB.exe will do. **Windows users do not need to follow the steps below.** Remenber to **ctrl+c** when you want to exit from RAB.
 
 ## Install Tesseract
 
