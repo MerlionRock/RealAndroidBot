@@ -181,6 +181,7 @@ sudo apt-get install adb
 
 
 ## Installing all dependencies via choclatey (Windows User Only)
+- Windows user are encouraged to use the [release version](https://github.com/MerlionRock/RealAndroidBot/releases). **If you are using the release version, you do not need to follow the steps anymore**.
 - For those who don't know what choclatey is, it's just like apt-get in ubuntu/Debian if u know what it is. If u want to know more about it before you use it please visit this [link](https://chocolatey.org/) 
 ### Installing Choclatey
 1. Open the PowerShell as administrator
