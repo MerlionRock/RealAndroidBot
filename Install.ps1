@@ -2,5 +2,9 @@ if (!([Security.Principal.WindowsPrincipal][Security.Principal.WindowsIdentity]:
 choco install adb -y
 choco install tesseract --pre -y 
 choco install python -y
-choco install visualstudio2019buildtools -y
-Restart-Computer -Confirm
+if ($Host.Name -eq "ConsoleHost")
+{
+    Write-Host "Press any key to continue..."
+    $Host.UI.RawUI.ReadKey("NoEcho,IncludeKeyUp") > $null
+}
+powershell
