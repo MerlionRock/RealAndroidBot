@@ -228,6 +228,31 @@ Note: If your screen return python after this command, please type in this inste
 19. Whenever you want to run the scripts again, remember to run Step 7 first follow by (mac/linux) `cd RealAndroidBot/rab` or (Windows) `cd RealAndroidBot\rab`
 20. To update your files from github repo, type `git pull`
 
+## Troubleshooting
+**RAB Mess up my screen resolution and my navigation bar went missing!!**
+Open your terminal or PowerShell, type in the following command. (press enter before entering the other)
+`adb shell wm size reset`
+`adb shell wm density reset`
+`adb shell wm overscan 0,0,0,0`
+
+To prevent it from happening again, always use ctrl+c to close RAB
+
+**After entering python run.py, nothing happens or it ask me to install requirements.text when all requirements are already installed**
+
+Please ensure that you have installed the required software. Tesseract and adb needs to be installed. 
+
+If you are sure you have installed adb, follow [this guide](https://www.xda-developers.com/adb-fastboot-any-directory-windows-linux/) to add adb to your system path
+
+If all required are install and you still did not see anything, make sure you have done step 9 correctly.
+
+Additional Steps to if it still doesn't help:
+1. Update your pip by using: python -m pip install --upgrade pip
+2. Reinstall your requirements, cd c:\RealAndroidBot follow by pip install -r requirements.txt
+
+RAB only works with 64bit system. You can't run RAB if you run a 32bit system.
+
+Lastly, for Windows users, when all options failed, just use the .exe version found [here](https://github.com/MerlionRock/RealAndroidBot/releases) 
+
 ## Disclaimer
 ©2016 Niantic, Inc. ©2016 Pokémon. ©1995–2016 Nintendo / Creatures Inc. / GAME FREAK inc. © 2016 Pokémon/Nintendo Pokémon and Pokémon character names are trademarks of Nintendo. Other trademarks are the property of their respective owners.
 [Privacy Policy](http://www.pokemon.com/us/privacy-policy/)
