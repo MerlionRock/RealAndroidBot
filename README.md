@@ -127,9 +127,9 @@ Join our [Discord Channel](https://discord.gg/HZXCzDXXJJ)
 
 ### Settings for Free Version
 - Spoofing Enabled
-- Hide PGSharp Enabled
+- Hide PGSharp Disabled, move joystick to somewhere that wont block the screen
 - Enhanced Throw on Excellent and Curved
-- Tap to `Teleport` Enabled. By default this option is tap to walk, it will not work for free version. Please change to Tap to Teleport
+- Tap to `Walk` Enabled. 
 - Set a location with the Map or enter coordinates 
 
 ### Settings for Paid Version
