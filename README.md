@@ -130,6 +130,7 @@ Join our [Discord Channel](https://discord.gg/HZXCzDXXJJ)
 - Hide PGSharp Disabled, move joystick to somewhere that wont block the screen
 - Enhanced Throw on Excellent and Curved
 - Tap to `Walk` Enabled. 
+- Set your walking speed to less than 7km/hr
 - Set a location with the Map or enter coordinates 
 
 ### Settings for Paid Version
