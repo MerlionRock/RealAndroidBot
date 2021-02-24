@@ -19,7 +19,7 @@
 [Changelog History](https://github.com/MerlionRock/RealAndroidBot/blob/master/Changelog.md)
 
 ## Discord
-Join our [Discord Channel](https://discord.gg/HZXCzDXXJJ)
+Join our [Discord Channel](https://discord.gg/Xw2DKBhRJu)
 
 ## Features
 - Auto Catch
