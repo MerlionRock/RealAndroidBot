@@ -5,7 +5,6 @@ SQLAlchemy>=1.2.12
 requests>=2.20.0
 flask>=1.0.2
 cython
-pyocr>=0.7.2
 geopy>=1.22.0
 s2sphere>=0.2.5
 Shapely>=1.7.0
@@ -17,3 +16,4 @@ imutils==0.5.3
 uiautomator2
 sourcedefender
 protobuf
+pytesseract

@@ -1,0 +1,43 @@
+english:
+    tab1: 'Instructions'
+    tab1text1: 'Setting up USB Debugging mode option'
+    tab1text2: '1. Launch the Settings application on your phone.\n2. Tap the About Phone option generally near the bottom of the list.\n3. Then tap the Build Number option 7 times to enable Developer Mode. You will see a toast message when it is done.\n4. Now go back to the main Settings screen and you should see a new Developer Options menu you can access.\n5. Go in there and enable the USB Debugging mode option.'
+    tab1text3: '\nXiaomi Users, in addition to enable USB Debugging, you must also enable the following options:'
+    tab1text4: '\nBefore Starting RAB'
+    tab1text5: '1. Configure RAB according to the 3rd party app that you will be using at the configuration tab and save it.\n2. Your Pokemon Go App must be in English. If it is not, change your System language to English\n3. Run all required apps (GPX Joystick for autoroute) on your phone with Pokemon Go at map zoomed out to the max.\n4. Connect your Phone to your PC and click on Start RAB below.\n5. If you are running RAB for the first time, you will be prompted to install some apps on your phone. Allow it.\n\nRemember to use CTRL+C when you want to quit RAB.'
+    tab1text6: 'Start RAB'
+
+    tab2: 'Configurations'
+    tab2Frame1: 'Client Settings'
+    tab2Frame1OptionsMsg: 'Select from list which 3rd party app you will be using with RAB'
+
+    tab3: 'Catch Settings'
+    tab3Frame1: 'Catch Settings'
+
+    tab4: 'Pokemon & Items'
+
+    tab5: 'Telegram Feed'
+    tab5text1: 'This Tab is reserved for future use'
+    tab6: 'Tools'
+
+german:
+    tab1: 'Anleitung'
+    tab1text1: 'Einrichten der Option für den USB-Debugging-Modus'
+    tab1text2: '1. Starten Sie die Anwendung Einstellungen auf Ihrem Telefon.\n2. Tippen Sie im Allgemeinen am Ende der Liste auf die Option Über Telefon.\n3. Tippen Sie dann siebenmal auf die Option Build-Nummer, um den Entwicklermodus zu aktivieren. Wenn dies erledigt ist, wird eine Toastnachricht angezeigt.\n4. Kehren Sie nun zum Hauptbildschirm "Einstellungen" zurück und Sie sollten ein neues Menü "Entwickleroptionen" sehen, auf das Sie zugreifen können.\n5. Gehen Sie dort hinein und aktivieren Sie die Option USB-Debugging-Modus.'
+    tab1text3: '\nXiaomi-Benutzer müssen zusätzlich zum Aktivieren des USB-Debuggens die folgenden Optionen aktivieren:'
+    tab1text4: '\nVor dem Start von RAB'
+    tab1text5: '1. Konfigurieren Sie RAB gemäß der Drittanbieter-App, die Sie auf der Registerkarte Konfiguration verwenden, und speichern Sie sie.\n2. Ihre Pokemon Go App muss auf Englisch sein. Ist dies nicht der Fall, ändern Sie Ihre Systemsprache in Englisch \n3. Führen Sie alle erforderlichen Apps (GPX Joystick für Autoroute) auf Ihrem Telefon mit Pokemon Go auf der Karte aus, die auf das Maximum verkleinert ist.\n4. Schließen Sie Ihr Telefon an Ihren PC an und klicken Sie unten auf RAB starten.\n5. Wenn Sie RAB zum ersten Mal ausführen, werden Sie aufgefordert, einige Apps auf Ihrem Telefon zu installieren. Erlaube es.\n\nDenken Sie daran, STRG + C zu verwenden, wenn Sie RAB beenden möchten.'
+    tab1text6: 'Starten Sie RAB'
+
+    tab2: 'Konfigurationen'
+    tab2Frame1: 'Client-Einstellungen'
+    tab2Frame1OptionsMsg: 'Wählen Sie aus der Liste aus, welche Drittanbieter-App Sie mit RAB verwenden möchten'
+
+    tab3: 'Catch Settings'
+    tab3Frame1: 'Catch Settings'
+
+    tab4: 'Pokemon & Items'
+
+    tab5: 'Telegram Feed'
+    tab5text1: 'Diese Registerkarte ist für die zukünftige Verwendung reserviert'
+    tab6: 'Werkzeuge'
