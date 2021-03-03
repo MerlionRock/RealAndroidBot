@@ -9,12 +9,41 @@ english:
 
     tab2: 'Configurations'
     tab2Frame1: 'Client Settings'
+    tab2Frame1Label1: 'Client Preset:' # New
     tab2Frame1OptionsMsg: 'Select from list which 3rd party app you will be using with RAB'
+    tab2Frame1TeamRocket: 'Auto Team Rocket' # New Onwards
+    tab2Frame1TeamRocketMsg: 'Auto win Team Rocket. (Enable/Disable in your 3rd Party App)'
+    tab2Frame1InstantSpin: 'Auto Spin Pokestop'
+    tab2Frame1InstantSpinMsg: 'Auto Spin Pokestop. (Enable/Disable in your 3rd Party App)'
+    tab2Frame1SkipIntro: 'Skip Encounter Intro'
+    tab2Frame1SkipIntroMsg: 'Skip the intro animation at the Pokemon catching screen. (Enable/Disable in your 3rd Party App)'
+    tab2Frame1EncounterIV: 'Encounter IV'
+    tab2Frame1EncounterIVMsg: 'Does it show IV when catching Pokemon. (Enable/Disable in your 3rd Party App)'
+    tab2Frame1QuickCatch: 'Quick Catch'
+    tab2Frame1QuickCatchMsg: 'Does it do quick catch? (Enable/Disable in your 3rd Party App)'
+    tab2Frame2AutoRoute: 'Auto Route'
+    tab2Frame2AutoRouteMsg: 'Are you using auto walk or gpx? (Please set a route using GPS Joystick)'
+    tab2Frame2PokestopPriority: 'Pokestop Priority'
+    tab2Frame2PokestopPriorityMsg: "For client that doesn't auto spin, please enable this."
+    tab2Frame2HostLabel: 'Host IP:'
+    tab2Frame2HostMsg: "(Polygon Enhancer Paid Only) local computer's hostname or IP address (Suggest to leave it as 0.0.0.0)"
+    tab2Frame2PortLabel: 'Port:'
+    tab2Frame2PortMsg: 'The port used by the server, must be different port for each device'
+
+    tab2Frame2: 'Phone Settings'
+    tab2Frame2ManualResolution: 'Manual Resolution'
+    tab2Frame2ManualResolutionMsg: 'RAB will attempt to auto resize screen resolution if disabled. If you prefer to resize it manually, enable it'
+    tab2Frame2AutoOffset: 'Auto Offset'
+    tab2Frame2AutoOffsetMsg: 'RAB will attempt to give you a screen_offset value'
+    tab2Frame2ScreenOffset: 'Screen Offset'
+    tab2Frame2ScreenOffsetMsg: 'Value to offset height od phone. Will be auto calculated if Auto offset is enabled'
 
     tab3: 'Catch Settings'
     tab3Frame1: 'Catch Settings'
 
-    tab4: 'Pokemon & Items'
+    tab4: 'Pokemon & Item Management'
+    tab4Frame1: 'Pokemon Management'
+    tab4Frame2: 'Item Management'
 
     tab5: 'Telegram Feed'
     tab5text1: 'This Tab is reserved for future use'
@@ -31,12 +60,15 @@ german:
 
     tab2: 'Konfigurationen'
     tab2Frame1: 'Client-Einstellungen'
+    tab2Frame1Label1: 'Client Preset:'
     tab2Frame1OptionsMsg: 'Wählen Sie aus der Liste aus, welche Drittanbieter-App Sie mit RAB verwenden möchten'
 
     tab3: 'Catch Settings'
     tab3Frame1: 'Catch Settings'
 
-    tab4: 'Pokemon & Items'
+    tab4: 'Pokemon & Item Management'
+    tab4Frame1: 'Pokemon Management'
+    tab4Frame2: 'Item Management'
 
     tab5: 'Telegram Feed'
     tab5text1: 'Diese Registerkarte ist für die zukünftige Verwendung reserviert'
