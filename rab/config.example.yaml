@@ -108,7 +108,7 @@ catch:
     catchpoke_every_x_spin: 5 # NEW OPTION: Polygon Paid Only. Try Catch a poke after every x spin (In Spin Mode). This is to help bot to refresh item list
     go_after_shiny: true # NEW OPTION: Polygon Paid Only. If Polygon alert shiny, teleport and try catch it
     go_after_100IV: true # NEW OPTION: Polygon Paid Only. If Polygon alert 100IV, teleport and try catch
-    shiny_mode: true # NEW OPTION: Polygon Paid Only. RAB will keep walking until shiny appear and catch it.
+    shiny_mode: false # NEW OPTION: Polygon Paid Only. RAB will keep walking until shiny appear and catch it.
 
 berry_selection:
     use_berry: true # Default auto use berries. Set to false if you do not want to use berries
