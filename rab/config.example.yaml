@@ -98,7 +98,7 @@ catch:
     high_far_pokemon: ['Zubat', 'Golbat', 'Magmar', 'Aerodactyl', 'Tentacruel', 'Tangela', 'Electabuzz', 'Abra', 
                         'Lapras', 'Yanma', 'Sawk', 'Growlithe', 'Weepinbell', 'Porygon', 'Magmar', 'Snorlax', 
                         'Doduo', 'Mantine', 'Arbok', 'Jynx', 'Dunsparce', 'Hariyama', 'Lickilicky', 'Shuppet', 
-                        'Gastly', 'Hoppip', 'Hitmonlee', 'Trubbish'] # List of Pokemon that requires high throw in order to catch them
+                        'Gastly', 'Hoppip', 'Hitmonlee', 'Trubbish', 'Skiploom', 'Dragonair'] # List of Pokemon that requires high throw in order to catch them
     mon_to_keep: ['Gible','Mewtwo','Vullaby','Scraggy','Pawniard','Deino', 'Gengar', 'Axew', 'Victini', 'Spiritomb', 'Cottonee', 'Pawniard']
     shadow_mon_to_keep: ['Skarmory']
     only_shiny: false # NEW OPTION: Only catch shiny. Flee for the rest, note that there will be a chance of RAB clicking that same poke again....

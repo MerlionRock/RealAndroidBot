@@ -37,6 +37,28 @@ english:
     tab2Frame2AutoOffsetMsg: 'RAB will attempt to give you a screen_offset value'
     tab2Frame2ScreenOffset: 'Screen Offset'
     tab2Frame2ScreenOffsetMsg: 'Value to offset height od phone. Will be auto calculated if Auto offset is enabled'
+    tab2Frame2NavigationOffset: 'Navigation Offset'
+    tab2Frame2NavigationOffsetMsg: 'Set this to the height of the navigation button to hide it'
+    tab2Frame2ScreenshotOffset: 'Screenshot Offset'
+    tab2Frame2ScreenshotOffsetMsg: "When taking screenshot of Pokemon Go during running of RAB, black bar is seen at top and bottom of the screenshot. Set a number to the first visible pixel that's not black"
+
+    tab2Frame3: 'Discord Notifications'
+    tab2Frame3DiscordEnabled: 'Enabled'
+    tab2Frame3DiscordEnabledMsg: 'Do you want to enable sending results to discord?'
+    tab2Frame3WebhookLabel: 'Webhook Address:'
+    tab2Frame3WebhookAddressMsg: 'Refer to Create Webhook at https://docs.gitlab.com/ee/user/project/integrations/discord_notifications.html'
+    tab2Frame3DiscordAll: 'Notify All Caught (Or Flee)'
+    tab2Frame3DiscordAllMsg: 'Do you want to notify all caught (or fled) Pokemon?'
+    tab2Frame3DiscordEncountered: 'Notify Encountered'
+    tab2Frame3DiscordEncounteredMsg: 'Notify Shiny/Max IV/PvP IV when encountered'
+    tab2Frame3DiscordCaughtOrFled: 'Notify Caught (or Fled)'
+    tab2Frame3DiscordCaughtOrFledMsg: 'Notify shiny/max iv/pvp iv when caught or flee.'
+    tab2Frame3DiscordShiny: 'Notify Shiny'
+    tab2Frame3DiscordShinyMsg: "Do you want to be notified when RAB encounter shiny?"
+    tab2Frame3Discord100IV: 'Notify 100IV'
+    tab2Frame3Discord100IVMsg: 'Do you want to be notified when RAB encounter 100 IV?'
+    tab2Frame3DiscordPVPIV: 'Notify PVP IV'
+    tab2Frame3DiscordPVPIVMsg: 'Do you want to be notified when RAB encounter PvP eligible Pokemon?'
 
     tab3: 'Catch Settings'
     tab3Frame1: 'Catch Settings'
