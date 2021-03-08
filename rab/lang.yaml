@@ -1,97 +1,371 @@
 english:
-    tab1: 'Instructions'
-    tab1text1: 'Setting up USB Debugging mode option'
-    tab1text2: '1. Launch the Settings application on your phone.\n2. Tap the About Phone option generally near the bottom of the list.\n3. Then tap the Build Number option 7 times to enable Developer Mode. You will see a toast message when it is done.\n4. Now go back to the main Settings screen and you should see a new Developer Options menu you can access.\n5. Go in there and enable the USB Debugging mode option.'
-    tab1text3: '\nXiaomi Users, in addition to enable USB Debugging, you must also enable the following options:'
-    tab1text4: '\nBefore Starting RAB'
-    tab1text5: '1. Configure RAB according to the 3rd party app that you will be using at the configuration tab and save it.\n2. Your Pokemon Go App must be in English. If it is not, change your System language to English\n3. Run all required apps (GPX Joystick for autoroute) on your phone with Pokemon Go at map zoomed out to the max.\n4. Connect your Phone to your PC and click on Start RAB below.\n5. If you are running RAB for the first time, you will be prompted to install some apps on your phone. Allow it.\n\nRemember to use CTRL+C when you want to quit RAB.'
-    tab1text6: 'Start RAB'
+    tab1: "Instructions"
+    tab1text1: "Setting up USB Debugging mode option"
+    tab1text2: "1. Launch the Settings application on your phone.\n2. Tap the About Phone option generally near the bottom of the list.\n3. Then tap the Build Number option 7 times to enable Developer Mode. You will see a toast message when it is done.\n4. Now go back to the main Settings screen and you should see a new Developer Options menu you can access.\n5. Go in there and enable the USB Debugging mode option."
+    tab1text3: "\nXiaomi Users, in addition to enable USB Debugging, you must also enable the following options:"
+    tab1text4: "\nBefore Starting RAB"
+    tab1text5: "1. Configure RAB according to the 3rd party app that you will be using at the configuration tab and save it.\n2. Your Pokemon Go App must be in English. If it is not, change your System language to English\n3. Run all required apps (GPX Joystick for autoroute) on your phone with Pokemon Go at map zoomed out to the max.\n4. Connect your Phone to your PC and click on Start RAB below.\n5. If you are running RAB for the first time, you will be prompted to install some apps on your phone. Allow it.\n\nRemember to use CTRL+C when you want to quit RAB."
+    tab1text6: "Start RAB"
+    but_save: "Save"
+    but_close: "Close"
 
-    tab2: 'Configurations'
-    tab2Frame1: 'Client Settings'
-    tab2Frame1Label1: 'Client Preset:' # New
-    tab2Frame1OptionsMsg: 'Select from list which 3rd party app you will be using with RAB'
-    tab2Frame1TeamRocket: 'Auto Team Rocket' # New Onwards
-    tab2Frame1TeamRocketMsg: 'Auto win Team Rocket. (Enable/Disable in your 3rd Party App)'
-    tab2Frame1InstantSpin: 'Auto Spin Pokestop'
-    tab2Frame1InstantSpinMsg: 'Auto Spin Pokestop. (Enable/Disable in your 3rd Party App)'
-    tab2Frame1SkipIntro: 'Skip Encounter Intro'
-    tab2Frame1SkipIntroMsg: 'Skip the intro animation at the Pokemon catching screen. (Enable/Disable in your 3rd Party App)'
-    tab2Frame1EncounterIV: 'Encounter IV'
-    tab2Frame1EncounterIVMsg: 'Does it show IV when catching Pokemon. (Enable/Disable in your 3rd Party App)'
-    tab2Frame1QuickCatch: 'Quick Catch'
-    tab2Frame1QuickCatchMsg: 'Does it do quick catch? (Enable/Disable in your 3rd Party App)'
-    tab2Frame2AutoRoute: 'Auto Route'
-    tab2Frame2AutoRouteMsg: 'Are you using auto walk or gpx? (Please set a route using GPS Joystick)'
-    tab2Frame2PokestopPriority: 'Pokestop Priority'
+    tab2: "Configurations"
+    tab2Frame1: "Client Settings"
+    tab2Frame1Label1: "Client Preset:" # New
+    tab2Frame1OptionsMsg: "Select from list which 3rd party app you will be using with RAB"
+    tab2Frame1TeamRocket: "Auto Team Rocket" # New Onwards
+    tab2Frame1TeamRocketMsg: "Auto win Team Rocket. (Enable/Disable in your 3rd Party App)"
+    tab2Frame1InstantSpin: "Auto Spin Pokestop"
+    tab2Frame1InstantSpinMsg: "Auto Spin Pokestop. (Enable/Disable in your 3rd Party App)"
+    tab2Frame1SkipIntro: "Skip Encounter Intro"
+    tab2Frame1SkipIntroMsg: "Skip the intro animation at the Pokemon catching screen. (Enable/Disable in your 3rd Party App)"
+    tab2Frame1EncounterIV: "Encounter IV"
+    tab2Frame1EncounterIVMsg: "Does it show IV when catching Pokemon. (Enable/Disable in your 3rd Party App)"
+    tab2Frame1QuickCatch: "Quick Catch"
+    tab2Frame1QuickCatchMsg: "Does it do quick catch? (Enable/Disable in your 3rd Party App)"
+    tab2Frame2AutoRoute: "Auto Route"
+    tab2Frame2AutoRouteMsg: "Are you using auto walk or gpx? (Please set a route using GPS Joystick)"
+    tab2Frame2PokestopPriority: "Pokestop Priority"
     tab2Frame2PokestopPriorityMsg: "For client that doesn't auto spin, please enable this."
-    tab2Frame2HostLabel: 'Host IP:'
+    tab2Frame2HostLabel: "Host IP:"
     tab2Frame2HostMsg: "(Polygon Enhancer Paid Only) local computer's hostname or IP address (Suggest to leave it as 0.0.0.0)"
-    tab2Frame2PortLabel: 'Port:'
-    tab2Frame2PortMsg: 'The port used by the server, must be different port for each device'
+    tab2Frame2PortLabel: "Port:"
+    tab2Frame2PortMsg: "The port used by the server, must be different port for each device"
 
-    tab2Frame2: 'Phone Settings'
-    tab2Frame2ManualResolution: 'Manual Resolution'
-    tab2Frame2ManualResolutionMsg: 'RAB will attempt to auto resize screen resolution if disabled. If you prefer to resize it manually, enable it'
-    tab2Frame2AutoOffset: 'Auto Offset'
-    tab2Frame2AutoOffsetMsg: 'RAB will attempt to give you a screen_offset value'
-    tab2Frame2ScreenOffset: 'Screen Offset'
-    tab2Frame2ScreenOffsetMsg: 'Value to offset height od phone. Will be auto calculated if Auto offset is enabled'
-    tab2Frame2NavigationOffset: 'Navigation Offset'
-    tab2Frame2NavigationOffsetMsg: 'Set this to the height of the navigation button to hide it'
-    tab2Frame2ScreenshotOffset: 'Screenshot Offset'
+    tab2Frame2: "Phone Settings"
+    tab2Frame2ManualResolution: "Manual Resolution"
+    tab2Frame2ManualResolutionMsg: "RAB will attempt to auto resize screen resolution if disabled. If you prefer to resize it manually, enable it"
+    tab2Frame2AutoOffset: "Auto Offset"
+    tab2Frame2AutoOffsetMsg: "RAB will attempt to give you a screen_offset value"
+    tab2Frame2ScreenOffset: "Screen Offset"
+    tab2Frame2ScreenOffsetMsg: "Value to offset height of phone. Will be auto calculated if Auto offset is enabled"
+    tab2Frame2NavigationOffset: "Navigation Offset"
+    tab2Frame2NavigationOffsetMsg: "Set this to the height of the navigation button to hide it"
+    tab2Frame2ScreenshotOffset: "Screenshot Offset"
     tab2Frame2ScreenshotOffsetMsg: "When taking screenshot of Pokemon Go during running of RAB, black bar is seen at top and bottom of the screenshot. Set a number to the first visible pixel that's not black"
 
-    tab2Frame3: 'Discord Notifications'
-    tab2Frame3DiscordEnabled: 'Enabled'
-    tab2Frame3DiscordEnabledMsg: 'Do you want to enable sending results to discord?'
-    tab2Frame3WebhookLabel: 'Webhook Address:'
-    tab2Frame3WebhookAddressMsg: 'Refer to Create Webhook at https://docs.gitlab.com/ee/user/project/integrations/discord_notifications.html'
-    tab2Frame3DiscordAll: 'Notify All Caught (Or Flee)'
-    tab2Frame3DiscordAllMsg: 'Do you want to notify all caught (or fled) Pokemon?'
-    tab2Frame3DiscordEncountered: 'Notify Encountered'
-    tab2Frame3DiscordEncounteredMsg: 'Notify Shiny/Max IV/PvP IV when encountered'
-    tab2Frame3DiscordCaughtOrFled: 'Notify Caught (or Fled)'
-    tab2Frame3DiscordCaughtOrFledMsg: 'Notify shiny/max iv/pvp iv when caught or flee.'
-    tab2Frame3DiscordShiny: 'Notify Shiny'
+    tab2Frame3: "Discord Notifications"
+    tab2Frame3DiscordEnabled: "Enabled"
+    tab2Frame3DiscordEnabledMsg: "Do you want to enable sending results to discord?"
+    tab2Frame3WebhookLabel: "Webhook Address:"
+    tab2Frame3WebhookAddressMsg: "Refer to Create Webhook at https://docs.gitlab.com/ee/user/project/integrations/discord_notifications.html"
+    tab2Frame3DiscordAll: "Notify All Caught (Or Flee)"
+    tab2Frame3DiscordAllMsg: "Do you want to notify all caught (or fled) Pokemon?"
+    tab2Frame3DiscordEncountered: "Notify Encountered"
+    tab2Frame3DiscordEncounteredMsg: "Notify Shiny/Max IV/PvP IV when encountered"
+    tab2Frame3DiscordCaughtOrFled: "Notify Caught (or Fled)"
+    tab2Frame3DiscordCaughtOrFledMsg: "Notify shiny/max iv/pvp iv when caught or flee."
+    tab2Frame3DiscordShiny: "Notify Shiny"
     tab2Frame3DiscordShinyMsg: "Do you want to be notified when RAB encounter shiny?"
-    tab2Frame3Discord100IV: 'Notify 100IV'
-    tab2Frame3Discord100IVMsg: 'Do you want to be notified when RAB encounter 100 IV?'
-    tab2Frame3DiscordPVPIV: 'Notify PVP IV'
-    tab2Frame3DiscordPVPIVMsg: 'Do you want to be notified when RAB encounter PvP eligible Pokemon?'
+    tab2Frame3Discord100IV: "Notify 100IV"
+    tab2Frame3Discord100IVMsg: "Do you want to be notified when RAB encounter 100 IV?"
+    tab2Frame3DiscordPVPIV: "Notify PVP IV"
+    tab2Frame3DiscordPVPIVMsg: "Do you want to be notified when RAB encounter PvP eligible Pokemon?"
 
-    tab3: 'Catch Settings'
-    tab3Frame1: 'Catch Settings'
+    tab2Frame4: "Quest Settings"
+    tab2Frame4QuestEnabled: "Enable"
+    tab2Frame4QuestEnabledMsg: "Do you want RAB to clear quest?"
+    tab2Frame4PowerUpScale: "Power up level"
+    tab2Frame4PowerUpScaleMsg: "How many times to you want to powerup a level 1 pokemon on catch to clear power up quest. Default is 5. Set to 0 if you do not want to do any power up."
+    tab2Frame4ClearQuestScale: "Clear Quest Interval"
+    tab2Frame4ClearQuestScaleMsg: "Interval between checking quest in mins"
+    labQuitToday: "Trigger Quit Text\n(Today Quest):"
+    tab2QuestTodayEntryMsg: "A short name that will trigger a quit from quest Today page. This will save time."
+    labQuitSpecial: "Trigger Quit Text\n(Special Quest):"
+    tab2QuestSpecialEntryMsg: "A short name that will trigger a quit from quest special page. This will save time."
 
-    tab4: 'Pokemon & Item Management'
-    tab4Frame1: 'Pokemon Management'
-    tab4Frame2: 'Item Management'
+    tab3: "Catch Settings"
+    tab3Frame1: "Catch Settings"
+    tab3Frame1KeepMon: "Enable"
+    tab3Frame1KeepMonMsg: "Do you want to keep Pokemon?"
+    tab3Frame1MinAtk: "Min Attack"
+    tab3Frame1MinAtkMsg: "Min Attack IV required in order to keep the Pokemon"
+    tab3Frame1MinDef: "Min Defense"
+    tab3Frame1MinDefMsg: "Min Defense IV required in order to keep the Pokemon"
+    tab3Frame1MinSta: "Min Stamina"
+    tab3Frame1MinStaMsg: "Min Stamina IV required in order to keep the Pokemon"
+    tab3Frame1MinLvl: "Min Level"
+    tab3Frame1MinLvlMsg: "Min Level required in order to keep the Pokemon"
+    tab3Frame1KeepShiny: "Keep Shiny"
+    tab3Frame1KeepShinyMsg: "Do you want to keep Shiny Pokemon?"
+    tab3Frame1KeepStrongShadow: "Keep Strong Shadow"
+    tab3Frame1KeepStrongShadowMsg: "Do you want to keep Strong Shadow Pokemon? (Strong shdaow is defined as IV >= 86 or Atk IV = 0)"
+    tab3Frame1KeepLegendary: "Keep Legendary Pokemon"
+    tab3Frame1KeepLegendaryMsg: "Do you want to keep Legendary Pokemon?"
+    tab3Frame1KeepLucky: "Keep Lucky Pokemon"
+    tab3Frame1KeepLuckyMsg: "Do you want to keep Lucky Pokemon?"
+    tab3Frame1ShinyTap: "Shiny Tap"
+    tab3Frame1ShinyTapMsg: "Only catch shiny (If not using quick catch). Flee for the rest, note that there will be a chance of RAB clicking that same poke again...."
+    tab3Frame1AppraisalDelay: "Appraisal Delay"
+    tab3Frame1AppraisalDelayMsg: "Number of secs of delay before doing appraisal. Increase this value if you often see misclick when RAB trying to do appraisal"
+    tab3Frame1HighFarPokemonLabel: "High Far Pokemon:"
+    txtHighFarPokemonMsg: "List of Pokemon that requires high throw in order to catch them. Separate each pokemon by a comma."
+    tab3Frame1Mon2Keep: "Do Not Transfer: "
+    txtMon2KeepMsg: "List of Pokemon that RAB will not transfer when they are caught"
+    tab3Frame1Shadow2Keep: "Shadow Pokemon to Keep: "
+    txtShadow2KeepMsg: "List of Shadow Pokemon that RAB will not transfer when they are caught"
+    tab3Frame1StopAtBall: "Stop at Ball"
+    tab3Frame1StopAtBallMsg: "Polygon Paid Only. Stop catching pokemon when balls reach this number"
+    tab3Frame1ResumeAtBall: "Resume at Ball"
+    tab3Frame1ResumeAtBallMsg: "Polygon Paid Only. Start catching when balls reach this number"
+    tab3Frame1CatchEveryXSpin: "Catch At Every x Spin"
+    tab3Frame1CatchEveryXSpinMsg: "Polygon Paid Only. Try Catch a poke after every x spin (In Spin Mode). This is to help RAB to refresh item list"
+    tab3Frame1GoAfterShiny: "Chase After Shiny"
+    tab3Frame1GoAfterShinyMsg: "Polygon Paid Only. If Polygon alert shiny, teleport and try catch it"
+    tab3Frame1GoAfterMaxIV: "Chase After Max IV"
+    tab3Frame1GoAfterMaxIVMsg: "Polygon Paid Only. If Polygon alert 100IV, teleport and try catch it"
+    tab3Frame1ShinyMode: "Shiny Mode"
+    tab3Frame1ShinyModeMsg: "Polygon Paid Only. RAB will keep walking until shiny appear and catch it"
 
-    tab5: 'Telegram Feed'
-    tab5text1: 'This Tab is reserved for future use'
-    tab6: 'Tools'
+    tab3Frame2: "Berry Selection"
+    tab3Frame2UseBerry: "Use Berry"
+    tab3Frame2UseBerryMsg: "Do you want to use berries?"
+    tab3Frame2BerryP1: "Shiny/High Level:"
+    tab3Frame2BerryP2: "Mid Level: "
+    tab3Frame2BerryP3: "Low Level: "
+    txtBerryP1: "Order of choice to use berry for Shiny or High Level Pokemon (IV100/CP>=2000/Lvl>=30)"
+    txtBerryP2: "Order of choice to use berry for Mid Level Pokemon (CP>=1000/Lvl>=15)"
+    txtBerryP3: "Order of choice to use berry for Low Level/Unknown Pokemon (CP<1000/Lvl<15)"
+
+    tab3Frame3: "Pokeball Selection"
+    tab3Frame3SelectBall: "Select Pokeball"
+    tab3Frame3SelectBallMsg: "Do you want RAB to auto select Pokeball for you?"
+    tab3Frame3SelectBallP1: "Shiny/High Level:"
+    tab3Frame3SelectBallP2: "Mid Level: "
+    tab3Frame3SelectBallP3: "Low Level: "
+    txtSelectBallP1: "Order of choice of selecting Pokeball for Shiny or High Level Pokemon (IV100/CP>=2000/Lvl>=30)"
+    txtSelectBallP2: "Order of choice of selecting Pokeball for Mid Level Pokemon (CP>=1000/Lvl>=15)"
+    txtSelectBallP3: "Order of choice of selecting Pokeball for Low Level/Unknown Pokemon (CP<1000/Lvl<15)"
+
+    tab3Frame4: "Eligible PVP Pokemon"
+    tab3Frame4EnablePVP: "Keep PVP?"
+    tab3Frame4EnablePVPMsg: "Do you want RAB keep Pokemon with good IV for PVP?"
+    tab3Frame4GL2Keep: "Keep Great League: "
+    txtGL2Keep: "Enter a list of Pokemon that is eligible for Great League PVP. Each separate by comma"
+    tab3Frame4GLRating: "GL Rating"
+    tab3Frame4GLRatingMsg: "At what percentage should be consider as eligible for PVP (Great League)."
+    tab3Frame4GLCP: "GL CP"
+    tab3Frame4GLCPMsg: "The Max CP of the Pokemon it can reach in order to qualify for this League"
+    tab3Frame4UL2Keep: "Keep Ultra League: "
+    txtUL2Keep: "Enter a list of Pokemon that is eligible for Ultra League PVP. Each separate by comma"
+    tab3Frame4ULRating: "UL Rating"
+    tab3Frame4ULRatingMsg: "At what percentage should be consider as eligible for PVP (Ultra League)."
+    tab3Frame4ULCP: "UL CP"
+    tab3Frame4ULCPMsg: "The Max CP of the Pokemon it can reach in order to qualify for this League"
+
+    tab4: "Pokemon & Item Management"
+    tab4Frame1: "Pokemon Management"
+    tab4Frame1EnablePokeManagement: "Enable"
+    tab4Frame1EnablePokeManagementMsg: "Do you want to do Pokemon Management when bag is full?"
+    tab4Frame1ManageOnStart: "Manage Pokemon On Start"
+    tab4Frame1ManageOnStartMsg: "Manage Pokemon inventory right from the start?"
+    tab4Frame1InventoryIV: "Inventory IV"
+    tab4Frame1InventoryIVMsg: "Manage Pokemon inventory right from the start? (PGSharp Only)"
+    tab4Frame1StopCheck: "Stop Checking at (x)"
+    tab4Frame1StopCheckMsg: "Total no. of pokemon to look through before quiting the page"
+
+    tab4Frame2: "Item Management"
+    tab4Frame2EnableItemManagement: "Enable"
+    tab4Frame2EnableItemManagementMsg: "Do you want to do Item Management when item bag is full?"
+    tab4Frame2ClearItemOnStart: "Clear Item on Start"
+    tab4Frame2ClearItemOnStartMsg: "Do you want to check and clear Item on Start of bot?"
+    tab4Frame2AutoMax: "Auto Max (HAL Only)"
+    tab4Frame2AutoMaxMsg: "Do you have auto Item Max on? (HAL Only)"
+    tab4Frame2ItemInterval: "Check Item Interval"
+    tab4Frame2ItemIntervalMsg: "Interval (in mins) to check and clear item inventory"
+    tab4Frame2BallFullInterval: "Reset Bagfull Interval"
+    tab4Frame2BallFullIntervalMsg: "RAB will try to avoid Pokestop when bag is full. Interval in mins to reset this counter."
+    tab4Frame2Item2QuitLabel: "Item to Quit: "
+    tab4Frame2Item2QuitEntryMsg: "Name of item that will trigger RAB to quit scrolling item page. This will save time."
+    itemCheckbox: "Checked items will be deleted during item management"
+
+    tab5: "Telegram Feed"
+    tab5text1: "This Tab is reserved for future use"
+    tab6: "Tools"
+    resetPhoneResolution: "Reset Phone Resolution"
 
 german:
-    tab1: 'Anleitung'
-    tab1text1: 'Einrichten der Option für den USB-Debugging-Modus'
-    tab1text2: '1. Starten Sie die Anwendung Einstellungen auf Ihrem Telefon.\n2. Tippen Sie im Allgemeinen am Ende der Liste auf die Option Über Telefon.\n3. Tippen Sie dann siebenmal auf die Option Build-Nummer, um den Entwicklermodus zu aktivieren. Wenn dies erledigt ist, wird eine Toastnachricht angezeigt.\n4. Kehren Sie nun zum Hauptbildschirm "Einstellungen" zurück und Sie sollten ein neues Menü "Entwickleroptionen" sehen, auf das Sie zugreifen können.\n5. Gehen Sie dort hinein und aktivieren Sie die Option USB-Debugging-Modus.'
-    tab1text3: '\nXiaomi-Benutzer müssen zusätzlich zum Aktivieren des USB-Debuggens die folgenden Optionen aktivieren:'
-    tab1text4: '\nVor dem Start von RAB'
-    tab1text5: '1. Konfigurieren Sie RAB gemäß der Drittanbieter-App, die Sie auf der Registerkarte Konfiguration verwenden, und speichern Sie sie.\n2. Ihre Pokemon Go App muss auf Englisch sein. Ist dies nicht der Fall, ändern Sie Ihre Systemsprache in Englisch \n3. Führen Sie alle erforderlichen Apps (GPX Joystick für Autoroute) auf Ihrem Telefon mit Pokemon Go auf der Karte aus, die auf das Maximum verkleinert ist.\n4. Schließen Sie Ihr Telefon an Ihren PC an und klicken Sie unten auf RAB starten.\n5. Wenn Sie RAB zum ersten Mal ausführen, werden Sie aufgefordert, einige Apps auf Ihrem Telefon zu installieren. Erlaube es.\n\nDenken Sie daran, STRG + C zu verwenden, wenn Sie RAB beenden möchten.'
-    tab1text6: 'Starten Sie RAB'
+    tab1: "Anleitung"
+    tab1text1: "Einrichten der Option für den USB-Debugging-Modus"
+    tab1text2: "1. Starten Sie die Anwendung Einstellungen auf Ihrem Telefon.\n2. Tippen Sie im Allgemeinen am Ende der Liste auf die Option Über Telefon.\n3. Tippen Sie dann siebenmal auf die Option Build-Nummer, um den Entwicklermodus zu aktivieren. Wenn dies erledigt ist, wird eine Toastnachricht angezeigt.\n4. Kehren Sie nun zum Hauptbildschirm Einstellungen zurück und Sie sollten ein neues MenüEntwickleroptionen sehen, auf das Sie zugreifen können.\n5. Gehen Sie dort hinein und aktivieren Sie die Option USB-Debugging-Modus."
+    tab1text3: "\nXiaomi-Benutzer müssen zusätzlich zum Aktivieren des USB-Debuggens die folgenden Optionen aktivieren:"
+    tab1text4: "\nVor dem Start von RAB"
+    tab1text5: "1. Konfigurieren Sie RAB gemäß der Drittanbieter-App, die Sie auf der Registerkarte Konfiguration verwenden, und speichern Sie sie.\n2. Ihre Pokemon Go App muss auf Englisch sein. Ist dies nicht der Fall, ändern Sie Ihre Systemsprache in Englisch \n3. Führen Sie alle erforderlichen Apps (GPX Joystick für Autoroute) auf Ihrem Telefon mit Pokemon Go auf der Karte aus, die auf das Maximum verkleinert ist.\n4. Schließen Sie Ihr Telefon an Ihren PC an und klicken Sie unten auf RAB starten.\n5. Wenn Sie RAB zum ersten Mal ausführen, werden Sie aufgefordert, einige Apps auf Ihrem Telefon zu installieren. Erlaube es.\n\nDenken Sie daran, STRG + C zu verwenden, wenn Sie RAB beenden möchten."
+    tab1text6: "Starten Sie RAB"
+    but_save: "Speichern"
+    but_close: "Anwendung"
 
-    tab2: 'Konfigurationen'
-    tab2Frame1: 'Client-Einstellungen'
-    tab2Frame1Label1: 'Client Preset:'
-    tab2Frame1OptionsMsg: 'Wählen Sie aus der Liste aus, welche Drittanbieter-App Sie mit RAB verwenden möchten'
+    tab2: "Konfigurationen"
+    tab2Frame1: "Client-Einstellungen"
+    tab2Frame1Label1: "Client-Voreinstellung:"
+    tab2Frame1OptionsMsg: "Wählen Sie aus der Liste aus, welche Drittanbieter-App Sie mit RAB verwenden möchten"
+    tab2Frame1TeamRocket: "Auto Team Rakete" # New Onwards
+    tab2Frame1TeamRocketMsg: "Team Rocket automatisch gewinnen. (Aktivieren / Deaktivieren in Ihrer Drittanbieter-App)"
+    tab2Frame1InstantSpin: "Auto Spin Pokestop"
+    tab2Frame1InstantSpinMsg: "Auto Spin Pokestop. (Aktivieren / Deaktivieren in Ihrer Drittanbieter-App)"
+    tab2Frame1SkipIntro: "Encounter Intro überspringen"
+    tab2Frame1SkipIntroMsg: "Überspringen Sie die Intro-Animation auf dem Pokemon-Fangbildschirm. (Aktivieren / Deaktivieren in Ihrer Drittanbieter-App)"
+    tab2Frame1EncounterIV: "Begegnung IV"
+    tab2Frame1EncounterIVMsg: "Zeigt es IV, wenn es Pokemon fängt? (Aktivieren / Deaktivieren in Ihrer Drittanbieter-App)"
+    tab2Frame1QuickCatch: "Schneller Fang"
+    tab2Frame1QuickCatchMsg: "Fängt es schnell? (Aktivieren / Deaktivieren in Ihrer Drittanbieter-App)"
+    tab2Frame2AutoRoute: "Automatische Route"
+    tab2Frame2AutoRouteMsg: "Verwenden Sie Auto Walk oder GPX? (Bitte stellen Sie eine Route mit dem GPS-Joystick ein.)"
+    tab2Frame2PokestopPriority: "Pokestop Priorität"
+    tab2Frame2PokestopPriorityMsg: "Aktivieren Sie dies für Clients, die sich nicht automatisch drehen."
+    tab2Frame2HostLabel: "Host IP:"
+    tab2Frame2HostMsg: "(Nur für Polygon Enhancer bezahlt) Hostname oder IP-Adresse des lokalen Computers (Schlagen Sie vor, ihn als 0.0.0.0 zu belassen)"
+    tab2Frame2PortLabel: "Port:"
+    tab2Frame2PortMsg: "Der vom Server verwendete Port muss für jedes Gerät ein anderer Port sein"
 
-    tab3: 'Catch Settings'
-    tab3Frame1: 'Catch Settings'
+    tab2Frame2: "Telefoneinstellungen"
+    tab2Frame2ManualResolution: "Manuelle Auflösung"
+    tab2Frame2ManualResolutionMsg: "RAB versucht, die Bildschirmauflösung automatisch zu ändern, wenn sie deaktiviert ist. Wenn Sie die Größe lieber manuell ändern möchten, aktivieren Sie sie"
+    tab2Frame2AutoOffset: "Automatischer Versatz"
+    tab2Frame2AutoOffsetMsg: "RAB versucht, Ihnen einen screen_offset-Wert zu geben"
+    tab2Frame2ScreenOffset: "Bildschirmversatz"
+    tab2Frame2ScreenOffsetMsg: "Wert zum Versetzen der Höhe des Telefons. Wird automatisch berechnet, wenn der automatische Versatz aktiviert ist"
+    tab2Frame2NavigationOffset: "Navigationsversatz"
+    tab2Frame2NavigationOffsetMsg: "Stellen Sie dies auf die Höhe der Navigationsschaltfläche ein, um sie auszublenden"
+    tab2Frame2ScreenshotOffset: "Screenshot-Versatz"
+    tab2Frame2ScreenshotOffsetMsg: "Wenn Sie während der Ausführung von RAB einen Screenshot von Pokemon Go aufnehmen, wird oben und unten im Screenshot ein schwarzer Balken angezeigt. Stellen Sie eine Zahl auf das erste sichtbare Pixel ein, das nicht schwarz ist"
 
-    tab4: 'Pokemon & Item Management'
-    tab4Frame1: 'Pokemon Management'
-    tab4Frame2: 'Item Management'
+    tab2Frame3: "Discord Benachrichtigungen"
+    tab2Frame3DiscordEnabled: "Aktiviert"
+    tab2Frame3DiscordEnabledMsg: "Möchten Sie das Senden von Ergebnissen an Discord aktivieren?"
+    tab2Frame3WebhookLabel: "Webhook-Adresse:"
+    tab2Frame3WebhookAddressMsg: "Weitere Informationen finden Sie unter Erstellen eines Webhooks unter https://docs.gitlab.com/ee/user/project/integrations/discord_notifications.html"
+    tab2Frame3DiscordAll: "Benachrichtigen Sie alle\nGefangenen (oder fliehen Sie)"
+    tab2Frame3DiscordAllMsg: "Möchten Sie alle gefangenen (oder geflohenen) Pokémon benachrichtigen?"
+    tab2Frame3DiscordEncountered: "Benachrichtigen Sie auf Begegnung"
+    tab2Frame3DiscordEncounteredMsg: "Benachrichtige Shiny / Max IV / PvP IV, wenn du angetroffen wirst"
+    tab2Frame3DiscordCaughtOrFled: "Benachrichtigen Sie\nerwischt (oder geflohen)"
+    tab2Frame3DiscordCaughtOrFledMsg: "Benachrichtigen Sie glänzend / max iv / pvp iv, wenn Sie gefangen werden oder fliehen."
+    tab2Frame3DiscordShiny: "Benachrichtigen Sie Shiny"
+    tab2Frame3DiscordShinyMsg: "Möchten Sie benachrichtigt werden, wenn die RAB-Begegnung glänzend ist?"
+    tab2Frame3Discord100IV: "Benachrichtigen Sie 100IV"
+    tab2Frame3Discord100IVMsg: "Möchten Sie benachrichtigt werden, wenn RAB auf 100 IV trifft?"
+    tab2Frame3DiscordPVPIV: "PVP IV benachrichtigen"
+    tab2Frame3DiscordPVPIVMsg: "Möchten Sie benachrichtigt werden, wenn RAB auf PvP-fähige Pokémon trifft?"
 
-    tab5: 'Telegram Feed'
-    tab5text1: 'Diese Registerkarte ist für die zukünftige Verwendung reserviert'
-    tab6: 'Werkzeuge'
+    tab2Frame4: "Quest Settings"
+    tab2Frame4QuestEnabled: "Enable"
+    tab2Frame4QuestEnabledMsg: "Do you want RAB to clear quest?"
+    tab2Frame4PowerUpScale: "Power up level"
+    tab2Frame4PowerUpScaleMsg: "How many times to you want to powerup a level 1 pokemon on catch to clear power up quest. Default is 5. Set to 0 if you do not want to do any power up."
+    tab2Frame4ClearQuestScale: "Clear Quest Interval"
+    tab2Frame4ClearQuestScaleMsg: "Interval between checking quest in mins"
+    labQuitToday: "Trigger Quit Text\n(Today Quest):"
+    tab2QuestTodayEntryMsg: "A short name that will trigger a quit from quest Today page. This will save time."
+    labQuitSpecial: "Trigger Quit Text\n(Special Quest):"
+    tab2QuestSpecialEntryMsg: "A short name that will trigger a quit from quest special page. This will save time."
+
+    tab3: "Fangeinstellungen"
+    tab3Frame1: "Fangeinstellungen"
+    tab3Frame1KeepMon: "Aktivieren"
+    tab3Frame1KeepMonMsg: "Willst du Pokemon behalten?"
+    tab3Frame1MinAtk: "Min. Angriff"
+    tab3Frame1MinAtkMsg: "Min Attack IV erforderlich, um das Pokemon zu behalten"
+    tab3Frame1MinDef: "Min. Verteidigung"
+    tab3Frame1MinDefMsg: "Min. Verteidigung IV erforderlich, um das Pokémon zu behalten"
+    tab3Frame1MinSta: "Min. Ausdauer"
+    tab3Frame1MinStaMsg: "Min. Ausdauer IV erforderlich, um das Pokémon zu behalten"
+    tab3Frame1MinLvl: "Min. Level"
+    tab3Frame1MinLvlMsg: "Min Level erforderlich, um das Pokemon zu behalten"
+    tab3Frame1KeepShiny: "Bleib glänzend"
+    tab3Frame1KeepShinyMsg: "Willst du Shiny Pokemon behalten?"
+    tab3Frame1KeepStrongShadow: "Behalte starken Schatten"
+    tab3Frame1KeepStrongShadowMsg: "Möchten Sie Strong Shadow Pokemon behalten? (Starkes Shdaow ist definiert als IV> = 86 oder Atk IV = 0)"
+    tab3Frame1KeepLegendary: "Behalte das legendäre\nPokémon"
+    tab3Frame1KeepLegendaryMsg: "Willst du Legendary Pokemon behalten?"
+    tab3Frame1KeepLucky: "Behalte Lucky Pokemon"
+    tab3Frame1KeepLuckyMsg: "Willst du Lucky Pokemon behalten?"
+    tab3Frame1ShinyTap: "Glänzender Wasserhahn"
+    tab3Frame1ShinyTapMsg: "Nur glänzend fangen (wenn kein Schnellfang verwendet wird). Fliehen Sie für den Rest, beachten Sie, dass es eine Chance gibt, dass RAB erneut auf denselben Stoß klickt ..."
+    tab3Frame1AppraisalDelay: "Beurteilungsverzögerung"
+    tab3Frame1AppraisalDelayMsg: "Anzahl der Sekunden Verzögerung vor der Beurteilung. Erhöhen Sie diesen Wert, wenn Sie häufig einen Fehlklick sehen, wenn RAB versucht, eine Bewertung vorzunehmen"
+    tab3Frame1HighFarPokemonLabel: "High Far Pokemon:"
+    txtHighFarPokemonMsg: "Liste der Pokémon, die einen hohen Wurf erfordern, um sie zu fangen. Trenne jedes Pokémon durch ein Komma."
+    tab3Frame1Mon2Keep: "Nicht übertragen: "
+    txtMon2KeepMsg: "Liste der Pokémon, die RAB nicht überträgt, wenn sie gefangen werden"
+    tab3Frame1Shadow2Keep: "Zu behaltendes\nSchattenpokemon: "
+    txtShadow2KeepMsg: "Liste der Schattenpokemon, die RAB nicht überträgt, wenn sie gefangen werden"
+    tab3Frame1StopAtBall: "Halt am Ball"
+    tab3Frame1StopAtBallMsg: "Nur Polygon bezahlt. Hören Sie auf, Pokémon zu fangen, wenn die Bälle diese Zahl erreichen"
+    tab3Frame1ResumeAtBall: "Fortsetzen bei Ball"
+    tab3Frame1ResumeAtBallMsg: "Nur Polygon bezahlt. Fangen Sie an zu fangen, wenn die Bälle diese Zahl erreichen"
+    tab3Frame1CatchEveryXSpin: "Fang bei jedem x Spin"
+    tab3Frame1CatchEveryXSpinMsg: "Nur Polygon bezahlt. Versuchen Sie, nach jedem x-Spin einen Poke zu fangen (im Spin-Modus). Dies soll RAB helfen, die Artikelliste zu aktualisieren"
+    tab3Frame1GoAfterShiny: "Chase After Shiny"
+    tab3Frame1GoAfterShinyMsg: "Nur Polygon bezahlt. Wenn der Polygon-Alarm glänzend ist, teleportieren Sie ihn und versuchen Sie, ihn zu fangen"
+    tab3Frame1GoAfterMaxIV: "Jagd nach Max IV"
+    tab3Frame1GoAfterMaxIVMsg: "Nur Polygon bezahlt. Wenn Polygon 100IV alarmiert, teleportiere und versuche es zu fangen"
+    tab3Frame1ShinyMode: "Glänzender Modus"
+    tab3Frame1ShinyModeMsg: "Nur Polygon bezahlt. RAB geht weiter, bis es glänzend erscheint, und fängt es auf"
+
+    tab3Frame2: "Beerenauswahl"
+    tab3Frame2UseBerry: "Verwenden Sie Berry"
+    tab3Frame2UseBerryMsg: "Möchten Sie Beeren verwenden?"
+    tab3Frame2BerryP1: "Glänzend / High Level:"
+    tab3Frame2BerryP2: "Mittlere Stufe: "
+    tab3Frame2BerryP3: "Niedriges Niveau: "
+    txtBerryP1: "Reihenfolge der Wahl zur Verwendung von Beeren für glänzende oder hochstufige Pokémon (IV100 / CP> = 2000 / Stufe> = 30)"
+    txtBerryP2: "Reihenfolge der Wahl zur Verwendung von Beeren für mittelschwere Pokémon (CP> = 1000 / Stufe> = 15)"
+    txtBerryP3: "Reihenfolge der Wahl zur Verwendung von Beeren für niedrigstufige / unbekannte Pokémon (CP <1000 / Stufe <15)"
+
+    tab3Frame3: "Pokeball-Auswahl"
+    tab3Frame3SelectBall: "Pokeball-Auswahl"
+    tab3Frame3SelectBallMsg: "Möchten Sie, dass RAB Pokeball automatisch für Sie auswählt?"
+    tab3Frame3SelectBallP1: "Glänzend / High Level:"
+    tab3Frame3SelectBallP2: "Mittlere Stufe: "
+    tab3Frame3SelectBallP3: "Niedriges Niveau: "
+    txtSelectBallP1: "Reihenfolge der Auswahl von Pokeball für Shiny oder High Level Pokemon (IV100 / CP> = 2000 / Lvl> = 30)"
+    txtSelectBallP2: "Reihenfolge der Auswahl der Auswahl von Pokeball für Pokemon mittlerer Stufe (CP> = 1000 / Stufe> = 15)"
+    txtSelectBallP3: "Reihenfolge der Auswahl der Auswahl von Pokeball für Emon mit niedrigem Level / unbekanntem Pokemon (CP <1000 / Lvl <15) (CP> = 1000 / Lvl> = 15)"
+
+    tab3Frame4: "Geeignetes PvP-Pokémon"
+    tab3Frame4EnablePVP: "PVP behalten?"
+    tab3Frame4EnablePVPMsg: "Möchten Sie, dass RAB Pokemon mit guter IV für PVP behält?"
+    tab3Frame4GL2Keep: "Keep Great League: "
+    txtGL2Keep: "Geben Sie eine Liste der Pokémon ein, die für die Great League PVP berechtigt sind. Jeweils durch Komma getrennt"
+    tab3Frame4GLRating: "GL-Bewertung"
+    tab3Frame4GLRatingMsg: "Ab welchem ​​Prozentsatz sollte für PVP (Great League) in Betracht gezogen werden."
+    tab3Frame4GLCP: "GL CP"
+    tab3Frame4GLCPMsg: "Der maximale CP des Pokémon, den es erreichen kann, um sich für diese Liga zu qualifizieren"
+    tab3Frame4UL2Keep: "Keep Ultra League: "
+    txtUL2Keep: "Geben Sie eine Liste der Pokémon ein, die für Ultra League PVP berechtigt sind. Jeweils durch Komma getrennt"
+    tab3Frame4ULRating: "UL Rating"
+    tab3Frame4ULRatingMsg: "Ab welchem ​​Prozentsatz sollte für PVP (Ultra League) in Betracht gezogen werden."
+    tab3Frame4ULCP: "UL CP"
+    tab3Frame4ULCPMsg: "Der maximale CP des Pokémon, den es erreichen kann, um sich für diese Liga zu qualifizieren"
+
+    tab4: "Pokemon & Item Management"
+    tab4Frame1: "Pokemon Management"
+    tab4Frame1EnablePokeManagement: "Aktivieren"
+    tab4Frame1EnablePokeManagementMsg: "Möchten Sie Pokemon Management durchführen, wenn die Tasche voll ist?"
+    tab4Frame1ManageOnStart: "Verwalten Sie Pokemon beim Start"
+    tab4Frame1ManageOnStartMsg: "Pokemon-Inventar von Anfang an verwalten?"
+    tab4Frame1InventoryIV: "Inventar IV"
+    tab4Frame1InventoryIVMsg: "Pokemon-Inventar von Anfang an verwalten? (Nur PGSharp)"
+    tab4Frame1StopCheck: "Stoppen Sie die Überprüfung bei (x)"
+    tab4Frame1StopCheckMsg: "Gesamt-Nr. von pokemon durchzusehen, bevor Sie die Seite verlassen"
+
+    tab4Frame2: "Item Management"
+    tab4Frame2EnableItemManagement: "Aktivieren"
+    tab4Frame2EnableItemManagementMsg: "Möchten Sie die Artikelverwaltung durchführen, wenn der Artikelbeutel voll ist?"
+    tab4Frame2ClearItemOnStart: "Element beim Start löschen"
+    tab4Frame2ClearItemOnStartMsg: "Möchten Sie das Element beim Start des Bots überprüfen und löschen?"
+    tab4Frame2AutoMax: "Auto Max (nur HAL)"
+    tab4Frame2AutoMaxMsg: "Haben Sie Auto Item Max aktiviert? (Nur HAL)"
+    tab4Frame2ItemInterval: "Überprüfen Sie das Artikelinterval"
+    tab4Frame2ItemIntervalMsg: "Intervall (in Minuten) zum Überprüfen und Löschen des Inventars"
+    tab4Frame2BallFullInterval: "Bagfull-Intervall zurücksetzen"
+    tab4Frame2BallFullIntervalMsg: "RAB wird versuchen, Pokestop zu vermeiden, wenn die Tasche voll ist. Intervall in Minuten, um diesen Zähler zurückzusetzen."
+    tab4Frame2Item2QuitLabel: "Zu beendender Gegenstand: "
+    tab4Frame2Item2QuitEntryMsg: "Name des Elements, das RAB auslöst, um das Scrollen der Elementseite zu beenden. Das spart Zeit."
+    itemCheckbox: "Überprüfte Elemente werden während der Elementverwaltung gelöscht"
+
+    tab5: "Telegram Feed"
+    tab5text1: "Diese Registerkarte ist für die zukünftige Verwendung reserviert"
+    tab6: "Werkzeuge"
+    resetPhoneResolution: "Telefonauflösung zurücksetzen"
