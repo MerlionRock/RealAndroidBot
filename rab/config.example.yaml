@@ -96,6 +96,7 @@ catch:
     keep_strong_shadow: false # Strong shdaow is defined as IV >= 86 or Atk IV = 0 
     keep_legendary: true # inclusive of mythical Pokemon
     keep_lucky: true # pokemon management option
+    keep_event: true # pokemon management option
     high_far_pokemon: ['Zubat', 'Golbat', 'Magmar', 'Aerodactyl', 'Tentacruel', 'Tangela', 'Electabuzz', 'Abra', 
                         'Lapras', 'Yanma', 'Sawk', 'Growlithe', 'Weepinbell', 'Porygon', 'Magmar', 'Snorlax', 
                         'Doduo', 'Mantine', 'Arbok', 'Jynx', 'Dunsparce', 'Hariyama', 'Lickilicky', 'Shuppet', 
