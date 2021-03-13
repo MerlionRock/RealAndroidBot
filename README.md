@@ -67,7 +67,7 @@ Join our [Discord Channel](https://discord.gg/Xw2DKBhRJu)
 7. Full screen mode (or guesture mode) without navigation butttons on screen
 
 ## System Requirements
-64 bit system is required to run RAB
+64 bit system is required to run RAB (Windows 10 - 64bit)
 
 ## Release Download
 
