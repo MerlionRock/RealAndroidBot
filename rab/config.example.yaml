@@ -46,7 +46,7 @@ telegram:
 
 shiny_check:
     enabled: false
-    auto_catch: false  # let the bot to auto-catch
+    auto_catch: true  # let the bot to auto-catch
     default_location: [0,0]  # initial cooldown timing will be based on this location if cannot get from phone
     mon_to_check: []  # 'Croagunk', 'Mareep', 'Burmy' list of Pokemon to check. Leave it blank to check all
     mon_to_ignore: ['Weedle', 'Sentret', 'Seedot', 'Castform', 'Turtwig', 'Mankey', 'Lillipup', 'Rhyhorn', 'Patrat',
