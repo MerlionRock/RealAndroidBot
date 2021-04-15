@@ -1,9 +1,39 @@
-# RealAndoridBot
+# RealAndroidBot
 
 [![RAB Video Demo](https://img.youtube.com/vi/wtpJ9_av-qc/0.jpg)](https://www.youtube.com/watch?v=wtpJ9_av-qc)
 
 ## Changelog
-### RAB 1.09
+### RAB 1.1.0
+Note that for this version, manual installation will need to re-run `pip install -r requirement.txt`. If you have not update to RAB 1.0.9 previously, you'll nned to run `pip install sourcedefender -U` too.
+
+Bot is now faster but some people might have issue. RAB might not catch any pokemon. When that happens, set `Delay Time` under Configuration tab to 2.5 secs (if still cannot, increase 0.5 and test try again)
+
+We welcome new translations. If you have your own translation, free feel to message RAB Admin in discord. 
+
+- Adjust the scrolling for quest for phones with offset (To solve issue of quest that are done, but didn’t get cleared)
+- (Polygon Enhancer Paid) Check for gyms with slots and attempt to slot pokemon.
+- Attempt to reconnect Go Plus (If user have one or using HAL/PGSharp Paid’s virtual Go Plus)
+- Fix: Stuck at “Going too fast” 
+- Added `notify_all_encountered` option
+- Time adjustment done for `None` preset (GPS Joystick with route) `None` Preset should now be fixed and users can choose to use this without any 3rd party. 
+- Added Keep Event Pokemon 
+- Telegram tab updated (GUI)
+- Donation feed is now live. You can now use our telegram feed to do Shiny Hunting. Or even SHundo hunting. Instructions on how to donate is at Telegram Tab.
+- German Translation partially updated.
+- Fix (None Profile): Not able to detect catch page when encounter Pokemon during at quest page
+- 720x1280 (720p) support. RAB will automatically detect and change to either 1080p or 720p base on what your phone support.
+- Notify all encountered (Good to inform you what Pokemon RAB has seen if you are just doing shiny Tap)
+- Fine tuning to various page detection
+- Lower Resolution Option
+- Farmer Discord Notification. Please note that all catch will be send to your webhook in this version. More options for farmer will be availible in next version
+- Only one screenshot will saved/overwrite for new users. Existing users you can turn screenshot off by manually all the screenshot options in config.yaml to false
+- Restart Pokemon Go if map is blank during shiny feed check (Polygon#).
+- Fix starting quest check, “RAB didn't manage to tap into quest page” error
+- Fixed None Profile (GPS Joystick only users)
+- Summary when RAB quits
+- Add delay timing option (will add more controls in future) for users with slower PC/Phones
+
+### RAB 1.0.9
 
 Note that for this version, manual installation will need to re-run `pip install -r requirement.txt`. You will also need to update your Source Defender by running `pip install sourcedefender -U`. You are also advised to delete your exisiting config.yaml before running the bot.
 

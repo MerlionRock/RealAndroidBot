@@ -17,3 +17,4 @@ uiautomator2
 sourcedefender
 protobuf
 pytesseract
+pymysql

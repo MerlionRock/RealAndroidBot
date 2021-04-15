@@ -1,5 +1,36 @@
 # Changelog
-### RAB 1.09
+
+### RAB 1.1.0
+Note that for this version, manual installation will need to re-run `pip install -r requirement.txt`. If you have not update to RAB 1.0.9 previously, you'll nned to run `pip install sourcedefender -U` too.
+
+Bot is now faster but some people might have issue. RAB might not catch any pokemon. When that happens, set `Delay Time` under Configuration tab to 2.5 secs (if still cannot, increase 0.5 and test try again)
+
+We welcome new translations. If you have your own translation, free feel to message RAB Admin in discord. 
+
+- Adjust the scrolling for quest for phones with offset (To solve issue of quest that are done, but didn’t get cleared)
+- (Polygon Enhancer Paid) Check for gyms with slots and attempt to slot pokemon.
+- Attempt to reconnect Go Plus (If user have one or using HAL/PGSharp Paid’s virtual Go Plus)
+- Fix: Stuck at “Going too fast” 
+- Added `notify_all_encountered` option
+- Time adjustment done for `None` preset (GPS Joystick with route) `None` Preset should now be fixed and users can choose to use this without any 3rd party. 
+- Added Keep Event Pokemon 
+- Telegram tab updated (GUI)
+- Donation feed is now live. You can now use our telegram feed to do Shiny Hunting. Or even SHundo hunting. Instructions on how to donate is at Telegram Tab.
+- German Translation partially updated.
+- Fix (None Profile): Not able to detect catch page when encounter Pokemon during at quest page
+- 720x1280 (720p) support. RAB will automatically detect and change to either 1080p or 720p base on what your phone support.
+- Notify all encountered (Good to inform you what Pokemon RAB has seen if you are just doing shiny Tap)
+- Fine tuning to various page detection
+- Lower Resolution Option
+- Farmer Discord Notification. Please note that all catch will be send to your webhook in this version. More options for farmer will be availible in next version
+- Only one screenshot will saved/overwrite for new users. Existing users you can turn screenshot off by manually all the screenshot options in config.yaml to false
+- Restart Pokemon Go if map is blank during shiny feed check (Polygon#).
+- Fix starting quest check, “RAB didn't manage to tap into quest page” error
+- Fixed None Profile (GPS Joystick only users)
+- Summary when RAB quits
+- Add delay timing option (will add more controls in future) for users with slower PC/Phones
+
+### RAB 1.0.9
 
 Note that for this version, manual installation will need to re-run `pip install -r requirement.txt`. You will also need to update your Source Defender by running `pip install sourcedefender -U`. You are also advised to delete your exisiting config.yaml before running the bot.
 
@@ -33,7 +64,7 @@ Don't forget to send me a copy so that I can include it in next version.
 - Added `last_quest_quit_today` option. RAB will move on when it encounter this given text in Today’s quest page. You are strongly advise to set `last_quest_quit_today`, `last_quest_quit` and `last_item_quit` if RAB get suck in these screens.
 - Console will now show caught information for Polygon # paid user (Exp, candies,XL and stardust earned)
 
-### RAB 1.08 Beta
+### RAB 1.0.8 Beta
 
 **Note** Polygon Network mode is back! Only for Polygon# paid user. Free Polygon users please use `Polygon` for the client option and Paid user please use `Polygon Paid` as the option for client.  
 
@@ -46,7 +77,7 @@ Don't forget to send me a copy so that I can include it in next version.
 - Bug Fix: RAB will be stuck at a lot of places using snipe and shiny check feature
 - Bug Fix: Stuck at collect component screen
 
-### RAB 1.07
+### RAB 1.0.7
 **NOTE:** Due to the recent announcement by Polygon#, we will be removing Network mode of Polygon# from RAB. What does this mean? It mean Polygon# users will no longer be able to teleport to exactly where pokestops/pokemon are. No longer able to automatically capture shiny or 100 Polygon# found. All features of Polygon# will be removed.
 
 Due to this sudden changes, we are unable to fully optimize support for Polygon# users and you might see your avatar stuck at different places frequently. As such I suggest you switch to Pokemod temporary.
@@ -61,20 +92,20 @@ Due to this sudden changes, we are unable to fully optimize support for Polygon#
 - Added only_shiny mode. Also known as shiny tap. It will only catch if poke is shiny, else flee.
 - Added navigation_offset option. For phones with buttons and you can't disable/remove them, we now have an option for you to remove it. Set the height of your navigation bar here.
 
-### RAB 1.06
+### RAB 1.0.6
 - Added Pokemon Inventory Mangement. RAB will now auto keep or release pokemon in your bag when it is full
 - New options for Pokemon Inventory Mangement are `enable_poke_management`, `manage_poke_on_start`, `inventory_iv` and `stop_check_at`. Please check config.example.yaml and update your exising config accordingly.
 - `keep_strong_shadow` and `keep_legendary` options added under catch
 
-### RAB 1.05
+### RAB 1.0.5
 - PGSharp is now fully supported. Paid users try to shift your joystick to somewhere that wont be click on or block important text.
 - Added `auto_route` option under `client`. PGSharp free users and Polygon# users please set this to false. PGSharp Paid users please set this to true if using auto walk or route.
 - Added `screen_offset` option. Some phones, especially those with front camera build right atb the top middle of the screen, certain page in Pokemon Go will be shifted slightly downwards. To test if you need to add a number here, set clear_item_on_start to true, and see if the name of the items are correctly captured. If not, set a number here or seek help in discord. (try 80)
 
-### RAB 1.04
+### RAB 1.0.4
 - Added PGSharp (Free Version) Support. 
 
-### RAB 1.03
+### RAB 1.0.3
 - Added Polygon Support. (Please do `pip install -r requirements.txt` to get new requirements needed.
 - Added client type option in config.
 - Added network settings. (Polygon Only)
@@ -85,19 +116,19 @@ Due to this sudden changes, we are unable to fully optimize support for Polygon#
 - Added `last_item_quit` to item_management option. Set something here for the bot to know when to quit item page. Example set to `Incense` and RAB will auto quit when it see Incense in item page
 - Added `last_quest_quit` to quest option. RAB will auto quit when it sees the key word here. Example, if you set to `Mythical`, RAB will quit special research page when it sees the quest A Mythical Discovery.
 
-### RAB 1.02r2
+### RAB 1.0.2r2
 - Hot Fix: Auto Max (HAL Only)
 
-### RAB 1.02r1
+### RAB 1.0.2r1
 - Hot Fix: Stuck at berry selection page
 
-### RAB 1.02
+### RAB 1.0.2
 - If `manual_set_resolution` is set to true, exiting bot will no longer change screen resolution
 - Added `power_up_lvl` to config. How many times do you want to powerup a level 1 pokemon.
 - Added `select_ball` to config. Default auto select ball. Set to false to use default ball without selecting
 - Speed up catching for users using `transfer_on_catch` options
 
-### RAB 1.01
+### RAB 1.0.1
 - Added `use_berry` option, defaulted to true
 - Added `manual_set_resolution`, defaulted to false
 
