@@ -46,20 +46,23 @@ Join our [Discord Channel](https://discord.gg/Xw2DKBhRJu)
 - Auto Clear Quests
 - Auto Hatch
 - Auto Item management
-- (NEW) Auto Pokemon Bag management
+- Auto Pokemon Bag management
+- Auto reconnect vitural Go-plus (HAL & PGSharp Paid)
 - Auto Team Rocket Battle (HAL & Polygon# Only)
-- Integration with Telegram feed to allow PvP/100IV Snipe (Not Live Yet)
-- Integration with Telegram feed to allow Shiny Checking (Not Live Yet)
+- Auto Slot Gym (Polygon# Enhancer Paid)
+- Discord Notifications (Polygon Farmer Supported)
+- Integration with Telegram feed to allow PvP/100IV Snipe (PvP Feed not available yet)
+- Integration with Telegram feed to allow Shiny Checking 
 - Non rooted support with PGSharp Free or Paid version (**NO NOT USE IT ON MAIN ACCOUNT**)
 
 ## Phone Requirements
 1. Rooted (Optional)
 2. Your phone must be able to run Pokemon Go if it's rooted
 3. USB Debugging Enabled ([Under Developer Options](https://developer.android.com/studio/debug/dev-options))
-4. Phone with Screen Resolution 1080 x 1920 and above
+4. Phone with Screen Resolution 720 x 1280 and above
 5. Recommended 2GB RAM and above
 6. Recommended Snapdragon 625 and above
-7. Full screen mode (or guesture mode) without navigation butttons on screen
+7. Additional settings needed for Samsung and Xiaomi phones (Explained in app)
 
 ## System Requirements
 64 bit system is required to run RAB (Windows 10 - 64bit)
@@ -75,20 +78,25 @@ Join our [Discord Channel](https://discord.gg/Xw2DKBhRJu)
 2. Tap the About Phone option generally near the bottom of the list.
 3. Then tap the Build Number option 7 times to enable Developer Mode. You will see a toast message when it is done.
 4. Now go back to the main Settings screen and you should see a new Developer Options menu you can access.
-5. Go in there and enable the USB Debugging mode option. Some Phones will have Install via USB option and USB debugging (Security settings) options or any options that's related simulating input, enable them too.
+5. Go in there and enable the USB Debugging mode option. 
+
+## Additional Setup required by phone brand
+1. Xiaomi phone: Also Enable USB Debugging (Security settings). 
+2. Realme: Enable "Disable permission monitoring".
+3. Samsung: Settings -> Display -> Navigation bar -> select 'Full screen gesture' and turn-off 'gesture hints'
 
 ## Additional Apps needed and their settings
 
-1. (Optional) Install [Pokemod or HAL](https://pokemod.dev/) or [Polygon#](https://discord.gg/QURp9gA) or [PGSharp](https://www.pgsharp.com/) Please set the correct client settings in config file
-2. (Pokemod, HAL and Polygon# Only) GPS Joystick, unlock version. Download from their [official website](http://gpsjoystick.theappninjas.com/faq/) 
-- (Pokemod, HAL, Polygon# Only) Create/download a GPX Route and run it in background. Make sure joystick are hidden from view.
+1. (Optional) Install [Pokemod or HAL](https://pokemod.dev/) or [Polygon#](https://discord.gg/QURp9gA) or [PGSharp](https://www.pgsharp.com/) Please ensure their enabled/disabled Modules matches with the client settings of RAB 
+2. (Pokemod, HAL and Polygon# Only) GPS Joystick, unlock version. Download from their [official website](http://gpsjoystick.theappninjas.com/faq/) You can also use GPS Joystick without any of those 3rd party apps.
+- (Pokemod, HAL, Polygon# Only) Create/download a GPX Route and run it in background. Make sure joystick are hidden from view. [GPX Routes in public domain](https://drive.google.com/drive/folders/1c1ztNRY6bAXBwI0dIl_XUtNeKiBEMitt)
 - (PGSharp Paid Only) Create/download a GPX Route and run it. Do not hide PGSharp. Move joystick away from location that will block text.
 - (Pokemod, HAL, Polygon# Only) Recommended Speed 7km per hour or less
-3. (Optional, if your phone's resolution is more than 1920 x 1080) Go to playstore and download Easy DPI Changer (or https://www.apkmirror.com/apk/chornerman_studio/easy-dpi-changer-root/), resize your phone to 1080 x 1920, reset it when you are not running the script. (**Update**: The bot now auto change your phone size. However, it's handy to have this app installed in case the bot is unable to reset back your phone to orginal screen resolution.)
-4. Your Pokemon Go Game MUST BE English
+3. (Optional, if phone is rooted) Go to playstore and download Easy DPI Changer (or https://www.apkmirror.com/apk/chornerman_studio/easy-dpi-changer-root/). You can use this if your phone resized and you need to reset it immediately. Non-rooted users, you can use the tools tab in RAB to help you reset your phone resolution.
+4. Your Pokemon Go Game MUST BE in English.
 5. When running the scripts at your computer, the following app/services must be running on your phone
 - GPS Joystick (Not needed for PGSharp)
-- (optional) Pokemod, HAL, Polygon# or PGSharp
+- (optional) Pokemod Espresso, Pokemod HAL, Polygon# or PGSharp
 - Pokemon Go
    
 ## Pokemod/HAL Support
@@ -165,7 +173,9 @@ Join our [Discord Channel](https://discord.gg/Xw2DKBhRJu)
 
 ## PC/MAC/LINUX Requirements
 
-Windows users who **downloaded the release version**, you just need to edit config.yaml, configure your phone and plug in to your PC and run RAB.exe will do. **You do not need to follow the steps below.** Remember to **ctrl+c** when you want to exit from RAB.
+Windows users who **downloaded the release version**, you just need to configure RAB, configure your phone and plug in to your PC and run RAB.exe will do. **You do not need to follow the steps below.** Remember to **ctrl+c** when you want to exit from RAB.
+
+<span style="color:red">Windows users who downloaded the release version, you do not need to read any further!</span>
 
 ## Install Tesseract
 
@@ -248,10 +258,13 @@ Note: If your screen return python after this command, please type in this inste
 
 ## Troubleshooting
 **RAB Mess up my screen resolution and my navigation bar went missing!!**
-Open your terminal or PowerShell, type in the following command. (press enter before entering the other)
+
+(Linux & Mac Users) Open your terminal, type in the following command. (press enter before entering the other)
 `adb shell wm size reset`
 `adb shell wm density reset`
 `adb shell wm overscan 0,0,0,0`
+
+(Windows) Use RAB.exe Under Tool tab, you can reset your phone resolution. Make sure your phone is plugged in.
 
 To prevent it from happening again, always use ctrl+c to close RAB
 
