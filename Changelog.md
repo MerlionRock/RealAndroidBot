@@ -1,5 +1,21 @@
 # Changelog
 
+### RAB 1.1.1
+
+This is a bug fix update. You are encourage to update to this version if you have issue with the telegram features.
+
+We have now included a patch file update for RAB v1.1.1. If you already have RAB v1.1.0 installed, you can simply download the patch file, unzip and overwrite the files in your v1.1.0 RAB Folder. This is so that you don't have to redownload the 100+mb file all over again.
+
+- Faster Gym detection
+- Fix Index Out of Range
+- RAB will now pasue for any key to show summary before exiting
+- RAB will now ask user to select from list if there are more than one device detected
+- UI Update. CTRL+C reminder now in RED
+- Attempt to fix Egg Hatch but did not incubate new egg
+- Attempt to fix not identifying encounter while claiming rewards in quest
+- (Team Rocket) Slot Pokemon if there are any empty slots. RAB will no longer swipe at Team Rocket Encounter screen.
+- Fix Telegram features not working on Windows
+
 ### RAB 1.1.0
 Note that for this version, manual installation will need to re-run `pip install -r requirement.txt`. If you have not update to RAB 1.0.9 previously, you'll nned to run `pip install sourcedefender -U` too.
 
