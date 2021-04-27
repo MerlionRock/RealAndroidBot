@@ -3,35 +3,24 @@
 [![RAB Video Demo](https://img.youtube.com/vi/wtpJ9_av-qc/0.jpg)](https://www.youtube.com/watch?v=wtpJ9_av-qc)
 
 ## Changelog
-### RAB 1.1.0
-Note that for this version, manual installation will need to re-run `pip install -r requirement.txt`. If you have not update to RAB 1.0.9 previously, you'll nned to run `pip install sourcedefender -U` too.
+### RAB 1.1.1
 
-Bot is now faster but some people might have issue. RAB might not catch any pokemon. When that happens, set `Delay Time` under Configuration tab to 2.5 secs (if still cannot, increase 0.5 and test try again)
+This is a bug fix update. You are encourage to update to this version if you have issue with the telegram features.
 
-We welcome new translations. If you have your own translation, free feel to message RAB Admin in discord. 
+We have now included a patch file update for RAB v1.1.1. If you already have RAB v1.1.0 installed, you can simply download the patch file, unzip and overwrite the files in your v1.1.0 RAB Folder. This is so that you don't have to redownload the 100+mb file all over again.
 
-- Adjust the scrolling for quest for phones with offset (To solve issue of quest that are done, but didn’t get cleared)
-- (Polygon Enhancer Paid) Check for gyms with slots and attempt to slot pokemon.
-- Attempt to reconnect Go Plus (If user have one or using HAL/PGSharp Paid’s virtual Go Plus)
-- Fix: Stuck at “Going too fast” 
-- Added `notify_all_encountered` option
-- Time adjustment done for `None` preset (GPS Joystick with route) `None` Preset should now be fixed and users can choose to use this without any 3rd party. 
-- Added Keep Event Pokemon 
-- Telegram tab updated (GUI)
-- Donation feed is now live. You can now use our telegram feed to do Shiny Hunting. Or even SHundo hunting. Instructions on how to donate is at Telegram Tab.
-- German Translation partially updated.
-- Fix (None Profile): Not able to detect catch page when encounter Pokemon during at quest page
-- 720x1280 (720p) support. RAB will automatically detect and change to either 1080p or 720p base on what your phone support.
-- Notify all encountered (Good to inform you what Pokemon RAB has seen if you are just doing shiny Tap)
-- Fine tuning to various page detection
-- Lower Resolution Option
-- Farmer Discord Notification. Please note that all catch will be send to your webhook in this version. More options for farmer will be availible in next version
-- Only one screenshot will saved/overwrite for new users. Existing users you can turn screenshot off by manually all the screenshot options in config.yaml to false
-- Restart Pokemon Go if map is blank during shiny feed check (Polygon#).
-- Fix starting quest check, “RAB didn't manage to tap into quest page” error
-- Fixed None Profile (GPS Joystick only users)
-- Summary when RAB quits
-- Add delay timing option (will add more controls in future) for users with slower PC/Phones
+- Faster Gym detection
+- Fix Index Out of Range
+- RAB will now pasue for any key to show summary before exiting
+- RAB will now ask user to select from list if there are more than one device detected
+- UI Update. CTRL+C reminder now in RED
+- Attempt to fix Egg Hatch but did not incubate new egg
+- Attempt to fix not identifying encounter while claiming rewards in quest
+- (Team Rocket) Slot Pokemon if there are any empty slots. RAB will no longer swipe at Team Rocket Encounter screen.
+- Fix Telegram features not working on Windows
+
+
+Note to manual install users only: If RAB says cannot import certain library simply re-run `pip install -r requirement.txt`. If you have have error with source defenser, try `pip install sourcedefender -U`
 
 [Changelog History](https://github.com/MerlionRock/RealAndroidBot/blob/master/Changelog.md)
 
