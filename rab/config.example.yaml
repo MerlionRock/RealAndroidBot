@@ -14,6 +14,7 @@ client:
     screenshot_shift: 0 # When taking screenshot of Pokemon Go during running of RAB, black bar is seen at top and bottom of the screenshot. Set a number to the first visible pixel that's not black
     auto_offset: true # RAB will attempt to give you a screen_offset value. After you got this vlaye, Use this value at screen_offset above and set auto_offset to off
     auto_goplus: false # Do you have go plus that can connect all the time? (Example HAL has auto pokemon go plus)
+    hyper_mode: false
 
 ## discord Webhook, Currently only support sending to Discord
 ## Set what notification you want to get from RAB

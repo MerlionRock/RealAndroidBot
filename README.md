@@ -3,24 +3,29 @@
 [![RAB Video Demo](https://img.youtube.com/vi/wtpJ9_av-qc/0.jpg)](https://www.youtube.com/watch?v=wtpJ9_av-qc)
 
 ## Changelog
-### RAB 1.1.1
+This is a urgent update. Previous version have all stop working.
 
-This is a bug fix update. You are encourage to update to this version if you have issue with the telegram features.
+Manual install users, please run `pip install --upgrade sourcedefender` to update your sourcedefender.
 
-We have now included a patch file update for RAB v1.1.1. If you already have RAB v1.1.0 installed, you can simply download the patch file, unzip and overwrite the files in your v1.1.0 RAB Folder. This is so that you don't have to redownload the 100+mb file all over again.
-
-- Faster Gym detection
-- Fix Index Out of Range
-- RAB will now pasue for any key to show summary before exiting
-- RAB will now ask user to select from list if there are more than one device detected
-- UI Update. CTRL+C reminder now in RED
-- Attempt to fix Egg Hatch but did not incubate new egg
-- Attempt to fix not identifying encounter while claiming rewards in quest
-- (Team Rocket) Slot Pokemon if there are any empty slots. RAB will no longer swipe at Team Rocket Encounter screen.
-- Fix Telegram features not working on Windows
-
-
-Note to manual install users only: If RAB says cannot import certain library simply re-run `pip install -r requirement.txt`. If you have have error with source defenser, try `pip install sourcedefender -U`
+### RAB 1.1.2
+- (Polygon# Paid Fix) Fix INVENTORY\_FULL looping
+- (Polygon# Paid Fix) Faster tapping
+- RAB will now auto zoomout if you didn't
+- RAB will attempt to restart if prolong period of no activity
+- Auto close Detail Page after restart
+- (Non HAL) RAB will now just click minus (-) sign to delete all items
+- Added zoom out method option. (Select pinch in or punch out to zoom out)
+- Added advance berry check option. Only use it when RAB is not able to detect berries
+- Added Enchanced PGSharp Mode. 
+- 1. Enable nearby radar and flash it all the way to exterme left. 
+- 2. The PHSharp icon flash all the to the right
+- If auto goplus is not availible in Enchanced PGSharp Mode, RAB will look for a pokestop to spin after encounter a pokemon.
+- Attempt to fix Pokemon Magement (transfer) feature.
+- Fix RAB not searching and spinning pokestop in PGSharp Enhanced Mode
+- Fix RAB not transfering on some devices
+- Hidden Option: hyper\_mode. maanually add 'hyper_mode': true under 'client' option to activate it. This is to help to speed up some process. **Work in process, Work for some people only.**
+- 1. Hyper Mode: Speed up closing of pokemon caught summary page for those without quick catch option.
+- Minor Bug Fix
 
 [Changelog History](https://github.com/MerlionRock/RealAndroidBot/blob/master/Changelog.md)
 

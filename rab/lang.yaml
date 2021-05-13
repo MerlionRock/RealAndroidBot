@@ -45,6 +45,10 @@ english:
     tab2Frame2AutoSlotGymMsg: "Paid Polygon# only. RAB will move to nearest gym with available slots and attempt to slot pokemon. Operation will fail if Gym is full while waiting for cooldown or if Gym is in battle."
     tab2Frame2DelayTimeLabel: "Delay Time"
     tab2Frame2DelayTimeMsg: "Time delay before checking for Pokestop or Encounter. If RAB is not catching pokemon, try increase this time."
+    tab2Frame2AdvanceBerryCheck: 'Advance Berry Check'
+    tab2Frame2AdvanceBerryCheckMsg: 'Using a more accurate but slower method to check for Berries during encounter'
+    tab2Frame2ZoomOutMethod: 'Zoom Out Method'
+    tab2Frame2AdvanceBerryCheckMsg: 'RAB will auto zoom out when Pokemon Go restarts. Select which method of pinching will zoom out the map. Default: Pinch In'
 
     tab2Frame2: "Phone Settings"
     tab2Frame2ManualResolution: "Manual Resolution"
@@ -300,6 +304,10 @@ german:
     tab2Frame2PortMsg: "Der vom Server verwendete Port muss für jedes Gerät ein anderer Port sein"
     tab2Frame2AutoSlotGym: "Auto Slot Gym"
     tab2Frame2AutoSlotGymMsg: "Paid Polygon# only. RAB will move to nearest gym with available slots and attempt to slot pokemon. Operation will fail if Gym is full while waiting for cooldown or if Gym is in battle."
+    tab2Frame2AdvanceBerryCheck: 'Advance Berry Check'
+    tab2Frame2AdvanceBerryCheckMsg: 'Using a more accurate but slower method to check for Berries during encounter'
+    tab2Frame2ZoomOutMethod: 'Zoom Out Method'
+    tab2Frame2AdvanceBerryCheckMsg: 'RAB will auto zoom out when Pokemon Go restarts. Select which method of pinching will zoom out the map. Default: Pinch In'
 
     tab2FrameRAB: "RAB Settings"
     tab2Frame2: "Smartphoneeinstellung"

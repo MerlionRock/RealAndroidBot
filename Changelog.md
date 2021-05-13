@@ -1,4 +1,23 @@
 # Changelog
+### RAB 1.1.2
+- (Polygon# Paid Fix) Fix INVENTORY\_FULL looping
+- (Polygon# Paid Fix) Faster tapping
+- RAB will now auto zoomout if you didn't
+- RAB will attempt to restart if prolong period of no activity
+- Auto close Detail Page after restart
+- (Non HAL) RAB will now just click minus (-) sign to delete all items
+- Added zoom out method option. (Select pinch in or punch out to zoom out)
+- Added advance berry check option. Only use it when RAB is not able to detect berries
+- Added Enchanced PGSharp Mode. 
+- 1. Enable nearby radar and flash it all the way to exterme left. 
+- 2. The PHSharp icon flash all the to the right
+- If auto goplus is not availible in Enchanced PGSharp Mode, RAB will look for a pokestop to spin after encounter a pokemon.
+- Attempt to fix Pokemon Magement (transfer) feature.
+- Fix RAB not searching and spinning pokestop in PGSharp Enhanced Mode
+- Fix RAB not transfering on some devices
+- Hidden Option: hyper\_mode. maanually add 'hyper_mode': true under 'client' option to activate it. This is to help to speed up some process. **Work in process, Work for some people only.**
+- 1. Hyper Mode: Speed up closing of pokemon caught summary page for those without quick catch option.
+- Minor Bug Fix
 
 ### RAB 1.1.1
 
