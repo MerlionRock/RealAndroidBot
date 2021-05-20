@@ -92,6 +92,7 @@ catch:
     min_atk: 15
     min_def: 15
     min_sta: 15
+    or_condition: false # Set to true to use ((atk and def and sta) or min lvl). Default condition: and
     min_lvl: 1
     enable_keep_shiny: true
     keep_strong_shadow: false # Strong shdaow is defined as IV >= 86 or Atk IV = 0 

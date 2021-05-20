@@ -3,28 +3,27 @@
 [![RAB Video Demo](https://img.youtube.com/vi/wtpJ9_av-qc/0.jpg)](https://www.youtube.com/watch?v=wtpJ9_av-qc)
 
 ## Changelog
-This is a urgent update. Previous version have all stop working.
 
 Manual install users, please run `pip install --upgrade sourcedefender` to update your sourcedefender.
 
-### RAB 1.1.2
-- (Polygon# Paid Fix) Fix INVENTORY\_FULL looping
-- (Polygon# Paid Fix) Faster tapping
-- RAB will now auto zoomout if you didn't
-- RAB will attempt to restart if prolong period of no activity
-- Auto close Detail Page after restart
-- (Non HAL) RAB will now just click minus (-) sign to delete all items
-- Added zoom out method option. (Select pinch in or punch out to zoom out)
-- Added advance berry check option. Only use it when RAB is not able to detect berries
-- Added Enchanced PGSharp Mode. 
-- 1. Enable nearby radar and flash it all the way to exterme left. 
-- 2. The PHSharp icon flash all the to the right
-- If auto goplus is not availible in Enchanced PGSharp Mode, RAB will look for a pokestop to spin after encounter a pokemon.
-- Attempt to fix Pokemon Magement (transfer) feature.
-- Fix RAB not searching and spinning pokestop in PGSharp Enhanced Mode
-- Fix RAB not transfering on some devices
-- Hidden Option: hyper\_mode. maanually add 'hyper_mode': true under 'client' option to activate it. This is to help to speed up some process. **Work in process, Work for some people only.**
-- 1. Hyper Mode: Speed up closing of pokemon caught summary page for those without quick catch option.
+### RAB 1.2.0
+- Updated PGSharp enhance mode vaild date till 27 May 2021
+- Level will not be considered (during transfer) if it's unkown when doing Pokemon Inventory management
+- Level will not be considered for None (or GPS Joystick only) user
+- Added Default Location for Telegram Sniping. This is to tell RAB where to teleport to after teleport to check for snipping. This value should be the first coordinate of your GPX Route.
+- Fix stuck at Pokestop for non auto spinning users
+- Added: Attempt to calcualte Pokemon Level if RAB failed to get from screenshot. (Accuracy +- 0.5)
+- (NEW) Basic MAD support. Ensure IV toast is enabled
+- Fix: When keep lucky pokemon is enabled, shiny check will always be enabled. This causes RAB not catching pokemon but leave the screen immediately.
+- Fix: RAB mistake pokemon page as egg hatch and tries to do transfer instead of catching it.
+- **IMPORTANT** The condition to keep pokemon has changed back to the orginal default: Atk AND Def AND Sta AND Min Level. There's now an option if you want to use Or condition for Min Level.
+- Fix: Polygon# Paid cooldown issue. RAB now uses your phone system location rather than in game location data.
+- Added Disable Auto Restart Module option
+- (PGSharp) Added 100IV Shiny Hunt Module. Please use only sniper feed for this option.
+- Attempt to improve CP detection during apprisal (This will slow down overall apprisal detection, will explore for other methods in future).
+- Telegram module is now enabled for PGSharp users. PGSharp users who donated can now login in with telegram to get the additional benifits after the trial period is over.
+- Attempt to detect PGSharp icon
+- Options that are not supposed to be enabled, are now disabled
 - Minor Bug Fix
 
 [Changelog History](https://github.com/MerlionRock/RealAndroidBot/blob/master/Changelog.md)
@@ -45,9 +44,15 @@ Join our [Discord Channel](https://discord.gg/Xw2DKBhRJu)
 - Auto Team Rocket Battle (HAL & Polygon# Only)
 - Auto Slot Gym (Polygon# Enhancer Paid)
 - Discord Notifications (Polygon Farmer Supported)
+- Non rooted support with PGSharp Free or Paid version (**NO NOT USE IT ON MAIN ACCOUNT**)
+
+### Enhanced Features (Donors Features)
+Requires telegram account and donor status
+
 - Integration with Telegram feed to allow PvP/100IV Snipe (PvP Feed not available yet)
 - Integration with Telegram feed to allow Shiny Checking 
-- Non rooted support with PGSharp Free or Paid version (**NO NOT USE IT ON MAIN ACCOUNT**)
+- (PGSharp Free/Paid) Hunt pokemon with Nearby feed (RAB PGSharp Enhance Mode)
+- (PGSharp Free/Paid) 100IV Shiny Pokemon tapping with Sniper feed 
 
 ## Phone Requirements
 1. Rooted (Optional)
@@ -78,6 +83,7 @@ Join our [Discord Channel](https://discord.gg/Xw2DKBhRJu)
 1. Xiaomi phone: Also Enable USB Debugging (Security settings). 
 2. Realme: Enable "Disable permission monitoring".
 3. Samsung: Settings -> Display -> Navigation bar -> select 'Full screen gesture' and turn-off 'gesture hints'
+4. Check your phone's color display. Make sure it's `Natural` instead of `Vivid`. For Samsung users, this setting can be found at `Settings > Display > Screen Mode`. Other brand and models you have to find this option yourself.
 
 ## Additional Apps needed and their settings
 
@@ -90,7 +96,7 @@ Join our [Discord Channel](https://discord.gg/Xw2DKBhRJu)
 4. Your Pokemon Go Game MUST BE in English.
 5. When running the scripts at your computer, the following app/services must be running on your phone
 - GPS Joystick (Not needed for PGSharp)
-- (optional) Pokemod Espresso, Pokemod HAL, Polygon# or PGSharp
+- (optional) MAD Enhancer, Pokemod Espresso, Pokemod HAL, Polygon# or PGSharp
 - Pokemon Go
    
 ## Pokemod/HAL Support
@@ -115,23 +121,18 @@ Join our [Discord Channel](https://discord.gg/Xw2DKBhRJu)
 - Instant Spin
 - Instant Catch and Transfer on Catch (HAL Only) (When Transfer on Catch is enabled, the bot will not be able to prevent PvP eligible Pokemon from being transfered)
 
-*Enable or disable the modules in config.yaml accordingly*
+*Enable or disable the settings in RAB's GUI accordingly*
 
-## Polygon# Enhancer (Free Version) Support
+## Polygon# Enhancer Support
 
-- Use `Polygon` in your config file
-- Set `auto_route` in your config file to `true`
+### Settings for Free version
 - Set a route in GPS Joystick and loop it
 
 ### Advanced
 - Encounter nameplates format `{default} LVL{lvl}\nIV{prc0}% {ivs}`
 - Pokemon panel nameplate format `{default}`
 
-## Polygon# Enhancer (Paid Version) Support
-
-- Use `Polygon Paid` in your config file
-- Set `auto_route` in your config file to `false`
-- Instant catch is not recommended to be disabled for Polygon#, settings related to keeping Pokemon in config will not apply to Polygon#
+### Settings for Paid version
 - Note that RAB will attempt to gather a few information from Polygon# Paid version first before starting to catch Pokemon. As such you might see RAB attempt to spin pokestops continously for a few mintues before catching. It is normal.
 
 ### Advanced
@@ -141,6 +142,32 @@ Join our [Discord Channel](https://discord.gg/Xw2DKBhRJu)
 - Enter a port number that you set in config. Default 5120. If you are using more than one device, each device must have their own config and with their own port number set.
 - Encounter nameplates format `{default} LVL{lvl}\nIV{prc0}% {ivs}`
 - Pokemon panel nameplate format `{default}`
+
+*Enable or disable the settings in RAB's GUI accordingly*
+
+## MAD Enhancer Support
+### Overlay Settings
+- Overlay Enabled
+- Show IV Overlay Enabled
+
+### App Settings
+- Disable notifications Enabled (Notification will interrupt RAB detection)
+
+### Location Settings
+- Disable MAD Enchancer Spoof Location. Please Use GPS Joystick instead
+
+### Additional Settings
+- Enhance Throws, set to your preferred
+- Speedup animations having hit a mon, set to either `Speedup` or `Quick`. If using Speedup, Disable RAB's `Quick Catch`. If using Quick, Enable RAB's `Quick Catch`
+- Stun Mon, you are encouraged to use `Immobilized`
+
+### Inventory Management Settings
+- Set your own Inventory management here. Disable RAB's Inventory management
+
+### Encounter Name Settings
+- Do not enable anything here
+
+*Enable or disable the settings in RAB's GUI accordingly*
 
 ## PGSharp Support
 
@@ -163,7 +190,11 @@ Join our [Discord Channel](https://discord.gg/Xw2DKBhRJu)
 - The rest of options are optional
 - Then click on PGSharp's icon and choose either auto walk or GPX route (this option is in map)
 
-*Enable or disable the modules in config.yaml accordingly*
+### RAB PGSharp Enhance Mode (Donor features)
+- If using nearby feed to move around, enable Nearby feed only. place it at extereme left hand side. Move the PGSharp icon to exterme right.
+- If using 100IV Shiny tap, enable Sniper feed only, enable 100IV Shiny Hunt in RAB Configuration tab. place it at extereme left hand side. Move the PGSharp icon to exterme right.
+
+*Enable or disable the settings in RAB's GUI accordingly*
 
 ## PC/MAC/LINUX Requirements
 
