@@ -48,7 +48,11 @@ english:
     tab2Frame2AdvanceBerryCheck: 'Advance Berry Check'
     tab2Frame2AdvanceBerryCheckMsg: 'Using a more accurate but slower method to check for Berries during encounter'
     tab2Frame2ZoomOutMethod: 'Zoom Out Method'
-    tab2Frame2AdvanceBerryCheckMsg: 'RAB will auto zoom out when Pokemon Go restarts. Select which method of pinching will zoom out the map. Default: Pinch In'
+    tab2Frame2ZoomOutMethodMsg: 'RAB will auto zoom out when Pokemon Go restarts. Select which method of pinching will zoom out the map. Default: Pinch In'
+    tab2Frame2PGSharpShunoHunt: 'PGSharp 100IV Shiny Hunt'
+    tab2Frame2PGSharpShunoHuntMsg: 'RAB will use the sniper feed from PGSharp to do Shuno Hunting. Please ensure only sniper feed is enabled and nearby feed is disabled.'
+    tab2Frame2DisableAutoRestart: 'Disable Auto Restart'
+    tab2Frame2DisableAutoRestartMsg: 'RAB will attempt to restart if it believes it get stucks. Enable this option to disable it.'
 
     tab2Frame2: "Phone Settings"
     tab2Frame2ManualResolution: "Manual Resolution"
@@ -106,6 +110,8 @@ english:
     tab3Frame1MinDefMsg: "Min Defense IV required in order to keep the Pokemon"
     tab3Frame1MinSta: "Min Stamina"
     tab3Frame1MinStaMsg: "Min Stamina IV required in order to keep the Pokemon"
+    tab3Frame1OrCondition: "Or Condition"
+    tab3Frame1OrConditionMsg: "Enable to use or condition instead of and for min level\nWhen Enabled: ((Atk AND Def AND Sta) OR Min Level)"
     tab3Frame1MinLvl: "Min Level"
     tab3Frame1MinLvlMsg: "Min Level required in order to keep the Pokemon"
     tab3Frame1KeepShiny: "Keep Shiny"
@@ -203,11 +209,11 @@ english:
     tab4Frame2Item2QuitEntryMsg: "Name of item that will trigger RAB to quit scrolling item page. This will save time."
     itemCheckbox: "Checked items will be deleted during item management"
 
-    tab5: "Telegram Feed"
+    tab5: "Telegram"
     tab5text1: "Get your own api_id and api_hash from"
     tab5text2: " https://my.telegram.org,"
     tab5text3: " login with your phone numbers and click on API development tools"
-    tab5text4: "Donors will have access to the following feeds: 100IV Shiny, 82IV Shiny,Rare 100IV"
+    tab5text4: "Donors will have access to the all feeds.\nPGSharp users will have unlimited access to Enchanced PGSharp Mode and PGSharp 100IV Shiny Hunting Mode"
     tab5text5: "Please ensure you can use this feature by testing with our free feed first before donating."
     tab5text6: "Free feed link: "
     tab5text7: "https://t.me/RealAndroidBotFree"
@@ -256,6 +262,8 @@ english:
     tab5Frame3SnipeMaxCDEntryMsg: "Only Snip if CD is below this timing in mins, set above 120 to snipe as long as it appear"
     tab5Frame3SnipeRouteNameLabel: "GPX Route Name"
     tab5Frame3SnipeRouteNameMsg: "RAB will restart route after a successful snipe. Make sure this is spell exactly the same as the route you specify in GPS Joystick"
+    tab5Frame3SnipeCoordinatesLabel: "Default Coordinates"
+    tab5Frame3SnipeCoordinatesMsg: "Coordinates to teleport to after a successful snipe. Recommended: 1st coordinates of your GPX route."
 
     tab6: "Tools"
     resetPhoneResolution: "Reset Phone Resolution"
@@ -307,7 +315,11 @@ german:
     tab2Frame2AdvanceBerryCheck: 'Advance Berry Check'
     tab2Frame2AdvanceBerryCheckMsg: 'Using a more accurate but slower method to check for Berries during encounter'
     tab2Frame2ZoomOutMethod: 'Zoom Out Method'
-    tab2Frame2AdvanceBerryCheckMsg: 'RAB will auto zoom out when Pokemon Go restarts. Select which method of pinching will zoom out the map. Default: Pinch In'
+    tab2Frame2ZoomOutMethodMsg: 'RAB will auto zoom out when Pokemon Go restarts. Select which method of pinching will zoom out the map. Default: Pinch In'
+    tab2Frame2PGSharpShunoHunt: 'PGSharp 100IV Shiny Hunt'
+    tab2Frame2PGSharpShunoHuntMsg: 'RAB will use the sniper feed from PGSharp to do Shuno Hunting. Please ensure only sniper feed is enabled and nearby feed is disabled.'
+    tab2Frame2DisableAutoRestart: 'Disable Auto Restart'
+    tab2Frame2DisableAutoRestartMsg: 'RAB will attempt to restart if it believes it get stucks. Enable this option to disable it.'
 
     tab2FrameRAB: "RAB Settings"
     tab2Frame2: "Smartphoneeinstellung"
@@ -368,6 +380,8 @@ german:
     tab3Frame1MinDefMsg: "Min Defense IV erforderlich um das Pokemon zu behalten"
     tab3Frame1MinSta: "Min Stamina"
     tab3Frame1MinStaMsg: "Min Ausdauer IV erforderlich, um das Pokemon zu behalten"
+    tab3Frame1OrCondition: "Or Condition"
+    tab3Frame1OrConditionMsg: "Enable to use or condition instead of and for min level\nWhen Enabled: ((Atk AND Def AND Sta) OR Min Level)"
     tab3Frame1MinLvl: "Min Level"
     tab3Frame1MinLvlMsg: "Min Level erforderlich, um das Pokemon zu behalten"
     tab3Frame1KeepShiny: "Shiny behalten"
@@ -518,6 +532,8 @@ german:
     tab5Frame3SnipeMaxCDEntryMsg: "Only Snip if CD is below this timing in mins, set above 120 to snipe as long as it appear"
     tab5Frame3SnipeRouteNameLabel: "GPX Route Name"
     tab5Frame3SnipeRouteNameMsg: "RAB will restart route after a successful snipe. Make sure this is spell exactly the same as the route you specify in GPS Joystick"
+    tab5Frame3SnipeCoordinatesLabel: "Default Coordinates"
+    tab5Frame3SnipeCoordinatesMsg: "Coordinates to teleport to after a successful snipe. Recommended: 1st coordinates of your GPX route."
 
     tab6: "Werkzeuge"
     resetPhoneResolution: "Telefonauflösung zurücksetzen"
