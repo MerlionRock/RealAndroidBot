@@ -191,7 +191,7 @@ Requires telegram account and donor status
 - Then click on PGSharp's icon and choose either auto walk or GPX route (this option is in map)
 
 ### RAB PGSharp Enhance Mode (Donor features)
-- If using nearby feed to move around, enable Nearby feed only. place it at extereme left hand side. Move the PGSharp icon to exterme right.
+- If using nearby feed to move around, enable Nearby feed only. place it at extereme left hand side. Move the PGSharp icon to exterme right. Joystick move to bottom left or right until the joystick can't be seen (Only left with 2 lines).
 - If using 100IV Shiny tap, enable Sniper feed only, enable 100IV Shiny Hunt in RAB Configuration tab. place it at extereme left hand side. Move the PGSharp icon to exterme right.
 
 *Enable or disable the settings in RAB's GUI accordingly*
