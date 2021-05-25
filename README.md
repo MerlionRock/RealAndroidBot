@@ -5,26 +5,18 @@
 ## Changelog
 
 Manual install users, please run `pip install --upgrade sourcedefender` to update your sourcedefender.
+### RAB 1.2.2
+- Fix PvP catch setting. UL was max 1500. Fixed to 2500
+- Fix Pokestop priority always enabled bug
+- PGSharp Shuno Hunting: Speed up tapping
+- Shiny Hunting: Fix stuck at weather warning
+- Shiny Hunting: Fix stuck at travel too fast message
+- Improvement: Encounter speed for HAL 
+- Increased chance of detecting Marill 
+- Fix: v1.2.0 and v1.2.1 auto close. **Please update to this version.**
 
-### RAB 1.2.0
-- Updated PGSharp enhance mode vaild date till 27 May 2021
-- Level will not be considered (during transfer) if it's unkown when doing Pokemon Inventory management
-- Level will not be considered for None (or GPS Joystick only) user
-- Added Default Location for Telegram Sniping. This is to tell RAB where to teleport to after teleport to check for snipping. This value should be the first coordinate of your GPX Route.
-- Fix stuck at Pokestop for non auto spinning users
-- Added: Attempt to calcualte Pokemon Level if RAB failed to get from screenshot. (Accuracy +- 0.5)
-- (NEW) Basic MAD support. Ensure IV toast is enabled
-- Fix: When keep lucky pokemon is enabled, shiny check will always be enabled. This causes RAB not catching pokemon but leave the screen immediately.
-- Fix: RAB mistake pokemon page as egg hatch and tries to do transfer instead of catching it.
-- **IMPORTANT** The condition to keep pokemon has changed back to the orginal default: Atk AND Def AND Sta AND Min Level. There's now an option if you want to use Or condition for Min Level.
-- Fix: Polygon# Paid cooldown issue. RAB now uses your phone system location rather than in game location data.
-- Added Disable Auto Restart Module option
-- (PGSharp) Added 100IV Shiny Hunt Module. Please use only sniper feed for this option.
-- Attempt to improve CP detection during apprisal (This will slow down overall apprisal detection, will explore for other methods in future).
-- Telegram module is now enabled for PGSharp users. PGSharp users who donated can now login in with telegram to get the additional benifits after the trial period is over.
-- Attempt to detect PGSharp icon
-- Options that are not supposed to be enabled, are now disabled
-- Minor Bug Fix
+**Knownbugs**
+- Certain features will not work with Samsung Phones. Investigation is still on going.
 
 [Changelog History](https://github.com/MerlionRock/RealAndroidBot/blob/master/Changelog.md)
 

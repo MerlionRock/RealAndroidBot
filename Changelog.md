@@ -1,4 +1,17 @@
 # Changelog
+### RAB 1.2.2
+- Fix PvP catch setting. UL was max 1500. Fixed to 2500
+- Fix Pokestop priority always enabled bug
+- PGSharp Shuno Hunting: Speed up tapping
+- Shiny Hunting: Fix stuck at weather warning
+- Shiny Hunting: Fix stuck at travel too fast message
+- Improvement: Encounter speed for HAL 
+- Increased chance of detecting Marill 
+- Fix: v1.2.0 and v1.2.1 auto close. **Please update to this version.**
+
+**Knownbugs**
+- Certain features will not work with Samsung Phones. Investigation is still on going.
+
 ### RAB 1.2.0
 - Updated PGSharp enhance mode vaild date till 27 May 2021
 - Level will not be considered (during transfer) if it's unkown when doing Pokemon Inventory management
