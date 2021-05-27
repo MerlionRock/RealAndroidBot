@@ -185,6 +185,7 @@ Requires telegram account and donor status
 ### RAB PGSharp Enhance Mode (Donor features)
 - If using nearby feed to move around, enable Nearby feed only. place it at extereme left hand side. Move the PGSharp icon to exterme right. Joystick move to bottom left or right until the joystick can't be seen (Only left with 2 lines).
 - If using 100IV Shiny tap, enable Sniper feed only, enable 100IV Shiny Hunt in RAB Configuration tab. place it at extereme left hand side. Move the PGSharp icon to exterme right.
+- Tap to `Walk` or `Teleport` Enabled for Paid version of PGSharp if using Enhance Mode. 
 
 *Enable or disable the settings in RAB's GUI accordingly*
 
