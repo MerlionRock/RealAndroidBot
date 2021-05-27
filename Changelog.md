@@ -1,4 +1,18 @@
 # Changelog
+
+### RAB 1.2.3
+- Pokemon Management: RAB will now scroll Pokemon inventory page
+- PGSharp: Detect shiny from overlay
+- Fixed: HAL has no PvP information
+- PGSharp enhanced mode extended to Monday, 31 May 2021 23:59:59 GMT
+- Fix: v1.2.0 to v1.2.2 auto close. **Please update to this version.**
+
+**Knownbugs**
+
+- The following features will not work or will have weird behavior with Samsung Phones
+1. Enchanced PGSharp Mode
+2. PGSharp 100IV Shiny Hunting Mode
+
 ### RAB 1.2.2
 - Fix PvP catch setting. UL was max 1500. Fixed to 2500
 - Fix Pokestop priority always enabled bug
@@ -8,9 +22,6 @@
 - Improvement: Encounter speed for HAL 
 - Increased chance of detecting Marill 
 - Fix: v1.2.0 and v1.2.1 auto close. **Please update to this version.**
-
-**Knownbugs**
-- Certain features will not work with Samsung Phones. Investigation is still on going.
 
 ### RAB 1.2.0
 - Updated PGSharp enhance mode vaild date till 27 May 2021
