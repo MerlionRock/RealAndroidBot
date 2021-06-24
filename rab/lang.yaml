@@ -67,6 +67,8 @@ english:
     tab2Frame2ScreenshotOffsetMsg: "When taking screenshot of Pokemon Go during running of RAB, black bar is seen at top and bottom of the screenshot. Set a number to the first visible pixel that's not black"
     tab2Frame2LowerResolution: "Lower Resolution"
     tab2Frame2LowerResolutionMsg: "Run in 720 x 1280 resolution"
+    tab2Frame2Density: "Density"
+    tab2Frame2DensityMsg: "DPI. 0 = Use orginal DPI or auto caculate (when lower resolution is enabled)"
 
     tab2Frame3: "Discord Notifications"
     tab2Frame3DiscordEnabled: "Enabled"
@@ -190,9 +192,13 @@ english:
     tab4Frame1ManageOnStart: "Manage Pokemon On Start"
     tab4Frame1ManageOnStartMsg: "Manage Pokemon inventory right from the start?"
     tab4Frame1InventoryIV: "Inventory IV"
-    tab4Frame1InventoryIVMsg: "Manage Pokemon inventory right from the start? (PGSharp Only)"
-    tab4Frame1StopCheck: "Stop Checking at (x)"
-    tab4Frame1StopCheckMsg: "Total no. of pokemon to look through before quiting the page"
+    tab4Frame1InventoryIVMsg: "IV Toast displayed when it's in Pokemon Inventory detail page? (PGSharp Only)"
+    tab4Frame1StopCheck: "Stop at (x)"
+    tab4Frame1StopCheckMsg: "Total no. of pokemon to transfer"
+    tab4Frame1MassTransfer: "Mass Transfer"
+    tab4Frame1MassTransferMsg: "This will ignore all checking (iv, shiny, etc) and mass transfer all recent caught Pokemon that's within 48hrs"
+    tab4Frame1PokeBagSearchLabel: "Search String"
+    tab4Frame1PokeBagSearchMsg: "The string that will limit what can be transfered. Do not change this vaule if you do not know what is this"
 
     tab4Frame2: "Item Management"
     tab4Frame2EnableItemManagement: "Enable"
@@ -207,7 +213,7 @@ english:
     tab4Frame2BallFullIntervalMsg: "RAB will try to avoid Pokestop when bag is full. Interval in mins to reset this counter."
     tab4Frame2Item2QuitLabel: "Item to Quit: "
     tab4Frame2Item2QuitEntryMsg: "Name of item that will trigger RAB to quit scrolling item page. This will save time."
-    itemCheckbox: "Checked items will be deleted during item management"
+    itemCheckbox: "0 = Do not delete, 1 = Delete All, More than 1 = Items to keep"
 
     tab5: "Telegram"
     tab5text1: "Get your own api_id and api_hash from"
@@ -337,6 +343,8 @@ german:
     tab2Frame2LowerResolutionMsg: "Run in 720 x 1280 resolution"
     tab2Frame2DelayTimeLabel: "Delay Time"
     tab2Frame2DelayTimeMsg: "Time delay before checking for Pokestop or Encounter. If RAB is not catching pokemon, try increase this time."
+    tab2Frame2Density: "Density"
+    tab2Frame2DensityMsg: "DPI. Default 0"
 
     tab2Frame3: "Discord Benachrichtigungen"
     tab2Frame3DiscordEnabled: "Aktiviert"
@@ -463,6 +471,10 @@ german:
     tab4Frame1InventoryIVMsg: "Pokemon-Inventar von Anfang an verwalten? (nur PGSharp)"
     tab4Frame1StopCheck: "Aufhören zu checken (x)"
     tab4Frame1StopCheckMsg: "Gesamtzahl der Pokemon, die vor dem Verlassen der Seite durchgesehen werden müssen"
+    tab4Frame1MassTransfer: "Mass Transfer"
+    tab4Frame1MassTransferMsg: "This will ignore all checking (iv, shiny, etc) and mass transfer all recent caught Pokemon that's within 48hrs"
+    tab4Frame1PokeBagSearchLabel: "Search String"
+    tab4Frame1PokeBagSearchMsg: "The string that will limit what can be transfered. Do not change this vaule if you do not know what is this"
 
     tab4Frame2: "Item Management"
     tab4Frame2EnableItemManagement: "Aktivieren"
@@ -477,7 +489,7 @@ german:
     tab4Frame2BallFullIntervalMsg: "RAB wird versuchen, den Pokestop zu vermeiden, wenn der Beutel voll ist. Intervall in Minuten, um diesen Zähler zurückzusetzen."
     tab4Frame2Item2QuitLabel: "Item zum Beenden: "
     tab4Frame2Item2QuitEntryMsg: "Name des Items, der RAB veranlasst, das Scrollen der Item-Seite zu beenden. Dadurch wird Zeit gespart."
-    itemCheckbox: "Markierte Elemente werden bei der Elementverwaltung gelöscht"
+    itemCheckbox: "0 = Do not delete, 1 = Delete All, More than 1 = Items to keep"
 
     tab5: "Telegram-Feed"
     tab5text1: "Get your own api_id and api_hash from"
