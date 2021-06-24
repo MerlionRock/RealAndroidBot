@@ -196,7 +196,8 @@ Requires telegram account and donor status
 - Spoofing Enabled
 - Hide PGSharp Disabled, move joystick to somewhere that wont block the screen
 - Enhanced Throw on Excellent and Curved
-- Tap to `Walk` Enabled. 
+- Tap to `Walk` Enabled 
+- Caught Preview Enabled
 - Set your walking speed to less than 7km/hr
 - Set a location with the Map or enter coordinates 
 
