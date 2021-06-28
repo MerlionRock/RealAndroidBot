@@ -52,6 +52,14 @@ Manual install users, please run `pip install --upgrade uiautomator2` to update 
 ## Discord
 Join our [Discord Channel](https://discord.gg/Xw2DKBhRJu)
 
+## Donation
+If you simply want to bless the team, feel free to donate through
+
+- BTC: 1Bs6sueNBYBusYYA3FKuxmyoQTV15QEM3G
+- ETH: 0x3ef0faf691a78ff09622e8f06f9f88acf85a80a3
+
+Note: The above donation is purely to bless us in our work. There will be no added benefit by donating through the above method
+
 ## Features
 - Auto Catch
 - Auto Keep or Transfer base on IV (100 or PvP)
