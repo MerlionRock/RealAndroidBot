@@ -6,39 +6,11 @@
 
 Manual install users, please run `pip install --upgrade uiautomator2` to update uiautomator2.
 
-### RAB 1.3.0
-- Faster response during catching of pokemon for 1. PGSharp Free/Paid, 2. HAL/Pokemod Espresso in quick catch Mode 3. MAD in Speed Up(Ball shake only one time, quick catch in RAB should be disabled for this mode)/Quick Catch mode
-- Minor changes to Non advance berry selection mode
-- Attempt to fix PGSharp get location error
-- (PGSharp Enhance/PGSharp 100IV Shiny Hunt Mode) RAB will attempt to move the elements on screen after restart
-- Added DPI setting for those who want to manually change their DPI
-- 3 days trial PGSharp 100IV Shiny hunt feature
-- (MAD Enhancer) Will skip appraisal during Pokemon management
-- Fixed: Adjusting Min Atk in catch settings will also adjust Min Sta
-- Fixed: Adjusting Check Item Interval will also adjust rest bagful interval
-- Minior GUI Text Fix
-- Attempt to address not incubating new eggs problem
-- Corrected/Updated stats for Pumpkaboo, Gourgeist, Xerneas, Yveltal
-- (Rooted Solutions) RAB will disconnect GoPlus if it’s activated before teleporting
-- Added mass transfer option
-- (Polygon#) Now support nameplate `{default} LVL{lvl} {ivs}` for Pokemon detail page, RAB will not do appraisal if this is set as nameplate
-- (Non PGSharp) If run out of balls, RAB will attempt to spin 50 pokestops before resume normal operation
-- Fix offset not found error (Telegram Snipe)
-- Attempt to fix clicking onto AR quest when it’s not completed, and get stuck
-- Fix: Attempt to improve Zero ball detection
-- PGSharp Enhance mode will be available for all PGSharp users.
-- Fix: Tapping on Scan Pokestop Quest which will cause RAB to get stuck
-- PGSharp Enhance Mode: RAB will teleport back to starting location if it run out of ball. Please set your starting location to a place full of poke stop before starting RAB.
-- Auto Teamrocket win for PGSharp Paid (From PGSharp v1.24.1 onwards)
-- Pokemon Management: When transfering Pokemon, RAB will limit what can be transferred by using search string. Default: `age0-1` (new Pokemon within 48hrs)
-- Pokemon Management: If Quick catch is also enabled, RAB will go back to Pokemon Inventory and favourite the last caught Pokemon if it's eligible for keeping. Please ensure Pokemon Inventory is set to recent list for this to work. 
-- New Option: Search String (For Pokemon Management)
-- Some devices are unable to use search string, RAB will fall back to mass delete by selecting 9 pokemons at a time and transfer up till the max number of pokemon assigned to check
-- Checking if pgsharp menu is open, close it to prevent accidently clicking it
-- Fix Teamrocket crash for non pgsharp users. (<D39)
-- Attempt to detect home screen map better for some phones
-- Restart wait time for MAD adjust to 90 secs as it always restart on it's own
-- Item Management now accepts values. `0 = Do not delete, 1 = Delete all,  More than 1 = No. 0f Items to remind`
+### RAB 1.3.1
+- Fix: Connecting or disconnecting Go Plus loop
+- Fix: Polygon Paid: If Pokemon Inventory is full, RAB will get stuck at Pokemon Encounter 
+- Fix: Deleting of items by number not working on some devices
+- Possible fix for some devices that perviously work on 1.2.3 but not working on 1.3.0
 
 **Known Issue**
 

@@ -1,5 +1,11 @@
 # Changelog
 
+### RAB 1.3.1
+- Fix: Connecting or disconnecting Go Plus loop
+- Fix: Polygon Paid: If Pokemon Inventory is full, RAB will get stuck at Pokemon Encounter 
+- Fix: Deleting of items by number not working on some devices
+- Possible fix for some devices that perviously work on 1.2.3 but not working on 1.3.0
+
 ### RAB 1.3.0
 - Faster response during catching of pokemon for 1. PGSharp Free/Paid, 2. HAL/Pokemod Espresso in quick catch Mode 3. MAD in Speed Up(Ball shake only one time, quick catch in RAB should be disabled for this mode)/Quick Catch mode
 - Minor changes to Non advance berry selection mode
