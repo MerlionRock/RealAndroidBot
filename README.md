@@ -177,6 +177,8 @@ Requires telegram account and donor status
 - Hide PGSharp Disabled, move joystick to somewhere that wont block the screen
 - Enhanced Throw on Excellent and Curved
 - Tap to `Walk` Enabled 
+- `Inventory IV` Enabled
+- `Encounter IV` Enabled
 - Caught Preview Enabled
 - Set your walking speed to less than 7km/hr
 - Set a location with the Map or enter coordinates 
@@ -188,8 +190,9 @@ Requires telegram account and donor status
 - Tap to `Walk` or `Teleport` Disabled. 
 - `Inventory IV` Enabled
 - `Encounter IV` Enabled
-- `Quick Catch` Optional. Set `transfer on catch` to true in RAB config if you set this option to true.
-- `Instant Beat Team Rocket` Optional. Set `Teamrocket Blast Off` to true in RAB config if you set this option to true.
+- `Quick Catch` Optional. Enable `Quick Catch` in RAB if you set this option to true.
+- `Instant Beat Team Rocket` Optional. Set `Teamrocket Blast Off` to true in RAB if you set this option to true.
+- Caught Preview Enabled
 - The rest of options are optional
 - Then click on PGSharp's icon and choose either auto walk or GPX route (this option is in map)
 
