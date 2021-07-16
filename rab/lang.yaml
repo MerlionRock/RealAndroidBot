@@ -155,9 +155,11 @@ english:
     tab3Frame2BerryP1: "Shiny/High Level:"
     tab3Frame2BerryP2: "Mid Level: "
     tab3Frame2BerryP3: "Low Level: "
+    tab3Frame2PinapExclusive: "Pinap Exclusive: "
     txtBerryP1: "Order of choice to use berry for Shiny or High Level Pokemon (IV100/CP>=2000/Lvl>=30)"
     txtBerryP2: "Order of choice to use berry for Mid Level Pokemon (CP>=1000/Lvl>=15)"
     txtBerryP3: "Order of choice to use berry for Low Level/Unknown Pokemon (CP<1000/Lvl<15)"
+    txtPinapExclusive: "Only Pokemon listed here will use Pinap."
 
     tab3Frame3: "Pokeball Selection"
     tab3Frame3SelectBall: "Select Pokeball"
@@ -431,9 +433,11 @@ german:
     tab3Frame2BerryP1: "Shiny/Hochwertig:"
     tab3Frame2BerryP2: "Mittleres Level: "
     tab3Frame2BerryP3: "Niedriges Niveau: "
+    tab3Frame2PinapExclusive: "Pinap Exclusive: "
     txtBerryP1: "Wahlweise Beeren für Shiny oder High Level Pokemon (IV100/CP>=2000/Lvl>=30)"
     txtBerryP2: "Reihenfolge der Wahl zur Verwendung von Beeren für Pokemon mit mittlerem Level (CP>=1000/Lvl>=15)"
     txtBerryP3: "Reihenfolge der Auswahl zur Verwendung von Beeren für Pokemon mit niedrigem Level/unbekannt (CP<1000/Lvl<15)"
+    txtPinapExclusive: "Only Pokemon listed here will use Pinap."
 
     tab3Frame3: "Pokeball-Auswahl"
     tab3Frame3SelectBall: "Pokeball auswählen"

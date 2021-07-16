@@ -117,8 +117,8 @@ catch:
 berry_selection:
     use_berry: true # Default auto use berries. Set to false if you do not want to use berries
     shiny_or_high_lvl: ['golden razz berry', 'razz berry']
-    mid_lvl: ['pinap berry', 'nanab berry', 'razz berry']
-    low_lvl_or_unknown: ['razz berry', 'nanab berry', 'pinap berry']
+    mid_lvl: ['nanab berry', 'razz berry']
+    low_lvl_or_unknown: ['razz berry', 'nanab berry']
 
 ball_selection:
     select_ball: true # Default auto select ball. Set to false to use default ball without selecting

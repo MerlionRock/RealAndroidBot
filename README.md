@@ -4,13 +4,35 @@
 
 ## Changelog
 
-Manual install users, please run `pip install --upgrade uiautomator2` to update uiautomator2.
+### RAB 1.5.0
+Changes: Odd number release will be public version and even numbers will be development version.
+Example: 
+`1.3.x, 1.5.x, 1.7.x, 1.9.x` <-- These will be public release
+`1.4.x, 1.6.x, 1.8.x, 1.10.x` <-- These will be development/beta release
 
-### RAB 1.3.1
-- Fix: Connecting or disconnecting Go Plus loop
-- Fix: Polygon Paid: If Pokemon Inventory is full, RAB will get stuck at Pokemon Encounter 
-- Fix: Deleting of items by number not working on some devices
-- Possible fix for some devices that perviously work on 1.2.3 but not working on 1.3.0
+- Fix: Search string changes is not being use by RAB when doing Mass transfer
+- Improvement: Tepig detection improvement
+- Fix: GL and UL ratings cannot be changed
+- RAB’s PGSharp Enhance Mode: Improve name detection
+- Attempt to disconnect GoPlus if teleporting to snipe (However, suggestion is to disable GoPlus if doing snipping as HAL now has auto reconnect which break this function)
+- More options added for Telegram Snipe: 
+New Type: `by_cp_less`, `by_cp_more` Options: `cp`
+New Type: `by_ivs` Options: `atk`, `def` and `sta`, optional: `cp`
+New option: `snipe_limit`, applicable to all type  
+- Fix: RAB will get stuck during mass transfer when there’s event Pokemon in selection
+- PGSharp Paid: Fix stuck at Team Rocket
+- Fix: Crash as trying to read saved image (Some machines)
+- Added PVP Feed for Donors
+- Fix: Crash when trying to teleport back to starting location
+- Fix: Stuck at weather warning screen
+- Added: Pinap Exclusive option. Only use Pinap on selected Pokemon 
+- Original Pinap entry removed from default config.example.yaml
+- Reduce chances of hitting pokestop (non team rocket) if auto go plus is enabled
+- RAB’s PGSharp Enhance Mode: Skip searching for Pokestop if auto go plus is enabled
+- PGSharp: RAB will now attempt to determine if Pokemon have move to left, right or fly/attack
+- Adjusted throwing height, solving the issue of miss hitting the Pokemon 
+- Fix: Your device is not in our system (which cause donation feed not working)
+- Fix: GPS Joystick fail to teleport for Android 7 and below
 
 **Known Issue**
 
