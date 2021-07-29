@@ -1,4 +1,12 @@
 # Changelog
+### RAB 1.7.0
+- PGSharp: RAB will now throw straight ball if name is not detected
+- Polygon Paid: Added chase after Incensed Pokemon. Good for event where certain Pokemon only appear when using incense. Auto activated when incense is used
+- Minor Text Change
+- PGSharp Paid: Skip Encounter Intro is now enabled. Please enable this option if you enable Skip cutscene options in your PGSharp setting 
+- Added `PGSharp Reposition` option. Disable it if you do not want RAB to move the elements of PGSharp
+- Added player level detection 
+- Fix: When spinning for poke stop after run out of ball, RAB will get stuck if users use instant spin
 
 ### RAB 1.5.0
 
