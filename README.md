@@ -4,35 +4,14 @@
 
 ## Changelog
 
-### RAB 1.5.0
-Changes: Odd number release will be public version and even numbers will be development version.
-Example: 
-`1.3.x, 1.5.x, 1.7.x, 1.9.x` <-- These will be public release
-`1.4.x, 1.6.x, 1.8.x, 1.10.x` <-- These will be development/beta release
-
-- Fix: Search string changes is not being use by RAB when doing Mass transfer
-- Improvement: Tepig detection improvement
-- Fix: GL and UL ratings cannot be changed
-- RAB’s PGSharp Enhance Mode: Improve name detection
-- Attempt to disconnect GoPlus if teleporting to snipe (However, suggestion is to disable GoPlus if doing snipping as HAL now has auto reconnect which break this function)
-- More options added for Telegram Snipe: 
-New Type: `by_cp_less`, `by_cp_more` Options: `cp`
-New Type: `by_ivs` Options: `atk`, `def` and `sta`, optional: `cp`
-New option: `snipe_limit`, applicable to all type  
-- Fix: RAB will get stuck during mass transfer when there’s event Pokemon in selection
-- PGSharp Paid: Fix stuck at Team Rocket
-- Fix: Crash as trying to read saved image (Some machines)
-- Added PVP Feed for Donors
-- Fix: Crash when trying to teleport back to starting location
-- Fix: Stuck at weather warning screen
-- Added: Pinap Exclusive option. Only use Pinap on selected Pokemon 
-- Original Pinap entry removed from default config.example.yaml
-- Reduce chances of hitting pokestop (non team rocket) if auto go plus is enabled
-- RAB’s PGSharp Enhance Mode: Skip searching for Pokestop if auto go plus is enabled
-- PGSharp: RAB will now attempt to determine if Pokemon have move to left, right or fly/attack
-- Adjusted throwing height, solving the issue of miss hitting the Pokemon 
-- Fix: Your device is not in our system (which cause donation feed not working)
-- Fix: GPS Joystick fail to teleport for Android 7 and below
+### RAB 1.7.0
+- PGSharp: RAB will now throw straight ball if name is not detected
+- Polygon Paid: Added chase after Incensed Pokemon. Good for event where certain Pokemon only appear when using incense. Auto activated when incense is used
+- Minor Text Change
+- PGSharp Paid: Skip Encounter Intro is now enabled. Please enable this option if you enable Skip cutscene options in your PGSharp setting 
+- Added `PGSharp Reposition` option. Disable it if you do not want RAB to move the elements of PGSharp
+- Added player level detection 
+- Fix: When spinning for poke stop after run out of ball, RAB will get stuck if users use instant spin
 
 **Known Issue**
 
@@ -79,12 +58,13 @@ Requires telegram account and donor status
 
 ## Phone Requirements
 1. Rooted or PGSharp (non-rooted solution)
-2. Your phone must be able to run Pokemon Go if it's rooted
-3. USB Debugging Enabled ([Under Developer Options](https://developer.android.com/studio/debug/dev-options))
-4. Phone with Screen Resolution 720 x 1280 and above
-5. Recommended 2GB RAM and above
-6. Recommended Snapdragon 625 and above
-7. Additional settings needed for Samsung and Xiaomi phones (Explained in app)
+2. For rooted phones, you are strongly advise to use [Smali Patcher](https://forum.xda-developers.com/t/module-smali-patcher-7-3.3680053/) to take advantage of all the features of RAB 
+3. Your phone must be able to run Pokemon Go if it's rooted
+4. USB Debugging Enabled ([Under Developer Options](https://developer.android.com/studio/debug/dev-options))
+5. Phone with Screen Resolution 720 x 1280 and above
+6. Recommended 2GB RAM and above
+7. Recommended Snapdragon 625 and above
+8. Additional settings needed for Samsung, Xiaomi and Oppo phones (Refer to Additional Setup required by phone brand below)
 
 ## System Requirements
 64 bit system is required to run RAB (Windows 10 - 64bit)
@@ -201,7 +181,7 @@ Requires telegram account and donor status
 - Tap to `Walk` Enabled 
 - `Inventory IV` Enabled
 - `Encounter IV` Enabled
-- Caught Preview Enabled
+- `Caught Preview` Enabled
 - Set your walking speed to less than 7km/hr
 - Set a location with the Map or enter coordinates 
 
@@ -209,12 +189,13 @@ Requires telegram account and donor status
 - Spoofing Enabled
 - Hide PGSharp Disabled, move joystick to somewhere that wont block the screen
 - Enhanced Throw on Excellent and Curved throw is preferred for faster catching
-- Tap to `Walk` or `Teleport` Disabled. 
+- Tap to `Walk` or `Teleport` Disabled. (Enable this option if you are using RAB PGSharp Enhance Mode, refer to the section below on this mode)
 - `Inventory IV` Enabled
 - `Encounter IV` Enabled
+- `Caught Preview` Enabled
+- `Skip Cutscenes` Enabled (Skip Encounter Intro enabled in RAB setting)
 - `Quick Catch` Optional. Enable `Quick Catch` in RAB if you set this option to true.
 - `Instant Beat Team Rocket` Optional. Set `Teamrocket Blast Off` to true in RAB if you set this option to true.
-- Caught Preview Enabled
 - The rest of options are optional
 - Then click on PGSharp's icon and choose either auto walk or GPX route (this option is in map)
 
@@ -300,22 +281,21 @@ Note: If your screen return python after this command, please type in this inste
 (Mac and Linux) Follow the same step but skip the `cd ..` part
 6. Follow by (Mac and Linux) `source RealAndroidBot/bin/activate` (Windows) `RealAndroidBot\Scripts\activate`
 7. Follow by `cd RealAndroidBot`
-8. Copy config.example.yaml to rab/config.yaml and configure it by using notepad++. **Do not use notepad to edit.!**
-9. Back to Terminal or PowerShell, type `pip install -r requirements.txt`
-10. Follow by `cd rab`
-11. Setup your phone according to app requirements as instructed above and run all required apps on phone
-12. Make sure your Pokemon Go is at map page and **zoomed out to the max**.
-13. Make sure your device are connected to your machine, run this command in Terminal or PowerShell `python -m uiautomator2 init`. Check your phone and allow installation of automator on your Phone
-14. Please ensure you have copied config.example.yaml to rab/config.yaml and configure it, then run 
+8. Back to Terminal or PowerShell, type `pip install -r requirements.txt`
+9. Follow by `cd rab`
+10. Setup your phone according to app requirements as instructed above and run all required apps on phone
+11. Make sure your Pokemon Go is at map page and **zoomed out to the max**.
+12. Make sure your device are connected to your machine, run this command in Terminal or PowerShell `python -m uiautomator2 init`. Check your phone and allow installation of automator on your Phone
+13. Please ensure you have copied config.example.yaml to rab/config.yaml and configure it, then run 
    `python run.py` in your terminal or powershell
-15. To run multiple devices, first run `adb devices` to get all your device ID connected to your computer
-16. Then run each command on their own terminal/shell console
+14. To run multiple devices, first run `adb devices` to get all your device ID connected to your computer
+15. Then run each command on their own terminal/shell console
     `python run.py --device-id YOUR_DEVICE_ID`
-17. To use a different config file (good for multiple devices setup) run
+16. To use a different config file (good for multiple devices setup) run
     `python run.py --device-id YOUR_DEVICE_ID --config-filename YOUR_CONFIG_FILE_NAME`
-18. Ctrl + C to terminate the program (you might have to do it more than once)
-19. Whenever you want to run the scripts again, remember to run Step 7 first follow by (mac/linux) `cd RealAndroidBot/rab` or (Windows) `cd RealAndroidBot\rab`
-20. To update your files from github repo, type `git pull`
+17. Ctrl + C to terminate the program (you might have to do it more than once)
+18. Whenever you want to run the scripts again, remember to run Step 7 first follow by (mac/linux) `cd RealAndroidBot/rab` or (Windows) `cd RealAndroidBot\rab`
+19. To update your files from github repo, type `git pull`
 
 ## Troubleshooting
 **RAB Mess up my screen resolution and my navigation bar went missing!!**
