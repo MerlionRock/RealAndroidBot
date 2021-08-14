@@ -4,14 +4,20 @@
 
 ## Changelog
 
-### RAB 1.7.0
-- PGSharp: RAB will now throw straight ball if name is not detected
-- Polygon Paid: Added chase after Incensed Pokemon. Good for event where certain Pokemon only appear when using incense. Auto activated when incense is used
-- Minor Text Change
-- PGSharp Paid: Skip Encounter Intro is now enabled. Please enable this option if you enable Skip cutscene options in your PGSharp setting 
-- Added `PGSharp Reposition` option. Disable it if you do not want RAB to move the elements of PGSharp
-- Added player level detection 
-- Fix: When spinning for poke stop after run out of ball, RAB will get stuck if users use instant spin
+### RAB 1.7.1
+
+**BREAKING CHANGE**
+From v1.7.1 onwards, PGSharp users using sniper or nearby feed, **Joystick MUST be removed** (from PGSharp option)
+
+- PGSharp: Attempt to fix not able to input search string
+- Attempt to fix not able to get Android version
+- Ensure it’s at “Me” Profile page before getting Player Level
+- RAB will not auto favourite newly caught Pokemon if Mass Transfer is not enabled 
+- PGSharp Enhance Mode Changes: **Joystick MUST be removed** (from PGSharp option)
+- Pokemon Names updated to Gen 8 (Stats are not included yet)
+- Telegram Snipe: If Pokemon does not match, CD is 1 sec before restart route
+- GUI Bugs: Navigation and Screenshot offset takes the vague from screen offset. This is fixed
+- Attempt to fix not zooming out after restart app
 
 **Known Issue**
 
