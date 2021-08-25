@@ -234,13 +234,13 @@ Windows users who **downloaded the release version**, you just need to configure
 ```
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 ```
-2. Install Tesseract
+2. Install Pyhton & Tesseract
 ```
-brew install tesseract (install homebrew if you have not)
+brew install python-tk tesseract
 ```
 3. Install ADB
 ```
-brew cask install android-platform-tools
+brew install --cask android-platform-tools
 ```
 4. Connect your device to your mac and run the following to see if it can detect your device
 ```
@@ -248,8 +248,9 @@ adb devices
 ```
 
 ### Linux
-1. Install tesseract via apt by using the command
+1. Install tesseract and pyhton via apt by using the command
 ```
+sudo apt-get install python-tk
 sudo apt-get install tesseract-ocr
 ```
 2. Install adb via apt by using the command
@@ -283,27 +284,26 @@ You will find the RealAndroidBot folder present in the C drive directory after e
    - 1.1 (Ubuntu/Linux) Open terminal and type: `cd ~/`
 2. (Windows Only) ==> Right click on the `Install.ps1` and select 'Run with PowerShell'
 3. (Windows Only) ==> The installation will take a little time and it will prompt press any key to continue (press any key) and then u will be directed to the `PS C:\Windows\system32>` directory.
-4. (Mac and Linux) Install Python 3.7 or later (https://www.python.org/downloads/)
-5. (Windows Only) ==> Now use `cd C:\` and Follow by using `python3 -m venv RealAndroidBot`
+4. (Windows Only) ==> Now use `cd C:\` and Follow by using `python3 -m venv RealAndroidBot`
 Note: If your screen return python after this command, please type in this instead `python -m venv RealAndroidBot` 
 (Mac and Linux) Follow the same step but skip the `cd ..` part
-6. Follow by (Mac and Linux) `source RealAndroidBot/bin/activate` (Windows) `RealAndroidBot\Scripts\activate`
-7. Follow by `cd RealAndroidBot`
-8. Back to Terminal or PowerShell, type `pip install -r requirements.txt`
-9. (Linux) Enter the following to install tkinter `sudo apt-get install python3-tk python3-pil python3-pil.imagetk`
-10. Follow by `cd rab`
-11. Setup your phone according to app requirements as instructed above and run all required apps on phone
-12. Make sure your Pokemon Go is at map page and **zoomed out to the max**.
-13. Make sure your device are connected to your machine, run this command in Terminal or PowerShell `python -m uiautomator2 init`. Check your phone and allow installation of automator on your Phone
-14. Run `python run.py` in your terminal or powershell
-15. To run multiple devices, first run `adb devices` to get all your device ID connected to your computer
-16. Then run each command on their own terminal/shell console
+5. Follow by (Mac and Linux) `source RealAndroidBot/bin/activate` (Windows) `RealAndroidBot\Scripts\activate`
+6. Follow by `cd RealAndroidBot`
+7. Back to Terminal or PowerShell, type `pip install -r requirements.txt`
+8. (Linux) Enter the following to install tkinter `sudo apt-get install python3-tk python3-pil python3-pil.imagetk`
+9. Follow by `cd rab`
+10. Setup your phone according to app requirements as instructed above and run all required apps on phone
+11. Make sure your Pokemon Go is at map page and **zoomed out to the max**.
+12. Make sure your device are connected to your machine, run this command in Terminal or PowerShell `python -m uiautomator2 init`. Check your phone and allow installation of automator on your Phone
+13. Run `python run.py` in your terminal or powershell
+14. To run multiple devices, first run `adb devices` to get all your device ID connected to your computer
+15. Then run each command on their own terminal/shell console
     `python run.py --device-id YOUR_DEVICE_ID`
-17. To use a different config file (good for multiple devices setup) run
+16. To use a different config file (good for multiple devices setup) run
     `python run.py --device-id YOUR_DEVICE_ID --config-filename YOUR_CONFIG_FILE_NAME`
-18. Ctrl + C to terminate the program (you might have to do it more than once)
-19. Whenever you want to run the scripts again, remember to run Step 7 first follow by (mac/linux) `cd RealAndroidBot/rab` or (Windows) `cd RealAndroidBot\rab`
-20. To update your files from github repo, type `git pull`
+17. Ctrl + C to terminate the program (you might have to do it more than once)
+18. Whenever you want to run the scripts again, remember to run Step 7 first follow by (mac/linux) `cd RealAndroidBot/rab` or (Windows) `cd RealAndroidBot\rab`
+19. To update your files from github repo, type `git pull`
 
 ## Troubleshooting
 **RAB Mess up my screen resolution and my navigation bar went missing!!**
