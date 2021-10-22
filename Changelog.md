@@ -1,5 +1,32 @@
 # Changelog
 
+### RAB 1.9.0
+Note for Polygon# Enhancer users: Every enhancer feature can be now used with a free enhancer key with effect from Polygon# Version 0.8.4 
+
+You can follow the paid instructions for Polygon# if you want backend data support.
+
+- RAB now save a file that contain locations of device. This will help RAB to do debugging when necessary 
+- Turtwig, Pidgey added to maintain throwing height list
+- Minor text fix
+- Location query for Google Pixel 4, android 11, fixed
+- Fix `name 'lat' is not defined` error
+- Will no longer check for encounter position for PGSharp Paid users
+- RPC update: Fix polygon paid data issue
+- Fix Mod/HAL shiny detection. RAB wrongly detect Shiny for Mod/HAL users
+- Added Chase after Pokemon (Polygon Paid Only)
+- Fix: Quit unknown battle
+- Fix: Clear item on start when item_management is disabled
+- Added Duskull detection
+- Pumpkaboo and Gourgeist form and value fix
+
+### RAB v1.7.3
+- Gen 8 Fix: Gen 8 Pokemon's stats are not shown
+
+### RAB v1.7.2
+- Telegram Fix: Snipe: PVP 100 rating not registered
+- If there are more to check after snipe, RAB will not resume route but continue to check for next Pokemon
+- Gen 8 Update
+
 ### RAB 1.7.1
 
 **BREAKING CHANGE**
