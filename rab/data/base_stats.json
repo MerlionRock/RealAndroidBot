@@ -18964,9 +18964,9 @@
     "form": []
   },
   "710": {
-    "attack": 121,
-    "defense": 123,
-    "stamina": 135,
+    "attack": 122,
+    "defense": 124,
+    "stamina": 127,
     "type1": 8,
     "type2": 12,
     "legendary": false,
@@ -18976,12 +18976,49 @@
     "1500_product": 1669772.4503170883,
     "2500_product": 1669772.4503170883,
     "evolutions": [],
-    "form": []
+    "form": [
+        {
+          "id": 2461,
+          "name": "Small",
+          "attack": 122,
+          "defense": 124,
+          "stamina": 127,
+          "type1": 8,
+          "type2": 12
+        },
+        {
+          "id": 2462,
+          "name": "Average",
+          "attack": 121,
+          "defense": 123,
+          "stamina": 135,
+          "type1": 8,
+          "type2": 12
+        },
+        {
+          "id": 2463,
+          "name": "Large",
+          "attack": 120,
+          "defense": 122,
+          "stamina": 144,
+          "type1": 8,
+          "type2": 12
+        },
+        {
+          "id": 2464,
+          "name": "Super",
+          "attack": 118,
+          "defense": 120,
+          "stamina": 153,
+          "type1": 8,
+          "type2": 12
+        }
+    ]
   },
   "711": {
-    "attack": 175,
-    "defense": 213,
-    "stamina": 163,
+    "attack": 171,
+    "defense": 219,
+    "stamina": 146,
     "type1": 8,
     "type2": 12,
     "legendary": false,
@@ -18991,7 +19028,44 @@
     "1500_product": 1956571.0545709955,
     "2500_product": 4203330.5556084905,
     "evolutions": [],
-    "form": []
+    "form": [
+        {
+          "id": 2461,
+          "name": "Small",
+          "attack": 171,
+          "defense": 219,
+          "stamina": 146,
+          "type1": 8,
+          "type2": 12
+        },
+        {
+          "id": 2462,
+          "name": "Average",
+          "attack": 175,
+          "defense": 213,
+          "stamina": 163,
+          "type1": 8,
+          "type2": 12
+        },
+        {
+          "id": 2463,
+          "name": "Large",
+          "attack": 179,
+          "defense": 206,
+          "stamina": 181,
+          "type1": 8,
+          "type2": 12
+        },
+        {
+          "id": 2464,
+          "name": "Super",
+          "attack": 182,
+          "defense": 200,
+          "stamina": 198,
+          "type1": 8,
+          "type2": 12
+        }
+    ]
   },
   "712": {
     "attack": 117,

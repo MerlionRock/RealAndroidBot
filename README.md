@@ -4,27 +4,36 @@
 
 ## Changelog
 
-### RAB 1.7.1
+### RAB 1.9.0
 
 **BREAKING CHANGE**
 From v1.7.1 onwards, PGSharp users using sniper or nearby feed, **Joystick MUST be removed** (from PGSharp option)
 
-- PGSharp: Attempt to fix not able to input search string
-- Attempt to fix not able to get Android version
-- Ensure it’s at “Me” Profile page before getting Player Level
-- RAB will not auto favourite newly caught Pokemon if Mass Transfer is not enabled 
-- PGSharp Enhance Mode Changes: **Joystick MUST be removed** (from PGSharp option)
-- Pokemon Names updated to Gen 8 (Stats are not included yet)
-- Telegram Snipe: If Pokemon does not match, CD is 1 sec before restart route
-- GUI Bugs: Navigation and Screenshot offset takes the vague from screen offset. This is fixed
-- Attempt to fix not zooming out after restart app
+Note for Polygon# Enhancer users: Every enhancer feature can be now used with a free enhancer key with effect from Polygon# Version 0.8.4 
+
+You can follow the paid instructions for Polygon# if you want backend data support.
+
+- RAB now save a file that contain locations of device. This will help RAB to do debugging when necessary 
+- Turtwig, Pidgey added to maintain throwing height list
+- Minor text fix
+- Location query for Google Pixel 4, android 11, fixed
+- Fix `name 'lat' is not defined` error
+- Will no longer check for encounter position for PGSharp Paid users
+- RPC update: Fix polygon paid data issue
+- Fix Mod/HAL shiny detection. RAB wrongly detect Shiny for Mod/HAL users
+- Added Chase after Pokemon (Polygon Paid Only)
+- Fix: Quit unknown battle
+- Fix: Clear item on start when item_management is disabled
+- Added Duskull detection
+- Pumpkaboo and Gourgeist form and value fix
 
 **Known Issue**
 
-- **The following features might not work wih all phones**
+**Samsung phones is confirmed not working for the features listed below**
+
 1. Enchanced PGSharp Mode
-2. PGSharp 100IV Shiny Hunting Mode
-3. Fast identification of Pokemon caught status during encounter (Caught, Missed, Escaped, etc)
+2. PGSharp 100IV Shiny Hunting Mode 
+3. Fast identification of Pokemon caught status during encounter (Caught, Missed, Escaped, etc) 
 
 [Changelog History](https://github.com/MerlionRock/RealAndroidBot/blob/master/Changelog.md)
 
@@ -133,6 +142,8 @@ Requires telegram account and donor status
 *Enable or disable the settings in RAB's GUI accordingly*
 
 ## Polygon# Enhancer Support
+
+Important Note: From Polygon version Polygon# v0.8.4 onwards, all paid enhancer features are now free. Please follow the paid intructions if you want RAB use backend data that's send by Polygon#. Make sure you are using v0.8.4 if you want the paid feature.
 
 ### Settings for Free version
 - Set a route in GPS Joystick and loop it
