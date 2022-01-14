@@ -1,5 +1,17 @@
 # Changelog
 
+### RAB 1.11.0
+
+Note: There is no patch file for this version. You are required to download the full version.
+
+- PGSharp: Fix “RAB will attempt to walk...” when in Auto Route (GPX) mode
+- Added device id to Discord notification
+- Clear Pokemon inventory flag once clear Pokemon action is done
+- Improves detection for Shinx
+- Added dim screen as an option 
+- Fix unable to connect to Telegram issue
+- If using HAL and keep Pokemon, quick catch is enabled, and a Pokemon is eligible to be kept, volume down will be triggered to disable HAL’s auto transfer for current Pokemon
+
 ### RAB 1.9.0
 Note for Polygon# Enhancer users: Every enhancer feature can be now used with a free enhancer key with effect from Polygon# Version 0.8.4 
 
