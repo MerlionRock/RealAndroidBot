@@ -69,6 +69,8 @@ english:
     tab2Frame2LowerResolutionMsg: "Run in 720 x 1280 resolution"
     tab2Frame2Density: "Density"
     tab2Frame2DensityMsg: "DPI. 0 = Use orginal DPI or auto caculate (when lower resolution is enabled)"
+    tab2Frame2DimPhone: "Dim Screen"
+    tab2Frame2DimPhoneMsg: "Enable to dim your phone screen. This is to prevent phone heating and battery draining"
 
     tab2Frame3: "Discord Notifications"
     tab2Frame3DiscordEnabled: "Enabled"
@@ -349,6 +351,8 @@ german:
     tab2Frame2DelayTimeMsg: "Time delay before checking for Pokestop or Encounter. If RAB is not catching pokemon, try increase this time."
     tab2Frame2Density: "Density"
     tab2Frame2DensityMsg: "DPI. Default 0"
+    tab2Frame2DimPhone: "Dim Screen"
+    tab2Frame2DimPhoneMsg: "Enable to dim your phone screen. This is to prevent phone heating and battery draining"
 
     tab2Frame3: "Discord Benachrichtigungen"
     tab2Frame3DiscordEnabled: "Aktiviert"
